@@ -1,0 +1,86 @@
+Meridian Atlas — reference geography
+Snapshot assembled on 24 November 2026. Installed-edition records are in geo-book-1.0.8.0.json. Publicly documented examples are in game-guide.json.
+
+Names, places and units
+World records include countries, dependencies and other mapped regions. Names, aliases, representative coordinates, areas and administrative centres are adapted from world-countries 5.1.0 by Mohammed Le Doze and contributors. The adapted geographical database is available under ODbL 1.0. Place coordinates are representative points for the region. Areas are given in square kilometres.
+https://github.com/mledoze/countries
+https://opendatacommons.org/licenses/odbl/1-0/
+
+Names and administrative updates
+The UN name Naoero is indexed under its previous name Nauru. Equatorial Guinea moved its capital to Ciudad de la Paz in January 2026. Sri Lanka's administrative capital is Sri Jayawardenepura Kotte. The Svalbard and Jan Mayen area figure is the sum of Statistics Norway's 2026 land and fresh water areas.
+https://www.un.org/en/about-us/member-states/naoero
+https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial
+https://www.mfa.gov.lk/national-profile-and-geography
+https://www.ssb.no/en/natur-og-miljo/areal/statistikk/areal-av-land-og-ferskvatn
+
+Country and territory populations
+World Bank World Development Indicators, SP.POP.TOTL, 2024 (216 entries). Data licensed under CC BY 4.0. Where unavailable, 22 places use UN World Population Prospects 2024, estimates for 2023, as processed by Our World in Data. Åland uses its official year-end 2024 count. Christmas Island, Cocos (Keeling) Islands and Norfolk Island use their 2021 Australian Census counts. Each figure carries its observation year. Blank values mean the selected sources did not supply a comparable figure.
+https://data.worldbank.org/indicator/SP.POP.TOTL
+https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=2024&format=json&per_page=400
+https://ourworldindata.org/grapher/population
+https://population.un.org/wpp/
+https://www.asub.ax/sv/statistik/invanarantalet-31122024
+https://www.abs.gov.au/census/find-census-data/quickstats/2021/901011001
+https://www.abs.gov.au/census/find-census-data/quickstats/2021/90102
+https://abs.gov.au/census/find-census-data/quickstats/2021/90104
+https://creativecommons.org/licenses/by/4.0/
+
+Chinese answer explanations
+The game supplies the clue assignments, souvenir artwork and shelf matches. The study companion supplies the Chinese explanations. The download includes one note per place and clue key under education.clueReasons and a teachingNote on each souvenirDescriptions record. linkedInSouvenirSort identifies artwork that the installed shelf exercise actually uses.
+https://www.okhistory.org/publications/enc/entry.php?entry=so010
+https://www.okhistory.org/learn/latino2
+https://ich.unesco.org/en/RL/weaving-of-traditional-toquilla-straw-hats-of-ecuador-00729
+https://www.americanhistory.si.edu/collections/object/nmah_1069139
+https://en.nka.gl/intangible-topics/kalaallisuut/
+
+U.S. state facts
+Areas and internal coordinates come from the 2010 Census state area table. Populations are July 1 estimates from the Census Bureau's Vintage 2024 series as reproduced by Rhode Island's Department of Labor and Training. State capitals are listed by USDA NASS. The District of Columbia is a federal district.
+https://www.census.gov/geographies/reference-files/2010/geo/state-area.html
+https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html
+https://dlt.ri.gov/media/19926/download?language=en
+https://www.nass.usda.gov/Publications/AgCensus/2022/Online_Resources/Census_of_Horticulture_Specialties/hortic_2_008_008.pdf
+
+Pronunciation
+Phonemic IPA uses one English reading per place, in broad American English. Contributors to English Wiktionary and Wikipedia supplied geographical entries. For individual contributors and revisions, open the article for the spelling in question and choose View history. IPA has been selected and adapted for this atlas, including American English word readings from ipa-dict and CMUdict. Some less widely documented names use an English approximation of the local pronunciation. The Wikimedia-derived transcriptions are offered under CC BY-SA 4.0.
+https://en.wiktionary.org/wiki/Special:Search
+https://en.wikipedia.org/wiki/Special:Search
+https://creativecommons.org/licenses/by-sa/4.0/
+https://github.com/open-dict-data/ipa-dict
+https://github.com/cmusphinx/cmudict
+https://dictionary.cambridge.org/pronunciation/english/kiribati
+
+Flags
+Country and territory icons are flag-icons 7.6.0 by Panayiotis Lipiridis and contributors (MIT). Designs for places without an official flag may use a regional or representative symbol. U.S. state flags were distributed by Flagpedia / FlagCDN from Wikimedia Commons artwork. The District of Columbia flag is from hayleox/flags. Source license texts for bundled assets are in assets/licenses.
+https://github.com/lipis/flag-icons
+https://flagpedia.net/us-states/download
+https://github.com/hayleox/flags/blob/master/svg/us/dc.svg
+
+Map outlines
+World Atlas 2.0.2 distributes Natural Earth's public-domain world boundaries. US Atlas 3.0.1 distributes Census Bureau geography. Projection and boundary detail vary with scale.
+https://github.com/topojson/world-atlas
+https://github.com/topojson/us-atlas
+https://www.naturalearthdata.com/about/terms-of-use/
+
+Installed game and bilingual lessons
+The local Xbox PC installation of Geo Book 1.0.8.0 supplies its mode tables, English localization, original game-map coordinates and learning illustrations. Original artwork and game strings belong to their respective owners. In the JSON export, nativeContent retains the original production fields. The education section supplies independently written Chinese study notes, American English IPA and selected sources. Unused artwork is identified separately from playable questions. The game has no flag artwork for its Taiwan or French Guiana record. Public Scholar Edition materials are indexed separately under Published examples.
+https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2
+https://www.xbox.com/zh-CN/games/store/geo-book-scholar-edition/9p1gqx08j2p8
+
+City locations and geography lessons
+Real-world city points are matched to Natural Earth Populated Places. The game pin diagrams use the game's own map coordinate system. Game associations can include a shared international landmark. Chinese place names use CLDR and Wikimedia labels, reviewed against the game spelling. Per-place cultural sources, where supplied, are in the study card and JSON. U.S. state game area and population cross-checks cite the Census sources in Fact checks.
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/
+https://cldr.unicode.org/
+https://www.wikidata.org/
+https://whc.unesco.org/en/list/
+https://www.nps.gov/arch/learn/nature/geologicformations.htm
+
+Globe and phonetics
+The flat and orthographic views share the atlas region identifiers. Globe geometry is adapted from the same geographic sources. D3 and TopoJSON project and clip it locally; runtime license notices are in assets/licenses. The broad transcription uses /r/ for the English approximant conventionally written [ɹ], with /ɚ/ and /ɝ/ for r-coloured vowels.
+https://d3js.org/d3-geo
+https://www.internationalphoneticassociation.org/content/ipa-chart
+
+Destination clue illustrations
+TakeMeSomewhereContentAsset links each of the three clue slots to an English localization key. Its PeopleAtlas contains character portraits. The inline study illustrations are editorial pairings, shared by the map sidebar, Lookup and the three-clue lesson. Geo Book flags, souvenirs and stickers illustrate matching subjects. Supplemental photographs and artwork come from Wikimedia Commons. Open a thumbnail for its creator, source file and license. The local WebP copies are resized and re-encoded. Educational diagrams are by Meridian Atlas. Vocabulary pictograms arrange Twemoji graphics by Twitter, Inc. and other contributors under CC BY 4.0. Per-word credits and image paths are also included in the JSON download under education.vocabulary.glossary.
+https://commons.wikimedia.org/
+https://github.com/jdecked/twemoji
+https://creativecommons.org/licenses/by/4.0/

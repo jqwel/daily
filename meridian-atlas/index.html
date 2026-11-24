@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#faf9f5" />
+    <meta
+      name="description"
+      content="An offline world atlas and Geo Book study companion with searchable countries, U.S. states, flags and American English pronunciations."
+    />
+    <title>Meridian — World atlas</title>
+    <link rel="icon" href="assets/compass.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="places.js"></script>
+    <script defer src="geometry.js"></script>
+    <script defer src="game-data.js"></script>
+    <script defer src="installed-data.js"></script>
+    <script defer src="assets/geo-projection.js"></script>
+    <script defer src="globe-data.js"></script>
+    <script defer src="globe.js"></script>
+    <script defer src="map.js"></script>
+    <script defer src="study.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="masthead">
+      <div class="mast-inner">
+        <a class="brand" href="#explorer" aria-label="Meridian home"
+          ><img
+            src="assets/compass.svg"
+            width="39"
+            height="39"
+            alt=""
+          />Meridian</a
+        >
+        <nav aria-label="Main navigation">
+          <a data-page="explorer" href="#explorer" aria-current="page"
+            >Map explorer</a
+          >
+          <a data-page="index" href="#index">Place index</a>
+          <a data-page="guide" href="#guide">Game guide</a>
+        </nav>
+        <button class="sources-link" id="sources-open" type="button">
+          <span data-icon="book"></span><span>Sources</span>
+        </button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section id="explorer-page" class="page">
+        <div class="page-heading">
+          <div>
+            <h1>World <em>atlas</em></h1>
+            <p>Find a place, learn its pronunciation, and explore the map.</p>
+          </div>
+          <div class="atlas-counts">
+            <div>
+              <strong id="world-count">250</strong
+              ><span>Countries &amp; regions</span>
+            </div>
+            <div><strong>50</strong><span>U.S. states</span></div>
+          </div>
+        </div>
+        <div class="explorer-grid">
+          <section
+            class="map-card panel"
+            id="map-card"
+            aria-label="Interactive atlas"
+          >
+            <div class="map-toolbar">
+              <span class="map-title"
+                ><span data-icon="globe"></span>Interactive map</span
+              >
+              <div class="map-views" role="group" aria-label="Map projection">
+                <button
+                  type="button"
+                  data-projection="flat"
+                  aria-pressed="true"
+                >
+                  Flat map
+                </button>
+                <button
+                  type="button"
+                  data-projection="globe"
+                  aria-pressed="false"
+                >
+                  Globe
+                </button>
+              </div>
+              <button
+                type="button"
+                id="expand-map"
+                class="icon-button"
+                aria-label="Expand map"
+                title="Expand map"
+              >
+                <span data-icon="expand"></span>
+              </button>
+            </div>
+            <div class="map-surface" id="map-surface">
+              <svg
+                id="atlas-map"
+                class="flat-map"
+                role="group"
+                tabindex="0"
+                aria-label="World map. Use the place finder to select a location. Use arrow keys to pan, plus and minus to zoom, or Home to reset."
+              ></svg>
+              <svg
+                id="globe-map"
+                class="globe-map"
+                role="group"
+                tabindex="0"
+                aria-label="Rotating globe. Drag or use arrow keys to rotate. Plus and minus zoom."
+                viewBox="0 0 1000 510"
+                hidden
+              ></svg>
+              <div class="compass" aria-hidden="true">
+                <span>N</span
+                ><svg viewBox="0 0 56 56">
+                  <circle cx="28" cy="28" r="16" />
+                  <circle cx="28" cy="28" r="13" />
+                  <path d="M28 2l4 22 20 4-20 4-4 22-4-22-20-4 20-4z" />
+                  <path
+                    class="dark"
+                    d="M28 2v26l-4-4zm24 26H28l4-4zM28 54V28l4 4zM4 28h24l-4 4z"
+                  />
+                </svg>
+              </div>
+              <div id="hover-label" class="map-tooltip" hidden></div>
+              <div class="map-controls" aria-label="Map controls">
+                <button id="zoom-in" aria-label="Zoom in" title="Zoom in">
+                  <span data-icon="plus"></span>
+                </button>
+                <button id="zoom-out" aria-label="Zoom out" title="Zoom out">
+                  <span data-icon="minus"></span>
+                </button>
+                <button
+                  id="reset-map"
+                  aria-label="Reset map view"
+                  title="Reset map view"
+                >
+                  <span data-icon="focus"></span>
+                </button>
+              </div>
+            </div>
+            <div class="map-caption">
+              <span
+                ><i class="status-dot"></i
+                ><b id="view-caption">World view</b></span
+              ><span class="map-tip">Drag to pan <i>·</i> Scroll to zoom</span>
+            </div>
+            <label class="zoom-setting"
+              ><input id="click-zoom" type="checkbox" role="switch" /><span
+                >Zoom on map click
+                <small lang="zh-Hans">点选地点时自动缩放</small></span
+              ></label
+            >
+          </section>
+          <aside class="finder panel">
+            <div class="finder-head">
+              <div class="section-title">
+                <span class="title-icon" data-icon="locate"></span>
+                <h2>Place finder</h2>
+              </div>
+              <label for="place-search" class="sr-only"
+                >Search places, capitals, or landmarks</label
+              >
+              <div class="search-bar">
+                <span data-icon="search"></span
+                ><input
+                  id="place-search"
+                  type="text"
+                  inputmode="search"
+                  autocomplete="off"
+                  spellcheck="false"
+                  placeholder="Place, capital, or landmark…"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-controls="place-results"
+                  aria-expanded="true"
+                /><kbd id="search-hint">/</kbd
+                ><button
+                  id="clear-search"
+                  class="clear"
+                  aria-label="Clear search"
+                  hidden
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+            <div class="finder-body">
+              <div class="list-kicker">
+                <h3 id="finder-list-title">Quick locations</h3>
+                <span id="finder-count"></span>
+              </div>
+              <div
+                id="place-results"
+                role="listbox"
+                aria-label="Locations"
+              ></div>
+              <div id="place-detail" hidden></div>
+            </div>
+            <a class="finder-bottom" href="#index"
+              ><span data-icon="list"></span> Browse the place index</a
+            >
+          </aside>
+        </div>
+        <section class="field-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Geo Book</span>
+              <h2>From the game</h2>
+            </div>
+            <a href="#guide" class="text-link"
+              >Open study guide <span data-icon="book"></span
+            ></a>
+          </div>
+          <div class="clue-cards" id="clue-cards"></div>
+        </section>
+      </section>
+      <section class="page" id="index-page" hidden>
+        <div class="page-heading">
+          <div>
+            <h1>Place <em>index</em></h1>
+            <p>
+              Look up flags, capitals and pronunciations, or compare places by
+              size.
+            </p>
+          </div>
+        </div>
+        <div class="panel reference-panel">
+          <div class="reference-tools">
+            <div class="search-bar wide">
+              <span data-icon="search"></span
+              ><input
+                id="index-search"
+                aria-label="Search the place index"
+                type="search"
+                placeholder="Search by name, code, or capital…"
+                autocomplete="off"
+              />
+            </div>
+            <label class="select-label"
+              >Sort by
+              <select id="index-sort">
+                <option value="name">Name A–Z</option>
+                <option value="area">Largest area</option>
+                <option value="population">Largest population</option>
+              </select></label
+            >
+          </div>
+          <div class="result-summary" id="index-summary"></div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Place · 地点</th>
+                  <th>Capital · 游戏首都或州府</th>
+                  <th>Region · 地区</th>
+                  <th class="numeric">Game area (km²)</th>
+                  <th class="numeric">Game population</th>
+                  <th>Study · 学习</th>
+                </tr>
+              </thead>
+              <tbody id="index-rows"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="page" id="guide-page" hidden>
+        <div class="page-heading">
+          <div>
+            <h1>Game <em>guide</em></h1>
+            <p>
+              Study the installed Geo Book edition with American English IPA and
+              Chinese explanations.
+            </p>
+          </div>
+          <a class="outlined-link" href="geo-book-1.0.8.0.json" download
+            ><span data-icon="download"></span>Download game data</a
+          >
+        </div>
+        <section
+          id="study-desk"
+          class="panel study-desk"
+          aria-label="Learning with Geo Book"
+        >
+          <div class="study-tabs" role="group" aria-label="Study sections">
+            <button data-study-tab="practice" aria-pressed="true">
+              Lessons <span lang="zh-Hans">教程与练习</span>
+            </button>
+            <button data-study-tab="lookup" aria-pressed="false">
+              Lookup <span lang="zh-Hans">游戏速查</span>
+            </button>
+            <button data-study-tab="library" aria-pressed="false">
+              Library <span lang="zh-Hans">配图图鉴</span>
+            </button>
+            <button data-study-tab="checks" aria-pressed="false">
+              Fact checks <span lang="zh-Hans">辨错</span>
+            </button>
+          </div>
+          <div id="study-content"></div>
+        </section>
+        <details id="public-records" class="public-records">
+          <summary>
+            Published examples &amp; achievements
+            <span lang="zh-Hans">公开题例与成就</span>
+          </summary>
+          <div class="panel reference-panel">
+            <div class="reference-tools">
+              <div class="search-bar wide">
+                <span data-icon="search"></span
+                ><input
+                  id="game-search"
+                  type="search"
+                  aria-label="Search game records"
+                  placeholder="Try alligators, Seoul, or World Tour…"
+                  autocomplete="off"
+                />
+              </div>
+              <label class="select-label"
+                >Show
+                <select id="game-filter">
+                  <option value="all">All records</option>
+                  <option value="examples">Game examples</option>
+                  <option value="modes">Game modes</option>
+                  <option value="achievements">Achievements</option>
+                </select></label
+              >
+            </div>
+            <p class="provenance-note">
+              <span data-icon="book"></span>These records come from public
+              screenshots, publisher previews and achievement listings.
+              <a href="game-guide.json" download>Download records</a>
+            </p>
+            <div id="game-records"></div>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer>
+      <span
+        ><img alt="" src="assets/compass.svg" width="19" height="19" />Meridian
+        Atlas</span
+      ><span>Independent Geo Book study companion</span>
+    </footer>
+    <button
+      type="button"
+      id="random-place"
+      class="random-float"
+      aria-haspopup="dialog"
+    >
+      <span data-icon="shuffle"></span
+      ><span>Random place <small lang="zh-Hans">随机地点</small></span>
+    </button>
+    <dialog
+      id="random-dialog"
+      class="study-dialog"
+      aria-labelledby="random-title"
+    >
+      <div class="dialog-top study-dialog-head">
+        <h2 id="random-title">
+          Random place <small lang="zh-Hans">随机地点</small>
+        </h2>
+        <button type="button" id="random-next" class="detail-action">
+          <span data-icon="shuffle"></span> Next · 换一个
+        </button>
+        <button
+          type="button"
+          class="icon-button"
+          data-dialog-close
+          aria-label="Close random place"
+        >
+          <span data-icon="close"></span>
+        </button>
+      </div>
+      <span id="random-status" class="sr-only" role="status"></span>
+      <div id="random-content" class="study-dialog-body"></div>
+    </dialog>
+    <dialog
+      id="locator-dialog"
+      class="study-dialog"
+      aria-labelledby="locator-title"
+    >
+      <div class="dialog-top study-dialog-head">
+        <h2 id="locator-title">
+          Locate on atlas <small lang="zh-Hans">地图定位</small>
+        </h2>
+        <button
+          type="button"
+          class="icon-button"
+          data-dialog-close
+          aria-label="Close atlas location"
+        >
+          <span data-icon="close"></span>
+        </button>
+      </div>
+    </dialog>
+    <dialog id="sources-dialog" aria-labelledby="sources-title">
+      <div class="dialog-top">
+        <h2 id="sources-title">Atlas sources</h2>
+        <button
+          class="icon-button"
+          id="sources-close"
+          aria-label="Close sources"
+        >
+          <span data-icon="close"></span>
+        </button>
+      </div>
+      <dl class="sources-list">
+        <dt>Game records</dt>
+        <dd>
+          The lessons use the locally installed Geo Book 1.0.8.0 content tables
+          and artwork. The download includes original field names, English
+          strings and game-map coordinates. The published examples link to their
+          own evidence.
+          <a
+            href="https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2"
+            target="_blank"
+            rel="noreferrer"
+            >Base game</a
+          >
+          ·
+          <a
+            href="https://www.xbox.com/zh-CN/games/store/geo-book-scholar-edition/9p1gqx08j2p8"
+            target="_blank"
+            rel="noreferrer"
+            >Scholar Edition</a
+          >
+        </dd>
+        <dt>Geography</dt>
+        <dd>
+          World boundaries use Natural Earth. U.S. state boundaries use Census
+          cartography. The main atlas shows Alaska and Hawaii at their
+          geographic locations; Pin It practice uses the game's own map.
+        </dd>
+        <dt>Reference facts</dt>
+        <dd>
+          Area is in square kilometres. Population figures carry their reference
+          year. A dash indicates missing data.
+        </dd>
+        <dt>American English IPA · 美式音标</dt>
+        <dd lang="zh-Hans">
+          斜线内是美式英语读音。本站用词典常见的 /r/ 表示 red
+          开头的音，精细音标写作 [ɹ]，舌尖不用颤动。ˈ 后面是主重读音节，ˌ
+          表示次重读，ɚ 和 ɝ
+          都带卷舌音。英语中少见的地方名采用近似读法。朗读使用设备上的美式英语语音。
+        </dd>
+      </dl>
+      <a
+        href="data-sources.txt"
+        class="text-link"
+        target="_blank"
+        rel="noreferrer"
+        >View data credits and licenses</a
+      >
+    </dialog>
+    <div class="sr-only" aria-live="polite" id="announcement"></div>
+  </body>
+</html>
