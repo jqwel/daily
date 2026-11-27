@@ -580,6 +580,10 @@ function showPage(page) {
       currentPage
     ];
   if (currentPage === "index") renderIndex();
+  if (page.startsWith("place/")) {
+    const place = places.get(page.slice(6));
+    if (place && !place.gameMapOnly && !study.geographyOnly(place.id)) selectExplorerPlace(place);
+  }
   if (currentPage === "guide") {
     if (puzzle) {
       study.openPuzzle();
@@ -605,16 +609,19 @@ function choosePlace(id, options) {
   }
   const fromOther = currentPage !== "explorer";
   navigate("explorer");
-  selected = id;
+  selectExplorerPlace(place, options);
+  if (fromOther) window.scrollTo({ top: 0 });
+}
+function selectExplorerPlace(place, options) {
+  selected = place.id;
   refreshExplorerTargets();
   search.value = place.name;
-  atlas.select(place.gameMapOnly ? place.parent : id, { frameBoth: true, ...options });
+  atlas.select(place.gameMapOnly ? place.parent : place.id, { frameBoth: true, ...options });
   renderFinder();
   if (place.gameMapOnly)
     study.showPinDialog(place.target, study.byId.get(place.parent));
   $("announcement").textContent =
     place.name + ", " + place.kind + ". " + place.ipa;
-  if (fromOther) window.scrollTo({ top: 0 });
 }
 function rowFor(place, i) {
   const row = element("button", "place-row");
@@ -694,22 +701,13 @@ function renderFinder() {
   results.scrollTop = 0;
 }
 function speak(place, button) {
-  if (!("speechSynthesis" in window)) return;
-  const utterance = new SpeechSynthesisUtterance(place.name);
-  const voices = speechSynthesis.getVoices();
-  utterance.voice = voices.find((v) => /^en[-_]US/i.test(v.lang)) || null;
-  utterance.lang = "en-US";
-  utterance.rate = 0.88;
-  utterance.onerror = (e) => {
-    if (["interrupted", "canceled"].includes(e.error)) return;
+  speakEnglish(place.name, () => {
     const message = "Audio is unavailable on this device.";
     button.title = message;
     $("announcement").textContent = message;
     const note = element("span", "ipa", message);
     button.replaceWith(note);
-  };
-  speechSynthesis.cancel();
-  speechSynthesis.speak(utterance);
+  });
 }
 function atlasFacts(p, capitalNotes = []) {
   const facts = element("dl", "detail-facts");
@@ -766,6 +764,7 @@ function renderDetail(p) {
   }
   box.replaceChildren(element("p", "detail-kicker", p.kind), name, ipa);
   if (p.zh) box.append(element("strong", "word-zh", p.zh));
+  if (p.id === "US-FL") box.append(...guideConnections("florida"));
   if (!p.target && p.note && !notes.length)
     box.append(element("p", "pin-lesson-note", atlasIntroduction(p.note, p.parent || p.id, p.name)));
   if (p.approximate)

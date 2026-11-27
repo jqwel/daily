@@ -10,33 +10,57 @@
 </head>
 <body>
     <header class="masthead">
-        <div class="wordmark"><img src="./meridian-atlas/assets/compass.svg" width="34" height="34" alt="">Daily</div>
+        <span class="wordmark"><img src="./meridian-atlas/assets/compass.svg" width="34" height="34" alt="">Daily</span>
         <span>项目目录</span>
     </header>
     <main>
-        <section class="cover" aria-labelledby="atlas-title">
-            <div class="introduction">
-                <p class="subtitle">世界地图集</p>
-                <h1 id="atlas-title" lang="en">Meridian <em>Atlas</em></h1>
-                <p class="description">在平面地图与立体地球之间切换，<br>探索国家、城市与地标，聆听地名发音。</p>
-                <a class="open-atlas" href="./meridian-atlas/index.html">进入地图集 <span aria-hidden="true">→</span></a>
-            </div>
-            <figure class="plate">
-                <img class="globe" src="./atlas-cover.webp" width="1280" height="960" alt="以非洲和欧洲为中心的地球，金色曲线标出赤道">
-                <figcaption><span>正射投影</span><span>20° N &nbsp;/&nbsp; 15° E</span></figcaption>
-            </figure>
+        <div class="directory-title">
+            <h1 lang="en">Field <em>Guides</em></h1>
+            <div><h2>主题学习图鉴</h2><p>从感兴趣的世界出发，认识地点、人物与英语词汇。</p></div>
+        </div>
+        <div class="collection">
+            <article class="project">
+                <a class="project-link" href="./meridian-atlas/index.html">
+                    <div class="cover"><img src="./atlas-cover.webp" width="1280" height="960" alt="金色经纬线环绕着以非洲和欧洲为中心的地球"></div>
+                    <div class="project-heading"><div><p class="category">地理 · 世界地图集</p><h2 lang="en">Meridian <em>Atlas</em></h2></div><span class="arrow" aria-hidden="true">↗</span></div>
+                    <p>转动地球，探索国家、城市与地标，聆听地名发音。</p>
+                </a>
+                <nav aria-label="世界地图集快速入口"><a href="./meridian-atlas/index.html#index">地点索引</a><a href="./meridian-atlas/index.html#guide">学习指南</a></nav>
+            </article>
+            <article class="project game">
+                <a class="project-link" href="./games/index.html">
+                    <div class="cover"><img src="./games/gta-vi/coast.webp" alt="海滨街区的棕榈树、酒店、乐队与片场"></div>
+                    <div class="project-heading"><div><p class="category">游戏图鉴</p><h2 lang="en">Game <em>Worlds</em></h2></div><span class="arrow" aria-hidden="true">↗</span></div>
+                    <p>从游戏世界出发，在地点、人物与故事里学英语。</p>
+                </a>
+                <nav aria-label="游戏快速入口"><a href="./games/gta-vi/index.html">本期专题 · GTA VI</a></nav>
+            </article>
+        </div>
+        <section class="topic-list" aria-labelledby="plans">
+            <h2 id="plans">筹备中的图鉴</h2>
+            <a class="topic-row" href="./vocabulary/index.html"><strong>英语词汇图鉴</strong><small>从实物和生活场景认识英文表达</small><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="topic-row" href="./history/index.html"><strong>历史图鉴</strong><small>沿时间线追踪事件、地点与人物</small><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="topic-row" href="./culture/index.html"><strong>文化图鉴</strong><small>探索建筑、音乐与城市生活</small><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="topic-row" href="./people/index.html"><strong>人物图鉴</strong><small>通过作品与事件认识当代名人和历史人物</small><span class="arrow" aria-hidden="true">↗</span></a>
+            <a class="topic-row" href="./screen-stars/index.html"><strong>影视明星图鉴</strong><small>从电影和剧集找到演员与角色</small><span class="arrow" aria-hidden="true">↗</span></a>
         </section>
-        <nav class="shortcuts" aria-labelledby="shortcut-title">
-            <h2 id="shortcut-title">快速入口</h2>
-            <a href="./meridian-atlas/index.html#index">
-                <span><strong>地点索引</strong><small>查国旗、首都与发音</small></span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-            </a>
-            <a href="./meridian-atlas/index.html#guide">
-                <span><strong>学习指南</strong><small>读轮廓、辨国旗、练习地图定位</small></span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-            </a>
-        </nav>
+        <details class="roadmap">
+            <summary>Future guides · 后续主题规划</summary>
+            <dl>
+                <dt>Nature &amp; Wildlife · 自然与生命</dt><dd>从湿地认鸟类和植物，学 habitat、mangrove，与地图的栖息地联动。</dd>
+                <dt>Science &amp; Inventions · 科技与发明</dt><dd>从相机到航天器，读懂 lens、orbit，与影视和发明家联动。</dd>
+                <dt>Art &amp; Design · 艺术与设计</dt><dd>看建筑和海报辨认 symmetry、typeface，与城市文化联动。</dd>
+                <dt>Literature &amp; Myth · 文学与神话</dt><dd>从角色和改编作品学习 narrator、legend，与作者和影视联动。</dd>
+                <dt>Sports &amp; Competition · 体育与赛事</dt><dd>从比赛学 relay、qualify，与运动员、举办城市和体育游戏联动。</dd>
+                <dt>Food &amp; Daily Life · 饮食与日常生活</dt><dd>读菜单、听点单，学 roast、side dish，与地域文化联动。</dd>
+                <dt>Space &amp; Astronomy · 太空与天文</dt><dd>从月相、星座学 crescent、constellation，连到航天史与神话。</dd>
+                <dt>Travel &amp; Transport · 旅行与交通</dt><dd>读站牌、听换乘广播，学 platform、transfer，连到地图和城市。</dd>
+                <dt>Society &amp; Civic Life · 社会与公共生活</dt><dd>从图书馆和市政厅学 public hearing、council，连到历史人物。</dd>
+                <dt>Work &amp; Trade · 职业与商业</dt><dd>沿一件商品的旅程学 supplier、shipment，连到港口与工业史。</dd>
+                <dt>Earth &amp; Climate · 地球与气候</dt><dd>读天气图、看地貌，学 forecast、erosion，连到地图与自然生态。</dd>
+                <dt>Stage &amp; Sound · 舞台与声音</dt><dd>跟随一次排练学 rehearsal、acoustics，连到歌手与影视作品。</dd>
+            </dl>
+        </details>
     </main>
 </body>
 </html>
