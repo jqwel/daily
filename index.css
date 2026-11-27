@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "Instrument Serif";
+    src: url("./meridian-atlas/assets/instrument-serif-latin-400-normal.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Instrument Serif";
+    font-style: italic;
+    src: url("./meridian-atlas/assets/instrument-serif-latin-400-italic.woff2") format("woff2");
+    font-display: swap;
+}
+
+:root {
+    --paper: #f8f6ed;
+    --ink: #1c392f;
+    --muted: #59645a;
+    --rule: #c4c8b8;
+    --rust: #9b492e;
+    --serif: "Instrument Serif", Georgia, serif;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+}
+
+* { box-sizing: border-box; }
+body {
+    width: min(1280px, 88%);
+    margin: 0 auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("./meridian-atlas/assets/grain.svg");
+    opacity: .07;
+    pointer-events: none;
+    z-index: -1;
+}
+
+h1, h2, p, figure { margin: 0; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 3px solid var(--rust); outline-offset: 5px; }
+
+.masthead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    border-bottom: 1px solid var(--ink);
+    font-size: .83rem;
+}
+
+.wordmark { display: flex; align-items: center; gap: 10px; font: 2.25rem/1 var(--serif); }
+.cover {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    gap: clamp(28px, 5vw, 88px);
+    align-items: center;
+    margin: clamp(36px, 5vw, 72px) 0;
+}
+
+.subtitle, .shortcuts h2 {
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .12em;
+}
+
+.subtitle { display: flex; align-items: center; gap: 12px; color: var(--rust); }
+.subtitle::before { content: ""; width: 30px; height: 2px; background: currentColor; }
+h1 {
+    margin: .2em 0;
+    font: clamp(4.8rem, 8.5vw, 8.3rem)/.85 var(--serif);
+    letter-spacing: -.045em;
+}
+
+h1 em { display: block; font-weight: normal; color: #41644e; }
+.description { color: var(--muted); line-height: 1.9; font-size: clamp(.9rem, 1.2vw, 1.05rem); }
+.open-atlas {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+    min-height: 48px;
+    margin-top: 25px;
+    padding: 10px 20px;
+    color: var(--paper);
+    background: var(--ink);
+    border-radius: 3px;
+    font-size: .94rem;
+}
+
+.open-atlas:hover { background: #315745; }
+.open-atlas span, .link-arrow { font: 1.35rem/1 Georgia, serif; }
+.plate {
+    overflow: hidden;
+    color: #e4e6d5;
+    background: #193e37;
+    border: 1px solid #193e37;
+    border-radius: 3px;
+}
+
+.globe { width: 100%; height: auto; display: block; }
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 0 5%;
+    padding: 12px 0 14px;
+    border-top: 1px solid #698075;
+    font-size: .75rem;
+}
+
+figcaption span:last-child { font-family: Consolas, monospace; }
+.shortcuts {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 36px;
+    border-block: 1px solid var(--rule);
+}
+
+.shortcuts h2 { color: var(--muted); }
+.shortcuts a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 5px clamp(18px, 2.5vw, 42px);
+    border-left: 1px solid var(--rule);
+}
+
+.shortcuts a:last-child { padding-right: 4px; }
+.shortcuts strong { display: block; font-size: 1.1rem; }
+.shortcuts small { display: block; margin-top: 4px; color: var(--muted); font-size: .82rem; }
+.link-arrow { color: var(--rust); }
+.shortcuts a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 720px) {
+    body { width: min(90%, 520px); }
+    .masthead { min-height: 60px; }
+    .wordmark { font-size: 1.9rem; }
+    .wordmark img { width: 29px; height: 29px; }
+    .cover { grid-template-columns: 1fr; margin: 32px 0; gap: 26px; }
+    h1 { font-size: clamp(3.6rem, 12vw, 5.25rem); line-height: 1; }
+    h1 em { display: inline; margin-left: .05em; }
+    .open-atlas { margin-top: 18px; }
+    .shortcuts { grid-template-columns: 1fr 1fr; gap: 15px 0; }
+    .shortcuts h2 { grid-column: 1 / -1; }
+    .shortcuts a { padding: 2px 14px; gap: 5px; }
+    .shortcuts a:first-of-type { border: 0; padding-left: 0; }
+}

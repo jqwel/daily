@@ -7,8 +7,14 @@ https://github.com/mledoze/countries
 https://opendatacommons.org/licenses/odbl/1-0/
 
 Names and administrative updates
-The UN name Naoero is indexed under its previous name Nauru. Equatorial Guinea moved its capital to Ciudad de la Paz in January 2026. Sri Lanka's administrative capital is Sri Jayawardenepura Kotte. The Svalbard and Jan Mayen area figure is the sum of Statistics Norway's 2026 land and fresh water areas.
+Naoero is the atlas and study headword. Nauru remains a search alias and the spelling in the original game files. Equatorial Guinea moved its capital to Ciudad de la Paz in January 2026. Sri Lanka's administrative capital is Sri Jayawardenepura Kotte. The Svalbard and Jan Mayen area figure is the sum of Statistics Norway's 2026 land and fresh water areas.
 https://www.un.org/en/about-us/member-states/naoero
+The World Bank lists Naoeroan as the adjective. TERMIUM Plus lists dei-Naoero for an inhabitant. These two forms use approximate American readings. The atlas headword follows the General American entry for Naoero. Nauruan is also called Dorerin Naoero. English is widely used in government and commerce.
+https://documents1.worldbank.org/curated/en/099720507152616659/pdf/IDU-e682d79d-410a-4dc5-85b1-f0e61bda3d98.pdf
+https://www.btb.termiumplus.gc.ca/tpv2alpha/alpha-eng.html?i=&index=esw&lang=eng&srchtxt=NAOERO
+https://en.wiktionary.org/wiki/Naoero
+https://glottolog.org/resource/languoid/id/naur1243
+https://naoero.gov.nr/about-naoero/the-people.aspx
 https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial
 https://www.mfa.gov.lk/national-profile-and-geography
 https://www.ssb.no/en/natur-og-miljo/areal/statistikk/areal-av-land-og-ferskvatn
@@ -27,6 +33,7 @@ https://creativecommons.org/licenses/by/4.0/
 
 Chinese answer explanations
 The game supplies the clue assignments, souvenir artwork and shelf matches. The study companion supplies the Chinese explanations. The download includes one note per place and clue key under education.clueReasons and a teachingNote on each souvenirDescriptions record. linkedInSouvenirSort identifies artwork that the installed shelf exercise actually uses.
+https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-morocco-2025-know-your-team-cameroon/
 https://www.okhistory.org/publications/enc/entry.php?entry=so010
 https://www.okhistory.org/learn/latino2
 https://ich.unesco.org/en/RL/weaving-of-traditional-toquilla-straw-hats-of-ecuador-00729
@@ -42,27 +49,106 @@ https://www.nass.usda.gov/Publications/AgCensus/2022/Online_Resources/Census_of_
 
 Pronunciation
 Phonemic IPA uses one English reading per place, in broad American English. Contributors to English Wiktionary and Wikipedia supplied geographical entries. For individual contributors and revisions, open the article for the spelling in question and choose View history. IPA has been selected and adapted for this atlas, including American English word readings from ipa-dict and CMUdict. Some less widely documented names use an English approximation of the local pronunciation. The Wikimedia-derived transcriptions are offered under CC BY-SA 4.0.
+Chinese introductions annotate recognized names on their first occurrence in a paragraph, omitting annotations for the entry itself and its geographic context. The spellings and readings reuse the atlas entries where available, with a separate glossary for names that occur only in the text. English Harbour retains the spelling used in the UNESCO listing.
+English names for selected wildlife and plants follow references from South African National Parks, SANBI and the UNESCO World Heritage Centre.
+https://www.sanparks.org/parks/table-mountain/explore/fauna-flora/birds
+https://pza.sanbi.org/protea-cynaroides
+https://whc.unesco.org/en/list/033/
+https://whc.unesco.org/en/list/185/
+https://whc.unesco.org/en/list/609/
+https://whc.unesco.org/en/list/1499/
+https://dictionary.cambridge.org/us/pronunciation/english/harbor
 https://en.wiktionary.org/wiki/Special:Search
 https://en.wikipedia.org/wiki/Special:Search
 https://creativecommons.org/licenses/by-sa/4.0/
 https://github.com/open-dict-data/ipa-dict
 https://github.com/cmusphinx/cmudict
 https://dictionary.cambridge.org/pronunciation/english/kiribati
+For Pakistan the atlas selects the common US first-syllable stress. The country name and the adjective Pakistani have different primary stress. Other selected US headwords include Nepal, Qatar, Kazakhstan, Maldives and Moscow.
+https://dictionary.cambridge.org/us/pronunciation/english/pakistan
+https://dictionary.cambridge.org/pronunciation/english/pakistani
+https://dictionary.cambridge.org/us/pronunciation/english/nepal
+https://dictionary.cambridge.org/pronunciation/english/qatar
+https://dictionary.cambridge.org/pronunciation/english/kazakhstan
+https://dictionary.cambridge.org/pronunciation/english/maldives
+https://dictionary.cambridge.org/us/pronunciation/english/moscow
+
+American English readings were cross-checked for the meaning shown on the card. For example, wind in wind turbines denotes moving air, perfume labels a noun, and merengue names the dance. CMUdict's vowel stress distinguishes stressed /ʌ/ from unstressed /ə/ and stressed /ɝ/ from unstressed /ɚ/ in the atlas notation.
+https://dictionary.cambridge.org/pronunciation/english/mbira
+https://dictionary.cambridge.org/dictionary/english/wind-turbine
+https://dictionary.cambridge.org/dictionary/english/perfume
+https://www.oxfordlearnersdictionaries.com/us/definition/english/merengue
+https://dictionary.cambridge.org/dictionary/english/hanbok
+https://dictionary.cambridge.org/dictionary/english/baobab
+https://dictionary.cambridge.org/dictionary/english/ylang-ylang
+https://dictionary.cambridge.org/dictionary/english/taekwondo
+https://www.collinsdictionary.com/dictionary/english/atacama-desert
+https://dictionary.cambridge.org/dictionary/english/tarawa
+https://dictionary.cambridge.org/dictionary/english/kuala-lumpur
+https://dictionary.cambridge.org/dictionary/english/niue
 
 Flags
-Country and territory icons are flag-icons 7.6.0 by Panayiotis Lipiridis and contributors (MIT). Designs for places without an official flag may use a regional or representative symbol. U.S. state flags were distributed by Flagpedia / FlagCDN from Wikimedia Commons artwork. The District of Columbia flag is from hayleox/flags. Source license texts for bundled assets are in assets/licenses.
+Country and territory icons are flag-icons 7.6.0 by Panayiotis Lipiridis and contributors (MIT). Designs for places without an official flag may use a regional or representative symbol. The 50 U.S. state flags are bundled as SVGs from Flagpedia / FlagCDN, based on Wikimedia Commons artwork. Original PNGs are also included. The District of Columbia flag is from hayleox/flags. Source license texts for bundled assets are in assets/licenses.
 https://github.com/lipis/flag-icons
 https://flagpedia.net/us-states/download
 https://github.com/hayleox/flags/blob/master/svg/us/dc.svg
+The Chinese notes describe the artwork bundled with the atlas. National designs and documented meanings were checked against the archived CIA World Factbook and the specifications below. Notes identify representative and historical artwork where applicable. U.S. state and district descriptions follow the bundled artwork.
+https://www.thefactbook.org/fields/flag
+https://www.usa.gov/flag
+https://www.canada.ca/en/canadian-heritage/services/flag-canada-description.html
+https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2023/art_5e1206b52a484dfdba6ea8b76d75a7f0.html
+https://www.protocol.gov.hk/en/flags-emblems-anthem.html
+https://sso.agc.gov.sg/Act/NSA2022?ProvIds=Sc1-&ViewType=Advance&WiAl=1
 
 Map outlines
-World Atlas 2.0.2 distributes Natural Earth's public-domain world boundaries. US Atlas 3.0.1 distributes Census Bureau geography. Projection and boundary detail vary with scale.
-https://github.com/topojson/world-atlas
-https://github.com/topojson/us-atlas
+Both atlas views use Natural Earth v5.1.1 1:50m admin-0 map subunits and admin-1 U.S. states. Bouvet Island, Gibraltar and the U.S. Minor Outlying Islands use the 1:10m map subunits. Lakes use the 1:50m Lakes + Reservoirs v5.0.0 layer (scale ranks 0–5). The flat map ships preprojected paths from the globe topology.
+https://www.naturalearthdata.com/downloads/50m-cultural-vectors/
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-details/
+https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-lakes-reservoirs/
 https://www.naturalearthdata.com/about/terms-of-use/
 
+Rivers
+River lines and their connections across lakes use Natural Earth's 1:50m Rivers and Lake Centerlines v5.0.0. The bundled layer omits canals, simplifies each line to a tolerance of 0.012 degrees, and draws scale ranks 1–3 with a heavier stroke.
+English water labels use the same river and lake layers and Natural Earth's 1:50m marine areas v5.1.0. Lake and marine labels use interior points. Major rivers have alternative anchors along their course so their names can move past crowded labels when zooming. Viewport size and zoom determine which labels fit.
+https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-rivers-lake-centerlines/
+https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-physical-labels/
+
+Country languages
+The language field covers the 195 entries classified as countries. It lists national or federal official languages, with qualifiers for limited official use. Where no national official language is designated, it shows the most widely spoken language using census or reference data. The archived CIA World Factbook supplies baseline reference data, checked against the documents below for selected cases.
+https://github.com/factbook/factbook.json
+https://www.govinfo.gov/app/details/DCPD-202500315
+https://hansard.parliament.nz/hansard-transcript/2026-07-29/bills-employment-leave-bill?sId=9f35175f0a2cc1552c920786651fdf77
+https://www.legislation.govt.nz/act/public/2026/49/en/latest
+https://www.gacetaoficialdebolivia.gob.bo/normas/verGratis_gob/154183
+https://www.bk.admin.ch/en/romansh
+https://www.gov.za/speeches/president-cyril-ramaphosa-enact-sign-language-12th-official-langauge
+https://sgg-mali.ml/JO/2023/mali-jo-2023-13-sp.pdf
+https://sgg-mali.ml/JO/2017/mali-jo-2017-39.pdf
+https://justice.gov.bf/wp-content/uploads/2025/08/loi-045-2023_ALT-portant-revision-consitutionnelle-1.pdf
+https://presidence.ne/pages/refondation
+https://abs.gov.au/census/find-census-data/quickstats/2021/AUS
+https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/language/bulletins/languageenglandandwales/census2021
+https://portalhcd.diputados.gob.mx/LeyesBiblio/pdf/257_200618.pdf
+https://statsmauritius.govmu.org/Pages/Censuses%20and%20Surveys/Census/census_2022.aspx
+https://home.eritreaembassy.ch/discover-eritrea/fact-and-figures
+
+Country adjectives and demonyms
+English forms cover the atlas's 195 country entries. The CIA World Factbook archive and the FCDO geographical names index provide the base spellings. Attributive forms, demonyms with the same singular and plural, and selected collective and gendered forms are recorded as used in English.
+The IPA uses broad American English, based on ipa-dict and checked against Cambridge Dictionary for selected entries. Regular plurals follow English pronunciation rules. Some regional names and variants use approximate readings.
+https://github.com/factbook/factbook.json
+https://www.gov.uk/government/publications/geographical-names-and-information
+https://dictionary.cambridge.org/grammar/british-grammar/nationalities-and-languages
+https://dictionary.cambridge.org/us/topics/earth-and-outer-space/nationalities/
+https://www.vaticanstate.va/en/state-and-government/general-informations/population.html
+https://gov.uz/en/yoshlar/news/view/159565
+
+U.S. state sights
+The National Park Service provides each added site's published name, location and reference page. The Chinese introductions are written for this atlas.
+https://www.nps.gov/findapark/index.htm
+https://www.nps.gov/subjects/developer/index.htm
+
 Installed game and bilingual lessons
-The local Xbox PC installation of Geo Book 1.0.8.0 supplies its mode tables, English localization, original game-map coordinates and learning illustrations. Original artwork and game strings belong to their respective owners. In the JSON export, nativeContent retains the original production fields. The education section supplies independently written Chinese study notes, American English IPA and selected sources. Unused artwork is identified separately from playable questions. The game has no flag artwork for its Taiwan or French Guiana record. Public Scholar Edition materials are indexed separately under Published examples.
+The local Xbox PC installation of Geo Book 1.0.8.0 supplies its mode tables, English localization, original game-map coordinates and learning illustrations. Original artwork and game strings belong to their respective owners. In the JSON export, nativeContent retains the original production fields. The education section supplies independently written Chinese study notes, American English IPA and selected sources. Unused artwork is identified separately from playable questions. The game has no flag artwork for its Taiwan or French Guiana record.
 https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2
 https://www.xbox.com/zh-CN/games/store/geo-book-scholar-edition/9p1gqx08j2p8
 
@@ -84,3 +170,73 @@ TakeMeSomewhereContentAsset links each of the three clue slots to an English loc
 https://commons.wikimedia.org/
 https://github.com/jdecked/twemoji
 https://creativecommons.org/licenses/by/4.0/
+
+Pin It city and landmark images
+The game pin cards show local WebP images of the target cities and landmarks. Click a picture for its source file, creator and license. Photos from Wikimedia Commons are resized and re-encoded. The JSON download includes these credits under education.capitalLessons and education.landmarks.
+https://commons.wikimedia.org/
+
+Place names, area and vocabulary
+Study cards, practice and the normalized download use Argentina, Vatican City's published area of 0.44 km², and Inuk for one person and Inuit for the plural. The exported nativeContent and englishTables retain the source records. The two-letter U.S. state abbreviations follow USPS Publication 28, Appendix B.
+https://www.un.org/about-us/member-states
+https://www.vaticanstate.va/en/state-and-government/general-informations/geography.html
+https://our-languages.canada.ca/en/writing-tips-plus/inuk-inuit
+https://pe.usps.com/text/pub28/28apb.htm
+
+Political geography (checked 2026-11-25)
+Atlas entries distinguish administrative relationships, self-government and unresolved sovereignty claims. These descriptions are independent of the game's regional assignments.
+France and its overseas jurisdictions:
+https://www.vie-publique.fr/files/collection_number/portrait/photo/9782111455788.pdf
+https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000052092591/2026-04-08
+https://www.insee.fr/fr/metadonnees/definition/c1378
+https://mandates.un.org/mandate/A/RES/48/56
+British Overseas Territories, Crown Dependencies and Chagos:
+https://www.gov.uk/government/publications/the-central-government-s-concept-of-operations/the-amber-book-appendices-html
+https://www.gov.uk/government/publications/crown-dependencies-jersey-guernsey-and-the-isle-of-man
+https://commonslibrary.parliament.uk/research-briefings/cbp-10512/
+Dutch, Nordic, US and Australian jurisdictions:
+https://www.government.nl/themes/justice-security-and-defence/security-strategy-for-the-kingdom-of-the-netherlands/question-and-answer/what-are-the-different-parts-of-the-kingdom-of-the-netherlands
+https://pub.norden.org/nordicenergyresearch2026-02/nordicenergyresearch2026-02.pdf
+https://www.regjeringen.no/no/tema/utenrikssaker/folkerett/hvor-gjelder-norsk-lovgivning/id446714/
+https://www.doi.gov/library/internet/insular
+https://www.pmc.gov.au/resources/australian-flags-booklet/part-3-other-official-flags-australia/state-and-territory-flags
+New Zealand's relationships with the Cook Islands, Niue and Tokelau:
+https://www.mfat.govt.nz/assets/OIA/OIA-2023/OIA-28505-US-recognition-of-Cook-Islands-and-Niue-30-March-2023.pdf
+https://www.un.org/dppa/decolonization/en/nsgt/tokelau
+Hong Kong and Macao Basic Laws:
+https://www.locpg.gov.cn/2022-06/07/c_1211653784_2.htm
+https://www.al.gov.mo/zh-hans/basic-law.html
+United Nations membership, Non-Self-Governing Territories and Antarctic Treaty Article IV:
+https://www.un.org/about-us/member-states
+https://www.un.org/dppa/decolonization/en/nsgt
+https://documents.ats.aq/atcm42/ww/ATCM42_ww011_e.pdf
+
+Further geography in lookup entries
+Cities are an editorial selection of regional centres outside the corresponding national, territorial or U.S. state capital. Natural Earth supplies place names and GeoNames identifiers. Each city links to its gazetteer record.
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/
+https://www.geonames.org/
+Scenic and cultural sites supplement the edition's named landmarks and clues. UNESCO World Heritage properties link to their catalogue records. Other sights link to the responsible tourism authority. Overseas properties appear under their local atlas entry.
+https://whc.unesco.org/en/list/
+https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-peak.html
+https://www.sunmoonlake.gov.tw/en/guides/ArticlesFull?a=32
+https://visitmaldives.com/index.php/en/places/baa-atoll-biosphere-reserve
+
+Supplementary names use broad English IPA. The pronunciation sources above include English Wiktionary, English Wikipedia, ipa-dict and CMUdict. Local names without a well-established English reading carry an approximation label. Heteronyms and cities sharing a name are transcribed in their geographical context.
+https://dictionary.cambridge.org/pronunciation/english/brisbane
+The photo viewer credits each photographer and links to the source and reuse terms. Commons and Flickr photos are resized and encoded as WebP. World Heritage Centre photographs are bundled as the original published catalogue JPEGs.
+https://commons.wikimedia.org/
+https://whc.unesco.org/en/documents/158853/
+https://whc.unesco.org/en/documents/166675/
+https://whc.unesco.org/en/documents/114879/
+https://whc.unesco.org/en/documents/175097/
+https://www.flickr.com/photos/javier_losa/3522741729/
+https://whc.unesco.org/en/licenses/13
+
+The offline Chinese introductions describe the places themselves. City entries link to further reading about the individual city. Supplementary heritage entries link to their World Heritage Centre listing or the local visitor authority. Game-specific hints are kept separately from the place descriptions.
+https://data.unesco.org/explore/dataset/whc001/
+
+The interactive atlas projects longitude and latitude, stored as [longitude, latitude]. Game-map pixels remain in the original Pin It diagrams. Each new game landmark coordinate and the Yaren and Ngerulmud coordinates carry a coordSource link in the education data. A park, lagoon, trail or group of monuments is marked by a representative site.
+Supplementary cities use their linked GeoNames records (CC BY 4.0). World Heritage sites use the representative geographical point from UNESCO's whc001 catalogue, including for serial properties. Other supplementary sights have an individual coordSource.
+https://www.geonames.org/export/
+https://data.unesco.org/explore/dataset/whc001/
+Selected monument and boardwalk locations use © OpenStreetMap contributors (ODbL).
+https://www.openstreetmap.org/copyright

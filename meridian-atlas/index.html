@@ -12,13 +12,19 @@
     <link rel="icon" href="assets/compass.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="places.js"></script>
-    <script defer src="geometry.js"></script>
-    <script defer src="game-data.js"></script>
+    <script defer src="geography-status.js"></script>
+    <script defer src="country-facts.js"></script>
+    <script defer src="flag-notes.js"></script>
+    <script defer src="lookup-supplements.js"></script>
+    <script defer src="supplement-media.js"></script>
+    <script defer src="geometry.js?v=2"></script>
     <script defer src="installed-data.js"></script>
+    <script defer src="introduction-names.js"></script>
     <script defer src="assets/geo-projection.js"></script>
-    <script defer src="globe-data.js"></script>
+    <script defer src="map-targets.js"></script>
     <script defer src="globe.js"></script>
     <script defer src="map.js"></script>
+    <script defer src="world-puzzle.js"></script>
     <script defer src="study.js"></script>
     <script defer src="app.js"></script>
   </head>
@@ -40,6 +46,7 @@
           >
           <a data-page="index" href="#index">Place index</a>
           <a data-page="guide" href="#guide">Game guide</a>
+          <a data-page="world-puzzle" href="#world-puzzle">World Puzzle</a>
         </nav>
         <button class="sources-link" id="sources-open" type="button">
           <span data-icon="book"></span><span>Sources</span>
@@ -47,6 +54,9 @@
       </div>
     </header>
     <main id="main" tabindex="-1">
+      <a class="directory-link" href="../index.html" lang="zh-CN">
+        <span aria-hidden="true">←</span> 返回项目目录
+      </a>
       <section id="explorer-page" class="page">
         <div class="page-heading">
           <div>
@@ -155,6 +165,15 @@
                 <small lang="zh-Hans">点选地点时自动缩放</small></span
               ></label
             >
+            <label class="zoom-setting" lang="zh-Hans">
+              <input id="show-supplements" type="checkbox" role="switch" />
+              <span>显示补充地理资料<small class="supplements-help" hidden></small></span>
+            </label>
+            <label class="zoom-setting" lang="zh-Hans">
+              <input id="show-rivers" type="checkbox" role="switch" aria-label="显示河流"
+                title="同时显示海洋、海湾、湖泊和河流的英文名称" />
+              <span>显示河流<small class="river-status" role="status"></small></span>
+            </label>
           </section>
           <aside class="finder panel">
             <div class="finder-head">
@@ -256,7 +275,7 @@
               <thead>
                 <tr>
                   <th>Place · 地点</th>
-                  <th>Capital · 游戏首都或州府</th>
+                  <th>Capital · 首都或州府</th>
                   <th>Region · 地区</th>
                   <th class="numeric">Game area (km²)</th>
                   <th class="numeric">Game population</th>
@@ -302,101 +321,30 @@
           </div>
           <div id="study-content"></div>
         </section>
-        <details id="public-records" class="public-records">
-          <summary>
-            Published examples &amp; achievements
-            <span lang="zh-Hans">公开题例与成就</span>
-          </summary>
-          <div class="panel reference-panel">
-            <div class="reference-tools">
-              <div class="search-bar wide">
-                <span data-icon="search"></span
-                ><input
-                  id="game-search"
-                  type="search"
-                  aria-label="Search game records"
-                  placeholder="Try alligators, Seoul, or World Tour…"
-                  autocomplete="off"
-                />
-              </div>
-              <label class="select-label"
-                >Show
-                <select id="game-filter">
-                  <option value="all">All records</option>
-                  <option value="examples">Game examples</option>
-                  <option value="modes">Game modes</option>
-                  <option value="achievements">Achievements</option>
-                </select></label
-              >
-            </div>
-            <p class="provenance-note">
-              <span data-icon="book"></span>These records come from public
-              screenshots, publisher previews and achievement listings.
-              <a href="game-guide.json" download>Download records</a>
-            </p>
-            <div id="game-records"></div>
-          </div>
-        </details>
       </section>
     </main>
+    <div id="image-hover-preview" hidden aria-hidden="true"><img alt="" /></div>
     <footer>
       <span
         ><img alt="" src="assets/compass.svg" width="19" height="19" />Meridian
         Atlas</span
       ><span>Independent Geo Book study companion</span>
     </footer>
-    <button
-      type="button"
-      id="random-place"
-      class="random-float"
-      aria-haspopup="dialog"
-    >
-      <span data-icon="shuffle"></span
-      ><span>Random place <small lang="zh-Hans">随机地点</small></span>
-    </button>
-    <dialog
-      id="random-dialog"
-      class="study-dialog"
-      aria-labelledby="random-title"
-    >
-      <div class="dialog-top study-dialog-head">
-        <h2 id="random-title">
-          Random place <small lang="zh-Hans">随机地点</small>
-        </h2>
-        <button type="button" id="random-next" class="detail-action">
-          <span data-icon="shuffle"></span> Next · 换一个
-        </button>
-        <button
-          type="button"
-          class="icon-button"
-          data-dialog-close
-          aria-label="Close random place"
-        >
-          <span data-icon="close"></span>
-        </button>
-      </div>
-      <span id="random-status" class="sr-only" role="status"></span>
-      <div id="random-content" class="study-dialog-body"></div>
-    </dialog>
-    <dialog
-      id="locator-dialog"
-      class="study-dialog"
-      aria-labelledby="locator-title"
-    >
-      <div class="dialog-top study-dialog-head">
-        <h2 id="locator-title">
-          Locate on atlas <small lang="zh-Hans">地图定位</small>
-        </h2>
-        <button
-          type="button"
-          class="icon-button"
-          data-dialog-close
-          aria-label="Close atlas location"
-        >
-          <span data-icon="close"></span>
-        </button>
-      </div>
-    </dialog>
+    <div class="study-shortcuts">
+      <button type="button" id="next-tour-question" class="study-shortcut">
+        <span data-icon="book"></span>
+        <span>Next in tour <small lang="zh-Hans">混合复习下一题</small></span>
+      </button>
+      <button
+        type="button"
+        id="random-place"
+        class="study-shortcut"
+        title="随机打开一个国家或美国州的速查词条"
+      >
+        <span data-icon="shuffle"></span>
+        <span>Random lookup <small lang="zh-Hans">随机速查</small></span>
+      </button>
+    </div>
     <dialog id="sources-dialog" aria-labelledby="sources-title">
       <div class="dialog-top">
         <h2 id="sources-title">Atlas sources</h2>
@@ -413,8 +361,7 @@
         <dd>
           The lessons use the locally installed Geo Book 1.0.8.0 content tables
           and artwork. The download includes original field names, English
-          strings and game-map coordinates. The published examples link to their
-          own evidence.
+          strings and game-map coordinates.
           <a
             href="https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2"
             target="_blank"
@@ -431,9 +378,9 @@
         </dd>
         <dt>Geography</dt>
         <dd>
-          World boundaries use Natural Earth. U.S. state boundaries use Census
-          cartography. The main atlas shows Alaska and Hawaii at their
-          geographic locations; Pin It practice uses the game's own map.
+          Both atlas views use Natural Earth boundaries and lakes. Alaska and
+          Hawaii appear at their geographic locations. Pin It and World Puzzle
+          use the game's own map.
         </dd>
         <dt>Reference facts</dt>
         <dd>
@@ -444,8 +391,8 @@
         <dd lang="zh-Hans">
           斜线内是美式英语读音。本站用词典常见的 /r/ 表示 red
           开头的音，精细音标写作 [ɹ]，舌尖不用颤动。ˈ 后面是主重读音节，ˌ
-          表示次重读，ɚ 和 ɝ
-          都带卷舌音。英语中少见的地方名采用近似读法。朗读使用设备上的美式英语语音。
+          表示次重读。比较 surfer /ˈsɝfɚ/，前一个卷舌元音重读，后一个轻读。
+          部分地名和地方文化词采用美式近似读法。朗读使用设备上的美式英语语音。
         </dd>
       </dl>
       <a

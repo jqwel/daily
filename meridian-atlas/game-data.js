@@ -663,14 +663,13 @@ window.GAME_GUIDE = {
       "mode": "Take Me Somewhere",
       "title": "Buenos Aires ticket",
       "answer": "Argentina · South America",
-      "detail": "The flag and capital identify Argentina. The game prints “Argentine” on this ticket.",
+      "detail": "The flag and the capital, Buenos Aires, identify Argentina.",
       "evidence": "On-screen detail",
       "source": "https://store-images.s-microsoft.com/image/apps.26313.14511737182744801.b736cdc1-6474-466b-af7e-6c94b6e3ca9f.ed1dd016-60a2-4472-a7aa-e9e87c07c60a",
       "placeIds": [
         "ARG"
       ],
       "keywords": [
-        "Argentine",
         "Argentina",
         "Buenos Aires",
         "South America",

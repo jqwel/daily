@@ -1,24 +1,29 @@
 @font-face {
   font-family: "DM Sans";
   src: url("assets/dm-sans-latin-400-normal.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
   font-weight: 600 800;
   src: url("assets/dm-sans-latin-600-normal.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Instrument Serif";
   src: url("assets/instrument-serif-latin-400-normal.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "Instrument Serif";
   font-style: italic;
   src: url("assets/instrument-serif-latin-400-italic.woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("assets/ibm-plex-mono-latin-400-normal.woff2");
+  font-display: swap;
 }
 :root {
   --paper: #faf9f5;
@@ -194,6 +199,22 @@ main {
   gap: 24px;
   margin: 34px 0 26px;
 }
+.directory-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  min-height: 36px;
+  font-size: 0.875rem;
+}
+.directory-link:hover {
+  color: var(--rust);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.page > .page-heading:first-child {
+  margin-top: 8px;
+}
 h1 {
   font: clamp(3.5rem, 5.6vw, 5.65rem)/0.99 var(--serif);
   letter-spacing: -0.045em;
@@ -330,6 +351,40 @@ h1 em {
 .flat-map.dragging {
   cursor: grabbing;
 }
+.atlas-rivers {
+  fill: none;
+  stroke: #37798c;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.atlas-rivers path {
+  vector-effect: non-scaling-stroke;
+}
+.atlas-rivers .minor {
+  stroke-width: 0.7;
+  stroke-opacity: 0.8;
+}
+.atlas-rivers .major {
+  stroke-width: 1.15;
+}
+.carto-labels.detailed-water .ocean {
+  display: none;
+}
+.atlas-water-labels {
+  fill: #164d61;
+  stroke: #f5f7ec;
+  stroke-width: 2.6px;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+  font: italic 600 11px/1 var(--sans);
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+.atlas-water-labels .ocean {
+  letter-spacing: 0.04em;
+}
 .atlas-grid {
   stroke: #759b94;
   stroke-opacity: 0.37;
@@ -398,6 +453,13 @@ g:has(> [data-land-group="CHN"]:hover) > [data-land-group="CHN"],
 .map-pin {
   cursor: pointer;
 }
+.map-name-flag {
+  pointer-events: none;
+}
+.map-name-flag .flag-slot {
+  width: 100%;
+  height: 100%;
+}
 .map-pin text {
   font: 600 12px var(--sans);
   fill: #30413a;
@@ -461,6 +523,9 @@ g:has(> [data-land-group="CHN"]:hover) > [data-land-group="CHN"],
   color: #7d897f;
 }
 .map-tooltip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   position: absolute;
   pointer-events: none;
   background: #234d40;
@@ -469,6 +534,10 @@ g:has(> [data-land-group="CHN"]:hover) > [data-land-group="CHN"],
   border-radius: 4px;
   font-size: 0.8rem;
   z-index: 2;
+}
+.map-tooltip .flag-slot {
+  width: 20px;
+  height: 14px;
 }
 .map-caption {
   min-height: 38px;
@@ -609,6 +678,7 @@ g:has(> [data-land-group="CHN"]:hover) > [data-land-group="CHN"],
   width: 34px;
   height: 30px;
   display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
   place-items: center;
   flex-shrink: 0;
 }
@@ -721,6 +791,18 @@ g:has(> [data-land-group="CHN"]:hover) > [data-land-group="CHN"],
 .detail-facts .ipa {
   display: block;
   font-size: 0.78rem;
+}
+.country-form-list {
+  display: grid;
+  gap: 4px;
+}
+.country-form .ipa {
+  display: inline;
+}
+.country-form .word-zh {
+  font-size: 0.75rem;
+  font-weight: 400;
+  white-space: nowrap;
 }
 .detail-kicker {
   margin-bottom: 7px;
@@ -906,6 +988,10 @@ td:first-child {
 .index-place:hover strong {
   text-decoration: underline;
 }
+.index-place:has(+ .field-note) {
+  display: inline-flex;
+  vertical-align: middle;
+}
 .index-place .flag-slot {
   width: 30px;
 }
@@ -983,12 +1069,20 @@ html {
 dialog {
   overscroll-behavior: contain;
 }
-.random-float {
+.study-shortcuts {
   position: fixed;
-  min-height: 44px;
   z-index: 5;
   right: max(14px, env(safe-area-inset-right));
   bottom: max(18px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  pointer-events: none;
+}
+.study-shortcut {
+  pointer-events: auto;
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -1003,103 +1097,23 @@ dialog {
   font-weight: 600;
   line-height: 1.2;
 }
-.random-float:hover {
+.study-shortcut:hover {
   background: #173f32;
 }
-.random-float small {
+.study-shortcut small {
   display: block;
   margin-top: 1px;
   color: #e3eddd;
   font-size: 0.72rem;
   font-weight: 400;
 }
-.study-dialog {
-  width: min(880px, calc(100% - 32px));
-  padding: 0;
-  overflow: hidden;
-}
-.study-dialog[open] {
-  display: flex;
-  flex-direction: column;
-}
-.study-dialog-head {
-  flex: none;
-  padding: 13px 18px;
-  border-bottom: 1px solid var(--line);
-}
-.study-dialog-head h2 {
-  margin-right: auto;
-}
-.study-dialog-head small {
-  color: var(--muted);
-  font: 0.85rem var(--sans);
-}
-.study-dialog-head button {
-  flex: none;
-}
-.study-dialog-body {
-  overflow: auto;
-  overscroll-behavior: contain;
-  padding: 16px 20px 22px;
-}
-.random-place-kind {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 8px;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.random-place-kind .flag-slot {
-  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
-}
-#random-next {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-#locator-map-card {
-  min-height: 0;
-  border: 0;
-  border-radius: 0;
-}
-#locator-map-surface {
-  flex: none;
-  height: min(52dvh, 450px);
-  min-height: 0;
-}
-#locator-map-card .map-views {
-  margin: 0;
-  flex: none;
-}
 @media (max-width: 640px) {
-  .random-float {
-    padding: 7px 10px;
+  .study-shortcuts {
     right: max(8px, env(safe-area-inset-right));
+  }
+  .study-shortcut {
+    padding: 7px 10px;
     font-size: 0.75rem;
-  }
-  .study-dialog .study-dialog-head {
-    gap: 8px;
-    padding: 10px 12px;
-  }
-  .study-dialog .study-dialog-head h2 {
-    font-size: 1.55rem;
-  }
-  #locator-map-card .map-toolbar {
-    flex-wrap: wrap;
-    gap: 6px 10px;
-  }
-  #locator-map-card .map-title {
-    flex: 1 1 160px;
-  }
-  #locator-map-surface {
-    height: min(46dvh, 75vw);
-  }
-  .study-dialog-head h2 small {
-    display: block;
-  }
-  .study-dialog-body {
-    padding: 12px;
   }
 }
 .dialog-top {
@@ -1196,7 +1210,10 @@ dialog {
     height: 32px;
   }
   nav {
-    gap: 20px;
+    gap: clamp(6px, 2.5vw, 18px);
+    justify-content: space-between;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
     order: 3;
     width: 100%;
     height: 41px;
@@ -1370,8 +1387,11 @@ dialog {
   height: 43px;
 }
 .flag-slot img {
+  display: block;
   width: 100%;
   height: 100%;
+  min-width: 0;
+  min-height: 0;
   object-fit: contain;
 }
 .flag-zoom {
@@ -1385,7 +1405,7 @@ dialog {
   cursor: zoom-in;
 }
 .flag-zoom .flag-slot {
-  width: 140px;
+  width: min(140px, 100%);
   height: 84px;
 }
 .masked-flag {
@@ -1397,6 +1417,7 @@ dialog {
 }
 .masked-flag::after {
   content: "已模糊";
+  pointer-events: none;
   position: absolute;
   inset: 0;
   display: grid;
@@ -1441,7 +1462,6 @@ img[src*="flag_of_taiwan"] {
 .place-explainer,
 .lesson-context p,
 .feedback p,
-.check-card p,
 .study-note p {
   font-size: 0.92rem;
   line-height: 1.75;
@@ -1539,7 +1559,6 @@ img[src*="flag_of_taiwan"] {
 }
 .lesson-context h3,
 .game-entry h4,
-.check-card h4,
 .study-note h4 {
   font-weight: 600;
   font-size: 1.03rem;
@@ -1562,6 +1581,16 @@ img[src*="flag_of_taiwan"] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 9px;
   margin-block: 18px;
+}
+.lesson-word-cards {
+  min-inline-size: 0;
+  margin: 16px 0;
+  padding: 0;
+  border: 0;
+}
+.lesson-word-cards legend {
+  margin-bottom: 7px;
+  padding: 0;
 }
 .choice {
   border: 1px solid #c6cec0;
@@ -1624,18 +1653,24 @@ img[src*="flag_of_taiwan"] {
   margin: 12px 0 6px;
   font-size: 1rem;
 }
-.clue-reasons {
-  margin: 8px 0;
-}
-.clue-reasons dt {
-  font-weight: 600;
-  color: var(--green);
-}
-.clue-reasons dd,
 .teaching-explanation p {
   margin: 3px 0 12px;
   font-size: 0.92rem;
   line-height: 1.7;
+}
+.item-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 8px;
+}
+.item-thumbnail {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  padding: 5px;
+  border-radius: 7px;
+  background: #f3f3eb;
 }
 .shared-clue-note {
   border-top: 1px solid var(--line);
@@ -1690,10 +1725,19 @@ img[src*="flag_of_taiwan"] {
   width: 70px;
   height: 46px;
   object-fit: contain;
+  filter: drop-shadow(0 0 1px rgb(73 84 72 / 55%));
 }
 .entry-zh {
   color: var(--muted);
   font-size: 0.88rem;
+}
+.entry-source {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--green);
+  font-size: 0.78rem;
 }
 .entry-details {
   border-top: 1px solid #e1e5d9;
@@ -1701,6 +1745,100 @@ img[src*="flag_of_taiwan"] {
 }
 .entry-details > h4 {
   margin: 16px 0 9px;
+}
+.lookup-supplement {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.lookup-supplement h4 {
+  margin: 0;
+}
+.supplement-note,
+.supplement-match {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+.supplement-note {
+  margin: 3px 0 12px;
+}
+.supplement-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: 16px 24px;
+}
+.supplement-groups h5 {
+  margin: 0 0 5px;
+  font-size: 0.9rem;
+}
+.supplement-groups ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.supplement-groups li + li {
+  border-top: 1px solid var(--line);
+}
+.supplement-groups li {
+  display: grid;
+  grid-template-columns: clamp(64px, 8vw, 92px) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+.supplement-photo {
+  display: block;
+  aspect-ratio: 1;
+  padding: 0;
+  border: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--pale);
+  cursor: zoom-in;
+}
+.supplement-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.supplement-groups .ipa {
+  overflow-wrap: anywhere;
+}
+.supplement-groups .word-stack:first-child,
+.supplement-groups .place-introduction {
+  grid-column: 1 / -1;
+}
+.place-introduction {
+  margin: 0.5em 0;
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  text-align: start;
+}
+.supplement-groups .place-introduction {
+  margin: 0;
+}
+.pin-hint {
+  margin: 0.5em 0;
+  font-size: 0.85rem;
+}
+.pin-hint summary {
+  width: fit-content;
+  cursor: pointer;
+}
+.reading-note {
+  margin-inline-start: 0.45em;
+  font: 0.75rem var(--sans);
+  color: var(--muted);
+}
+.supplement-groups a {
+  display: inline;
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+.supplement-groups a:hover {
+  text-decoration: underline;
 }
 .entry-heading {
   display: flex;
@@ -1718,34 +1856,156 @@ img[src*="flag_of_taiwan"] {
   gap: 4px 10px;
   min-width: 0;
 }
-.entry-locator {
+.entry-overview:has(> .entry-map) {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 14px clamp(16px, 2vw, 30px);
+  align-items: start;
+}
+.entry-map .map-surface {
   flex: none;
+  aspect-ratio: 1.9;
+  min-height: 195px;
+  max-height: 320px;
+}
+#locator-map-card .map-toolbar,
+#locator-map-card .map-caption {
+  flex-wrap: wrap;
+  gap: 5px 10px;
+  padding: 7px 10px;
+}
+#locator-map-card .map-title {
+  flex: 1 1 9rem;
+  overflow-wrap: anywhere;
+}
+#locator-map-card .map-views {
+  margin: 0;
+}
+.locator-target-picker {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+}
+.locator-target-picker[hidden] {
+  display: none;
+}
+.target-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  width: 100%;
+}
+.target-legend span,
+.target-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.target-legend svg {
+  width: 16px;
+  height: 16px;
+}
+.target-select {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+}
+.target-select select {
+  width: 0;
+  flex: 1;
+  min-width: 0;
+}
+.atlas-targets {
+  font: 600 11px var(--sans);
+}
+.target-name {
+  fill: var(--ink);
+  stroke: #fffdf5;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  paint-order: stroke;
+  pointer-events: bounding-box;
+}
+.atlas-target {
+  cursor: pointer;
+}
+.atlas-targets line {
+  stroke: currentColor;
+  stroke-width: 1.25;
+  stroke-dasharray: 3 2;
+  pointer-events: none;
+}
+.target-arrowheads {
+  pointer-events: none;
+}
+.target-arrowheads path {
+  fill: currentColor;
+  stroke: #fffdf5;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  paint-order: stroke;
+}
+.target-symbol {
+  fill: currentColor;
+  stroke: white;
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+}
+:is(.atlas-targets, .target-legend) .capital { color: #a53f26; }
+:is(.atlas-targets, .target-legend) .stateCapital { color: #75478f; }
+:is(.atlas-targets, .target-legend) .landmark { color: #96651b; }
+:is(.atlas-targets, .target-legend) .city { color: #245f92; }
+:is(.atlas-targets, .target-legend) .sight { color: #277452; }
+.target-symbol.city,
+.target-symbol.sight {
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-dasharray: 4 2.5;
+}
+.entry-info .edition-facts {
+  gap: 6px;
+  margin: 9px 0;
+}
+.entry-info .edition-facts > div {
+  padding: 6px 9px;
+}
+.edition-facts > div:has(.field-note) {
+  grid-column: 1 / -1;
+}
+@media (max-width: 740px) {
+  .entry-overview:has(> .entry-map) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .entry-map .map-card:has(.target-name) .map-surface {
+    min-height: 285px;
+  }
 }
 .edition-facts,
-.passport-fields,
-.compare-facts {
+.passport-fields {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin: 13px 0;
   gap: 8px;
 }
 .edition-facts > div,
-.passport-fields > div,
-.compare-facts > div {
+.passport-fields > div {
   background: #f3f4ed;
   padding: 9px 12px;
   border-radius: 5px;
 }
 .edition-facts dt,
-.passport-fields dt,
-.compare-facts dt {
+.passport-fields dt {
   font-size: 0.8rem;
   color: var(--muted);
   margin-bottom: 3px;
 }
 .edition-facts dd,
-.passport-fields dd,
-.compare-facts dd {
+.passport-fields dd {
   margin: 0;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
@@ -1763,6 +2023,13 @@ img[src*="flag_of_taiwan"] {
 .study-gallery figcaption {
   padding-top: 5px;
 }
+.flag-introduction {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
 .study-gallery figcaption strong,
 .art-catalog strong {
   font-size: 0.86rem;
@@ -1778,9 +2045,13 @@ img[src*="flag_of_taiwan"] {
 }
 .art-tile {
   text-align: left;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 7px;
+}
+.art-catalog {
+  align-content: start;
 }
 .enlarge-art img,
 .art-tile img {
@@ -1801,6 +2072,31 @@ img[src*="flag_of_taiwan"] {
   height: min(42vh, 330px);
   object-fit: contain;
 }
+/* The comparison artwork has pale fills on a transparent canvas. */
+img[src*="assets/game/comparison/"] {
+  display: block;
+  padding: 6px;
+  border-radius: 5px;
+  background: var(--ink);
+}
+#image-hover-preview {
+  position: fixed;
+  z-index: 21;
+  width: min(360px, calc(100vw - 32px));
+  height: min(280px, 42vh);
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 6px 24px #23382c38;
+  pointer-events: none;
+}
+#image-hover-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .page-buttons {
   justify-content: center;
   padding: 14px;
@@ -1809,22 +2105,30 @@ img[src*="flag_of_taiwan"] {
   opacity: 0.45;
   cursor: default;
 }
-.check-card {
-  margin: 12px 0;
-  background: #faf7ef;
-  border: 1px solid #ddd5c4;
-  border-left: 3px solid #b97650;
-  border-radius: 6px;
-  padding: 14px 16px;
+.field-note {
+  margin-inline-start: 0.5em;
+  font: 400 0.82rem/1.65 var(--sans);
+  letter-spacing: normal;
+  color: var(--muted);
+  overflow-wrap: anywhere;
 }
-.compare-facts {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.field-note-category {
+  color: var(--rust);
+  font-weight: 600;
 }
-.check-card .text-link {
-  font-size: 0.79rem;
-  margin-right: 10px;
+.field-note .text-link,
+.check-entries .text-link {
+  font-size: inherit;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+.check-entries {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  margin: 12px 0;
+  font-size: 0.85rem;
 }
 .study-note {
   margin: 10px 0;
@@ -1864,24 +2168,79 @@ img[src*="flag_of_taiwan"] {
 .game-dot.guess {
   background: #2663a1;
 }
-.pin-dialog {
+.puzzle-tray {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0;
+}
+.puzzle-tile {
+  width: 76px;
+  height: 66px;
+  flex: none;
+  padding: 8px;
+  object-fit: contain;
+  border: 1px solid #526c65;
+  border-radius: 6px;
+  background: #415c55;
+}
+.draggable-piece {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.draggable-piece.dragging {
+  position: relative;
+  z-index: 2;
+  cursor: grabbing;
+}
+.draggable-piece.over-map {
+  opacity: 0;
+}
+.puzzle-overlay {
+  position: absolute;
+  width: 0;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+#world-puzzle {
+  scroll-margin-top: 12px;
+}
+.puzzle-cursor {
+  outline: 1px dashed var(--green);
+  min-width: 4px;
+  min-height: 4px;
+}
+.game-map-plate .game-dot {
+  z-index: 1;
+}
+.clickable-map:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 2px;
+}
+.prompt-card > .eyebrow + .version-stamp {
+  float: right;
+  font-variant-numeric: tabular-nums;
+}
+.pin-dialog,
+.study-card-dialog {
   width: min(1040px, 96%);
+}
+.study-card-dialog .dialog-top h2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35em;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.study-card-dialog .dialog-top .flag-slot {
+  width: 1.35em;
+  height: 0.9em;
+  margin-top: 0.1em;
 }
 .picture-dialog {
   width: min(560px, 94%);
-}
-.public-records {
-  margin-top: 20px;
-}
-.public-records > summary {
-  font-weight: 600;
-  cursor: pointer;
-  padding: 8px 0;
-}
-.public-records > summary span {
-  margin-left: 5px;
-  color: var(--muted);
-  font-size: 0.85rem;
 }
 .map-views {
   display: inline-flex;
@@ -1969,10 +2328,28 @@ img[src*="flag_of_taiwan"] {
 .globe-view .compass {
   display: none;
 }
-.globe-sea {
+.globe-sea,
+.atlas-lakes {
   fill: #c0dcd7;
+}
+.globe-sea {
   stroke: #87a99d;
   stroke-width: 1;
+}
+.atlas-neutral-land {
+  fill: #cdc9ad;
+  pointer-events: none;
+}
+.atlas-lakes,
+.atlas-lake-borders {
+  pointer-events: none;
+}
+.atlas-lake-borders {
+  fill: none;
+  stroke: #527d78;
+  stroke-width: 0.85;
+  stroke-dasharray: 3 2;
+  vector-effect: non-scaling-stroke;
 }
 .globe-grid {
   fill: none;
@@ -1993,15 +2370,22 @@ img[src*="flag_of_taiwan"] {
   paint-order: stroke;
   font: 600 14px var(--sans);
 }
-.rule-index,
-.clue-disclosure {
+.globe-label {
+  transform: translateX(9px);
+}
+@media (max-width: 740px) and (orientation: portrait) {
+  .globe-label {
+    transform-box: fill-box;
+    transform: translate(-50%, 17px);
+  }
+}
+.rule-index {
   margin: 12px 0;
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 10px 14px;
 }
-.rule-index summary,
-.clue-disclosure summary {
+.rule-index summary {
   cursor: pointer;
   font-weight: 600;
 }
@@ -2022,6 +2406,23 @@ img[src*="flag_of_taiwan"] {
   border-radius: 6px;
   padding: 12px 14px;
   min-width: 0;
+}
+.pin-photo {
+  display: block;
+  width: min(100%, 320px);
+  margin: 9px 0;
+  padding: 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+.pin-photo img {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 18vw, 210px);
+  object-fit: contain;
 }
 .pin-summary .pin-lesson-note,
 .pin-lesson-note {
@@ -2055,14 +2456,51 @@ img[src*="flag_of_taiwan"] {
   gap: 8px;
 }
 .clue-card-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: clamp(68px, 7vw, 94px) minmax(0, 1fr);
   align-items: center;
-  gap: 12px;
+  align-content: start;
+  gap: 6px 10px;
   min-width: 0;
   padding: 6px;
   border: 1px solid var(--line);
   border-radius: 7px;
   background: #fffdf6;
+}
+.clue-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 16px 0 9px;
+}
+.clue-matches {
+  align-self: flex-start;
+  margin-top: 4px;
+}
+.clue-places {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-block: 12px;
+}
+.clue-places strong {
+  width: 100%;
+}
+.clue-places [aria-pressed="true"] {
+  background: var(--green);
+  color: white;
+}
+.clue-card-row > .word-stack:first-child,
+.clue-card-row > .clue-reason {
+  grid-column: 1 / -1;
+}
+.clue-card-row > .clue-reason {
+  margin: 0;
+  padding: 6px 3px 2px;
+  border-top: 1px solid var(--line);
+  font-size: 0.89rem;
+  line-height: 1.65;
 }
 .clue-card-row .word-stack,
 .chinese-note .clue-card-row .word-stack {
@@ -2077,7 +2515,6 @@ img[src*="flag_of_taiwan"] {
 }
 .clue-thumbnail {
   padding: 0;
-  flex: 0 0 clamp(68px, 7vw, 94px);
   height: 69px;
   overflow: hidden;
   border: 0;
@@ -2159,13 +2596,8 @@ img[src*="flag_of_taiwan"] {
     flex-direction: column;
     gap: 2px;
   }
-  .game-entry > summary .entry-locator {
-    grid-column: 3;
-    max-width: 98px;
-    font-size: 0.75rem;
-  }
   .game-entry > summary::after {
-    display: none;
+    grid-column: 3;
   }
   .entry-zh {
     font-size: 0.78rem;
@@ -2180,9 +2612,6 @@ img[src*="flag_of_taiwan"] {
   .art-catalog {
     grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
     gap: 8px;
-  }
-  .compare-facts {
-    grid-template-columns: 1fr;
   }
   .table-scroll td,
   .table-scroll th {

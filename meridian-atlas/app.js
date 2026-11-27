@@ -93,8 +93,6 @@ if (!("closedBy" in HTMLDialogElement.prototype)) {
     pressedBackdrop = null;
   });
 }
-for (const button of document.querySelectorAll("[data-dialog-close]"))
-  button.onclick = () => button.closest("dialog").close();
 function normalize(value = "") {
   return String(value || "")
     .trim()
@@ -104,11 +102,17 @@ function normalize(value = "") {
     .replace(/[.'’]/g, "")
     .replace(/[\s_-]+/g, " ");
 }
+function placeLabel(place) {
+  return /^US-[A-Z]{2}$/.test(place.id)
+    ? place.name + " (" + place.id.slice(3) + ")"
+    : place.name;
+}
 const formatNumber = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 2,
 });
 const numberOrDash = (n) => (Number.isFinite(n) ? formatNumber.format(n) : "—");
 const places = new Map(window.PLACES.map((place) => [place.id, place]));
+const gameFlags = new Map(window.EDITION.places.map((p) => [p.id, p.images.flag]));
 const gameCities = [
   ["Seoul", "KOR", 37.5665, 126.978],
   ["Barcelona", "ESP", 41.3851, 2.1734, "/ˌbɑrsəˈloʊnə/"],
@@ -131,6 +135,7 @@ for (const [name, parent, lat, lon, customIpa] of gameCities) {
     lat,
     lon,
     flag: base.flag,
+    flagSvg: base.flagSvg,
     aliases: [],
   });
 }
@@ -188,6 +193,7 @@ function searchable(place) {
     name: normalize(place.name),
     codes: [
       place.id,
+      placeLabel(place),
       ...place.aliases,
       names?.zh,
       ...(names?.aliasesZh || []),
@@ -227,18 +233,78 @@ function rankedSearch(input, collection) {
     )
     .map((r) => r.p);
 }
+// Prefer bundled vector artwork and retain the image previously shown as the fallback.
+function flagArtwork(place) {
+  const atlas = places.get(place.id) || place;
+  const original = gameFlags.get(place.id) || atlas.flag;
+  const vector = atlas.flagSvg || (atlas.flag?.endsWith(".svg") && atlas.flag);
+  const src = vector || original;
+  return { src, fallback: src !== original ? original : undefined };
+}
+
+function picture(src, alt, cls = "study-image", fallback) {
+  const img = element("img", cls);
+  img.alt = alt;
+  img.loading = "lazy";
+  if (fallback) {
+    img.addEventListener("error", () => (img.src = fallback), { once: true });
+  }
+  img.src = src;
+  return img;
+}
+
+function enableImageHoverPreview() {
+  const main = $("main"), preview = $("image-hover-preview");
+  const enlarged = preview.querySelector("img");
+  let source = null;
+
+  function hide() {
+    source = null;
+    preview.hidden = true;
+  }
+  function show() {
+    if (!source?.complete || !source.naturalWidth) return;
+    enlarged.src = source.currentSrc || source.src;
+    preview.classList.toggle("masked-flag", Boolean(source.closest(".masked-flag")));
+    preview.hidden = false;
+    const rect = source.getBoundingClientRect();
+    const { width, height } = preview.getBoundingClientRect();
+    const gap = 12, right = document.documentElement.clientWidth - gap;
+    const bottom = document.documentElement.clientHeight - gap;
+    let x = rect.right + gap, y = rect.top;
+    if (x + width > right) x = rect.left - gap - width;
+    if (x < gap) {
+      x = rect.left;
+      y = rect.bottom + gap + height <= bottom ? rect.bottom + gap : rect.top - gap - height;
+    }
+    preview.style.left = Math.max(gap, Math.min(x, right - width)) + "px";
+    preview.style.top = Math.max(gap, Math.min(y, bottom - height)) + "px";
+  }
+  main.addEventListener("pointerover", (event) => {
+    if (event.pointerType === "touch" || event.buttons) return;
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement) || img.closest(".game-map-plate")) return;
+    source = img;
+    show();
+  });
+  main.addEventListener("load", (event) => {
+    if (source === event.target) show();
+  }, true);
+  main.addEventListener("pointerout", (event) => {
+    if (source === event.target) hide();
+  });
+  document.addEventListener("scroll", hide, true);
+  document.addEventListener("pointerdown", hide, true);
+  document.addEventListener("keydown", hide, true);
+  window.addEventListener("resize", hide);
+  window.addEventListener("blur", hide);
+}
+enableImageHoverPreview();
+
 function flag(place) {
   const box = element("span", "flag-slot");
-  const source =
-    window.EDITION.places.find((p) => p.id === place.id)?.images.flag ||
-    place.flag;
-  if (source) {
-    const img = element("img");
-    img.src = source;
-    img.alt = "";
-    img.loading = "lazy";
-    box.append(img);
-  }
+  const { src, fallback } = flagArtwork(place);
+  if (src) box.append(picture(src, "", "", fallback));
   if (place.id === "TWN") {
     box.classList.add("masked-flag");
     box.title = "Flag blurred by default · 旗帜默认模糊";
@@ -256,59 +322,129 @@ const search = $("place-search"),
 const locatorCard = $("map-card").cloneNode(true);
 for (const part of [locatorCard, ...locatorCard.querySelectorAll("[id]")])
   part.id = "locator-" + part.id;
-locatorCard.querySelector("#locator-expand-map").remove();
-locatorCard.querySelector(".zoom-setting").remove();
-$("locator-dialog").append(locatorCard);
-let locatorMap;
-function selectLocatorPlace(id, options) {
-  const place = places.get(id);
+locatorCard.querySelector("#locator-click-zoom").closest("label").remove();
+let locatorMap, visitLocatorEntry, locatorHost, locatorEntry;
+const locatorPicker = createAtlasTargetPicker(
+  (id) => locatorMap.select(id, { frameBoth: true, animate: false }),
+  (id) => showLocatorTarget(locatorPlaces.get(id)),
+);
+locatorCard.append(locatorPicker.box);
+function showLocatorTarget(place) {
+  if (place.target) study.showPinDialog(place.target, study.byId.get(place.parent));
+  else study.showSupplementDetails(place.name, place.zh, place.supplement, place.parent);
+}
+function showMapPlaceDetails(id) {
+  const place = locatorPlaces.get(id);
   if (!place) return;
+  if (place.markerKind) showLocatorTarget(place);
+  else study.showPlaceInfo(place);
+}
+const noMapTargets = [];
+function visibleMapTargets(id, includeGamePins, selectedPlace) {
+  const targets = targetsByEntry.get(id);
+  if (!targets) return noMapTargets;
+  if (includeGamePins && showSupplements) return targets;
+  const visiblePins = includeGamePins ? targets : selectedPlace?.projected ? [selectedPlace] : noMapTargets;
+  const relatedCities = new Set();
+  for (const place of visiblePins) {
+    const city = LANDMARK_SUPPLEMENT_CITIES.get(place.target?.key);
+    if (city) relatedCities.add(place.parent + "/" + city);
+  }
+  if (!includeGamePins && !showSupplements && !relatedCities.size) return noMapTargets;
+  return targets.filter((p) => p.supplement ? showSupplements || relatedCities.has(p.id) : includeGamePins);
+}
+function refreshLocatorTargets(selection) {
+  const targets = visibleMapTargets(locatorEntry, true);
+  locatorPicker.setTargets(targets, selection);
+  locatorMap.setTargets(targets);
+}
+function selectLocatorPlace(id, options) {
+  const place = locatorPlaces.get(id);
+  if (!place) return;
+  locatorEntry = id;
+  refreshLocatorTargets();
   locatorMap.select(id, options);
   locatorCard.querySelector(".map-title").textContent = [
-    place.name,
+    placeLabel(place),
     place.zh || window.EDITION.names[id]?.zh,
   ]
     .filter(Boolean)
     .join(" · ");
 }
-function showAtlasLocation(id) {
-  showDialog($("locator-dialog"));
-  if (!locatorMap)
+function pickLocatorPlace(id, options) {
+  const place = locatorPlaces.get(id);
+  if (place?.markerKind) {
+    showLocatorTarget(place);
+    return;
+  }
+  if (!study.hasLookupEntry(id)) {
+    selectLocatorPlace(id, options);
+    return;
+  }
+  const top = locatorCard.getBoundingClientRect().top;
+  const focused = document.activeElement;
+  const scroller = locatorCard.closest("dialog") || window;
+  visitLocatorEntry(id, options);
+  if (!locatorCard.closest(".expanded-map-dialog"))
+    scroller.scrollBy({
+      top: locatorCard.getBoundingClientRect().top - top,
+      behavior: "instant",
+    });
+  if (locatorCard.contains(focused) && document.activeElement !== focused)
+    focused.focus({ preventScroll: true });
+}
+function showAtlasLocation(id, host, options, visit) {
+  locatorHost = host;
+  visitLocatorEntry = visit;
+  if (!locatorMap) {
+    host.append(locatorCard);
     locatorMap = createAtlasMap(
-      places,
-      selectLocatorPlace,
+      locatorPlaces,
+      pickLocatorPlace,
       () => {
         locatorCard.querySelector(".map-title").textContent = "World atlas";
+        locatorPicker.reset();
       },
-      "locator-",
+      {
+        onDetails: showMapPlaceDetails,
+        prefix: "locator-",
+        focusZoom: (zoom) => Math.max(1.15, zoom / 1.6),
+      },
     );
-  selectLocatorPlace(id, { animate: false });
+    locatorMap.setRivers(displayedRivers);
+  } else locatorMap.mount(host);
+  selectLocatorPlace(id, { animate: false, frameBoth: true, ...options });
 }
-const atlas = createAtlasMap(places, choosePlace, () => {
-  selected = null;
-  search.value = "";
-  renderFinder();
-});
+// The locator is shared by the lookup page and stacked entry dialogs. Return it
+// to the originating entry only if the closing dialog still owns it.
+function rememberLocator(dialog) {
+  const host = locatorHost, id = locatorEntry, visit = visitLocatorEntry;
+  const view = locatorMap?.getView(), target = locatorPicker.value;
+  return () => {
+    if (!dialog.contains(locatorHost) || !host?.isConnected) return;
+    showAtlasLocation(id, host, { focus: false }, visit);
+    if (target) locatorPicker.choose(target);
+    locatorMap.restoreView(view);
+  };
+}
 const study = createStudyDesk(window.EDITION, places, showAtlasLocation, {
+  atlasEntries: window.PLACES,
+  rememberLocator,
+  navigate,
   element,
   normalize,
   formatNumber,
+  atlasFacts,
   storage: sessionRecord("study"),
 });
-const flatProjection = AtlasGeo.geoNaturalEarth1().fitExtent(
-  [
-    [10, 5],
-    [990, 505],
-  ],
-  { type: "Sphere" },
-);
+function atlasPosition(coords) {
+  return { lon: coords[0], lat: coords[1], projected: flatProjection(coords) };
+}
 for (const target of window.EDITION.pins) {
   const parent = study.byId.get(target.placeId),
     learning = study.learningPin(target, parent);
-  const isLandmark = target.variant === "Landmark",
-    coords = isLandmark
-      ? null
-      : window.EDITION.capitalLessons[parent.id]?.coords;
+  const isLandmark = target.variant === "Landmark";
+  const coords = learning.coords;
   const existingId = "city-" + normalize(target.target).replaceAll(" ", "-");
   const existing = places.get(existingId);
   const id =
@@ -320,17 +456,14 @@ for (const target of window.EDITION.pins) {
     region: parent.name,
     ipa: learning.ipa,
     zh: learning.zh,
-    note: learning.note,
     approximate: learning.approximate,
     kind: isLandmark ? "Landmark" : "City",
+    markerKind: isLandmark ? "landmark" : parent.id.startsWith("US-") ? "stateCapital" : "capital",
     aliases: [learning.zh],
     target,
     gameMapOnly: !coords,
   };
-  if (coords) {
-    [record.lon, record.lat] = coords;
-    record.projected = flatProjection(coords);
-  }
+  if (coords) Object.assign(record, atlasPosition(coords));
   places.set(id, { ...places.get(id), ...record });
 }
 for (const p of places.values()) {
@@ -340,17 +473,105 @@ for (const p of places.values()) {
   }
 }
 const searchFields = new Map([...places].map(([id, p]) => [id, searchable(p)]));
+const locatorPlaces = new Map(places);
+for (const [parent, groups] of Object.entries(LOOKUP_SUPPLEMENTS)) {
+  for (const [group, rows] of Object.entries(groups)) {
+    for (const [name, zh, url] of rows) {
+      const supplement = SUPPLEMENT_MEDIA[url];
+      const id = parent + "/" + url;
+      locatorPlaces.set(id, {
+        id, parent, name, zh, supplement, ipa: supplement.ipa,
+        markerKind: group === "cities" ? "city" : "sight",
+        ...atlasPosition(supplement.coords),
+      });
+    }
+  }
+}
+const targetsByEntry = Map.groupBy(
+  [...locatorPlaces.values()].filter((p) => p.markerKind && p.projected),
+  (p) => p.parent,
+);
+let showSupplements = false, displayedRivers = null;
+const atlas = createAtlasMap(locatorPlaces, (id, options) => {
+  const place = locatorPlaces.get(id);
+  if (place?.supplement) showLocatorTarget(place);
+  else choosePlace(id, options);
+}, () => {
+  selected = null;
+  refreshExplorerTargets();
+  search.value = "";
+  renderFinder();
+}, { onDetails: showMapPlaceDetails });
+function refreshExplorerTargets() {
+  const selectedPlace = places.get(selected);
+  const id = targetsByEntry.has(selected) ? selected : selectedPlace?.parent;
+  const targets = visibleMapTargets(id, false, selectedPlace);
+  atlas.setTargets(targets);
+  const hint = $("map-card").querySelector(".supplements-help");
+  hint.hidden = !showSupplements || targets.length > 0;
+  if (!hint.hidden) hint.textContent = selected ? "当前地点没有补充标记" : "选择一个国家或州查看";
+}
+function applySupplementSetting(enabled) {
+  showSupplements = enabled;
+  refreshExplorerTargets();
+  if (locatorMap) {
+    const target = locatorPicker.value;
+    refreshLocatorTargets(target);
+    if (target && !locatorPicker.value) locatorMap.select(locatorEntry, { focus: false });
+  }
+}
+function bindMapSwitch(id, key, apply) {
+  const inputs = [$(id), locatorCard.querySelector("#locator-" + id)];
+  function update(enabled) {
+    for (const input of inputs) input.checked = enabled;
+    apply(enabled);
+  }
+  const restore = () => update(readMapPreference(key, "false") === "true");
+  for (const input of inputs) input.onchange = () => {
+    writeMapPreference(key, String(input.checked));
+    update(input.checked);
+  };
+  window.addEventListener("storage", (event) => {
+    if (event.key === key || event.key === null) restore();
+  });
+  restore();
+}
+const riverMessages = [$("map-card"), locatorCard].map((card) => card.querySelector(".river-status"));
+let riverRequest = 0;
+async function applyRiverSetting(enabled) {
+  const request = ++riverRequest;
+  let data = null, status = "";
+  if (enabled) {
+    if (!displayedRivers) for (const message of riverMessages) message.textContent = "载入中…";
+    try {
+      data = await loadRiverData();
+    } catch {
+      status = "载入失败，重新开启可重试";
+    }
+  }
+  if (request !== riverRequest) return;
+  for (const message of riverMessages) message.textContent = status;
+  displayedRivers = data;
+  atlas.setRivers(data);
+  locatorMap?.setRivers(data);
+}
+bindMapSwitch("show-supplements", "meridian.showSupplements", applySupplementSetting);
+bindMapSwitch("show-rivers", "meridian.showRivers", applyRiverSetting);
+study.initialize();
 
 function navigate(page) {
   if (location.hash !== "#" + page) location.hash = page;
   showPage(page);
 }
 function showPage(page) {
-  currentPage = ["index", "guide"].includes(page) ? page : "explorer";
+  const puzzle = page === "world-puzzle";
+  const parentPage = puzzle ? "guide" : page;
+  currentPage = ["index", "guide"].includes(parentPage) ? parentPage : "explorer";
   for (const id of ["explorer", "index", "guide"])
     $(id + "-page").hidden = id !== currentPage;
   for (const a of document.querySelectorAll("nav a")) {
-    if (a.dataset.page === currentPage) a.setAttribute("aria-current", "page");
+    if (a.dataset.page === (puzzle ? page : currentPage))
+      a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   }
   document.title =
@@ -359,11 +580,17 @@ function showPage(page) {
       currentPage
     ];
   if (currentPage === "index") renderIndex();
-  if (currentPage === "guide") renderGuide();
+  if (currentPage === "guide") {
+    if (puzzle) {
+      study.openPuzzle();
+      document.title = "Meridian — World Puzzle";
+      $("world-puzzle").scrollIntoView({ block: "start" });
+    }
+  }
 }
 window.addEventListener("hashchange", () => showPage(location.hash.slice(1)));
 document
-  .querySelectorAll("nav a,.brand,.finder-bottom,.section-heading a")
+  .querySelectorAll('nav a:not([href="#world-puzzle"]),.brand,.finder-bottom,.section-heading a')
   .forEach((a) =>
     a.addEventListener("click", () => window.scrollTo({ top: 0 })),
   );
@@ -371,11 +598,17 @@ document
 function choosePlace(id, options) {
   const place = places.get(id);
   if (!place) return;
+  if (study.geographyOnly(id)) {
+    $("map-card").closest(".expanded-map-dialog[open]")?.close();
+    study.openEntry(id);
+    return;
+  }
   const fromOther = currentPage !== "explorer";
   navigate("explorer");
   selected = id;
+  refreshExplorerTargets();
   search.value = place.name;
-  atlas.select(place.gameMapOnly ? place.parent : id, options);
+  atlas.select(place.gameMapOnly ? place.parent : id, { frameBoth: true, ...options });
   renderFinder();
   if (place.gameMapOnly)
     study.showPinDialog(place.target, study.byId.get(place.parent));
@@ -392,7 +625,7 @@ function rowFor(place, i) {
   row.setAttribute("aria-selected", "false");
   const copy = element("span", "place-copy");
   copy.append(
-    element("strong", "", place.name),
+    element("strong", "", placeLabel(place)),
     element("span", "ipa", place.ipa),
   );
   const zh = place.zh || window.EDITION.names[place.id]?.zh;
@@ -478,10 +711,49 @@ function speak(place, button) {
   speechSynthesis.cancel();
   speechSynthesis.speak(utterance);
 }
+function atlasFacts(p, capitalNotes = []) {
+  const facts = element("dl", "detail-facts");
+  function fact(key, value, extra, notes = []) {
+    const div = element("div"),
+      dd = element("dd");
+    if (value !== undefined) dd.append(value);
+    dd.append(...notes);
+    if (extra) dd.append(element("span", "ipa", extra));
+    div.append(element("dt", "", key), dd);
+    facts.append(div);
+  }
+  fact("Location", p.region);
+  if (geographyStatus.has(p.id)) fact(geographyStatusLabel, atlasIntroduction(geographyStatus.get(p.id), p.id));
+  if (!p.target && p.kind !== "City" && !p.labelPoint) {
+    fact(
+      p.kind === "U.S. state" ? "State capital" : "Capital",
+      p.capital || "—",
+      p.capitalIpa,
+      capitalNotes,
+    );
+    fact("Area", Number.isFinite(p.area) ? numberOrDash(p.area) + " km²" : "—");
+    fact(
+      p.popYear ? "Population · " + p.popYear : "Population",
+      numberOrDash(p.population),
+    );
+    for (const field of atlasCountryFacts(p.id)) fact(...field);
+  }
+  function coord(n, pos, neg) {
+    return Math.abs(n).toFixed(2) + "° " + (n < 0 ? neg : pos);
+  }
+  if (Number.isFinite(p.lat) && Number.isFinite(p.lon))
+    fact("Map point", coord(p.lat, "N", "S") + ", " + coord(p.lon, "E", "W"));
+  return facts;
+}
 function renderDetail(p) {
   const box = $("place-detail");
   const name = element("div", "detail-title");
-  name.append(element("h3", "", p.name));
+  const title = element("h3", "", placeLabel(p));
+  const notes = p.target?.variant === "Capital"
+    ? study.fieldNotes(p.parent, "capital")
+    : study.fieldNotes(p.id, "name");
+  title.append(...notes);
+  name.append(title);
   const ipa = element("div", "detail-ipa");
   ipa.append(element("span", "ipa", p.ipa));
   if ("speechSynthesis" in window) {
@@ -492,45 +764,21 @@ function renderDetail(p) {
     btn.onclick = () => speak(p, btn);
     ipa.append(btn);
   }
-  const facts = element("dl", "detail-facts");
-  function fact(key, value, extra) {
-    const div = element("div"),
-      dd = element("dd", "", value);
-    if (extra) dd.append(element("span", "ipa", extra));
-    div.append(element("dt", "", key), dd);
-    facts.append(div);
-  }
-  fact("Location", p.region);
-  if (!p.target && p.kind !== "City" && !p.labelPoint) {
-    fact(
-      p.kind === "U.S. state" ? "State capital" : "Capital",
-      p.capital || "—",
-      p.capitalIpa,
-    );
-    fact("Area", Number.isFinite(p.area) ? numberOrDash(p.area) + " km²" : "—");
-    fact(
-      p.popYear ? "Population · " + p.popYear : "Population",
-      numberOrDash(p.population),
-    );
-  }
-  function coord(n, pos, neg) {
-    return Math.abs(n).toFixed(2) + "° " + (n < 0 ? neg : pos);
-  }
-  if (Number.isFinite(p.lat) && Number.isFinite(p.lon))
-    fact("Map point", coord(p.lat, "N", "S") + ", " + coord(p.lon, "E", "W"));
   box.replaceChildren(element("p", "detail-kicker", p.kind), name, ipa);
   if (p.zh) box.append(element("strong", "word-zh", p.zh));
-  if (p.note) box.append(element("p", "pin-lesson-note", p.note));
+  if (!p.target && p.note && !notes.length)
+    box.append(element("p", "pin-lesson-note", atlasIntroduction(p.note, p.parent || p.id, p.name)));
   if (p.approximate)
     box.append(element("small", "source-small", "美式近似读法"));
   if (p.target) {
+    const parent = study.byId.get(p.parent);
+    study.appendPinDetails(box, p.target, study.learningPin(p.target, parent));
     const pinButton = element(
       "button",
       "detail-action",
       "Game pin · 查看游戏落点",
     );
-    pinButton.onclick = () =>
-      study.showPinDialog(p.target, study.byId.get(p.parent));
+    pinButton.onclick = () => study.showPinDialog(p.target, parent);
     box.append(pinButton);
   }
   if (p.flag) {
@@ -540,18 +788,20 @@ function renderDetail(p) {
     zoom.append(flag(p));
     zoom.onclick = () => study.viewFlag(p);
     box.append(zoom);
+    const introduction = study.flagIntroduction(p);
+    if (introduction) box.append(introduction);
   }
   const note = study.placeNote(p);
   if (note) box.append(note);
   box.append(
     element("small", "detail-kicker", "Atlas reference · 地理参考"),
-    facts,
+    atlasFacts(p, study.fieldNotes(p.id, "capital")),
   );
   if (p.parent) {
     const btn = element(
       "button",
       "detail-action",
-      "Locate " + places.get(p.parent).name,
+      "Locate " + placeLabel(places.get(p.parent)),
     );
     btn.onclick = () => choosePlace(p.parent);
     box.append(btn);
@@ -566,7 +816,10 @@ function clearFinder() {
 search.addEventListener("input", () => {
   selected = null;
   if (!search.value.trim()) atlas.setMode(atlas.mode);
-  else renderFinder();
+  else {
+    refreshExplorerTargets();
+    renderFinder();
+  }
 });
 search.addEventListener("blur", () => {
   search.value = search.value.trim();
@@ -653,17 +906,18 @@ function renderIndex() {
       name = element("span", "place-copy");
     const local = study.byId.get(p.id);
     name.append(
-      element("strong", "", p.name),
+      element("strong", "", placeLabel(p)),
       element("span", "ipa", p.ipa),
       element("small", "word-zh", window.EDITION.names[p.id].zh),
     );
     btn.append(flag(p), name);
     btn.onclick = () => choosePlace(p.id);
-    td.append(btn);
+    td.append(btn, ...study.fieldNotes(p.id, "name"));
     const value = local && study.placeCap(local);
     const cap = element("td", "index-capital", value?.en || "—");
     if (value)
       cap.append(
+        ...study.fieldNotes(p.id, "capital"),
         element("span", "ipa", value.ipa),
         element("small", "word-zh", value.zh),
       );
@@ -673,7 +927,7 @@ function renderIndex() {
       "detail-action",
       local ? "Game card" : "Atlas card",
     );
-    go.onclick = () => (local ? study.openEntry(p.id) : choosePlace(p.id));
+    go.onclick = () => study.openEntry(p.id);
     lesson.append(go);
     tr.append(
       td,
@@ -693,103 +947,6 @@ function renderIndex() {
 }
 bindQuery("index-search", renderIndex);
 $("index-sort").onchange = renderIndex;
-
-const guide = window.GAME_GUIDE;
-const guideGroups = {
-  examples: "Game examples",
-  modes: "Game modes",
-  achievements: "Achievements",
-};
-let openedRecord = null;
-function recordElement(rec) {
-  const entry = element("details", "record");
-  entry.dataset.id = rec.id;
-  entry.open = rec.id === openedRecord;
-  const head = element("summary", "", rec.title);
-  const body = element("div", "record-body");
-  if (rec.answer)
-    body.append(
-      element(
-        "p",
-        "",
-        (rec.evidence === "Study inference" ? "Suggested match" : "Answer") +
-          " · " +
-          rec.answer,
-      ),
-    );
-  body.append(element("p", "", rec.detail));
-  const meta = [
-    rec.mode,
-    rec.evidence,
-    rec.gamerscore ? rec.gamerscore + "G" : null,
-  ]
-    .filter(Boolean)
-    .join(" · ");
-  if (meta) body.append(element("p", "record-meta", meta));
-  const links = element("div", "record-links");
-  const cityIds = {
-    "seoul-pin": "city-seoul",
-    "sagrada-pin": "city-barcelona",
-  };
-  for (const id of [cityIds[rec.id], ...rec.placeIds].filter(Boolean)) {
-    if (!places.has(id)) continue;
-    const btn = element("button", "detail-action", places.get(id).name);
-    btn.title = "Locate on map";
-    btn.onclick = () => choosePlace(id);
-    links.append(btn);
-  }
-  const source = element("a", "", "View source");
-  source.href = rec.source;
-  source.target = "_blank";
-  source.rel = "noreferrer";
-  links.append(source);
-  body.append(links);
-  entry.append(head, body);
-  return entry;
-}
-function renderGuide() {
-  const query = normalize($("game-search").value).split(" ").filter(Boolean),
-    filter = $("game-filter").value,
-    box = $("game-records");
-  box.replaceChildren();
-  for (const [key, title] of Object.entries(guideGroups)) {
-    if (filter !== "all" && filter !== key) continue;
-    const records = guide[key].filter((r) => {
-      const text = normalize(
-        [
-          r.title,
-          r.detail,
-          r.answer,
-          r.mode,
-          r.evidence,
-          ...r.keywords,
-          ...r.placeIds.map((id) => places.get(id)?.name),
-        ]
-          .filter(Boolean)
-          .join(" "),
-      );
-      return query.every((word) => text.includes(word));
-    });
-    if (!records.length) continue;
-    box.append(
-      element("h2", "records-heading", title + " · " + records.length),
-    );
-    for (const r of records) box.append(recordElement(r));
-  }
-  if (!box.children.length)
-    box.append(
-      element(
-        "p",
-        "no-results",
-        "No matching game records. Try a place, clue word, or game mode.",
-      ),
-    );
-}
-bindQuery("game-search", () => {
-  openedRecord = null;
-  renderGuide();
-});
-$("game-filter").onchange = renderGuide;
 
 function drawCards() {
   const cards = [
@@ -875,6 +1032,7 @@ if (selected) {
   const place = places.get(selected);
   atlas.select(place.gameMapOnly ? place.parent : selected, { focus: false });
 }
+refreshExplorerTargets();
 atlas.restoreView(finderState.view);
 const indexInput = $("index-search"),
   indexOrder = $("index-sort");
