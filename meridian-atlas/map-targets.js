@@ -4,7 +4,7 @@ const atlasTargetKinds = {
   capital: { name: "首都／行政中心", priority: 1, path: "M0 -8 2.2 -2.7 8 -2.5 3.5 1.2 5 7 0 3.5 -5 7 -3.5 1.2 -8 -2.5 -2.2 -2.7Z" },
   stateCapital: { name: "州府", priority: 1, path: "M-6 -6H6V6H-6Z" },
   city: { name: "补充城市", priority: 2, path: "M0 -6a6 6 0 1 0 0 12a6 6 0 1 0 0 -12" },
-  landmark: { name: "游戏名胜", priority: 3, path: "M0 -7.5 7.5 0 0 7.5 -7.5 0Z" },
+  landmark: { name: "名胜", priority: 3, path: "M0 -7.5 7.5 0 0 7.5 -7.5 0Z" },
   sight: { name: "补充景观", priority: 4, path: "M0 -7.5 7.5 6H-7.5Z" },
 };
 

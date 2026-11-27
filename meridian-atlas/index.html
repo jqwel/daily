@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#faf9f5" />
     <meta
       name="description"
-      content="An offline world atlas and Geo Book study companion with searchable countries, U.S. states, flags and American English pronunciations."
+      content="Explore an offline world atlas with bilingual place cards, American English pronunciations and interactive geography exercises."
     />
     <title>Meridian — World atlas</title>
     <link rel="icon" href="assets/compass.svg" type="image/svg+xml" />
@@ -45,7 +45,7 @@
             >Map explorer</a
           >
           <a data-page="index" href="#index">Place index</a>
-          <a data-page="guide" href="#guide">Game guide</a>
+          <a data-page="guide" href="#guide">Study guide</a>
           <a data-page="world-puzzle" href="#world-puzzle">World Puzzle</a>
         </nav>
         <button class="sources-link" id="sources-open" type="button">
@@ -228,8 +228,7 @@
         <section class="field-section">
           <div class="section-heading">
             <div>
-              <span class="eyebrow">Geo Book</span>
-              <h2>From the game</h2>
+              <h2>Try a geography question</h2>
             </div>
             <a href="#guide" class="text-link"
               >Open study guide <span data-icon="book"></span
@@ -270,6 +269,7 @@
             >
           </div>
           <div class="result-summary" id="index-summary"></div>
+          <small>¹ Exercise figures. See individual place cards for reference values and population years.</small>
           <div class="table-scroll">
             <table>
               <thead>
@@ -277,8 +277,8 @@
                   <th>Place · 地点</th>
                   <th>Capital · 首都或州府</th>
                   <th>Region · 地区</th>
-                  <th class="numeric">Game area (km²)</th>
-                  <th class="numeric">Game population</th>
+                  <th class="numeric">Area (km²)¹</th>
+                  <th class="numeric">Population¹</th>
                   <th>Study · 学习</th>
                 </tr>
               </thead>
@@ -290,27 +290,26 @@
       <section class="page" id="guide-page" hidden>
         <div class="page-heading">
           <div>
-            <h1>Game <em>guide</em></h1>
+            <h1>Study <em>guide</em></h1>
             <p>
-              Study the installed Geo Book edition with American English IPA and
-              Chinese explanations.
+              Read bilingual place cards, explore the picture atlas and test your geography.
             </p>
           </div>
-          <a class="outlined-link" href="geo-book-1.0.8.0.json" download
-            ><span data-icon="download"></span>Download game data</a
+          <a class="outlined-link" href="geo-book-1.0.8.0.json" download="meridian-atlas-data.json"
+            ><span data-icon="download"></span>Download study data</a
           >
         </div>
         <section
           id="study-desk"
           class="panel study-desk"
-          aria-label="Learning with Geo Book"
+          aria-label="Geography study desk"
         >
           <div class="study-tabs" role="group" aria-label="Study sections">
             <button data-study-tab="practice" aria-pressed="true">
               Lessons <span lang="zh-Hans">教程与练习</span>
             </button>
             <button data-study-tab="lookup" aria-pressed="false">
-              Lookup <span lang="zh-Hans">游戏速查</span>
+              Lookup <span lang="zh-Hans">地理速查</span>
             </button>
             <button data-study-tab="library" aria-pressed="false">
               Library <span lang="zh-Hans">配图图鉴</span>
@@ -328,7 +327,7 @@
       <span
         ><img alt="" src="assets/compass.svg" width="19" height="19" />Meridian
         Atlas</span
-      ><span>Independent Geo Book study companion</span>
+      ><span>Bilingual world atlas</span>
     </footer>
     <div class="study-shortcuts">
       <button type="button" id="next-tour-question" class="study-shortcut">
@@ -357,30 +356,29 @@
         </button>
       </div>
       <dl class="sources-list">
-        <dt>Game records</dt>
+        <dt>Exercise data and illustrations</dt>
         <dd>
-          The lessons use the locally installed Geo Book 1.0.8.0 content tables
-          and artwork. The download includes original field names, English
-          strings and game-map coordinates.
+          The download includes place records, English vocabulary, illustrations and
+          coordinates for the practice maps. Illustration sources:
           <a
             href="https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2"
             target="_blank"
             rel="noreferrer"
-            >Base game</a
+            >Original collection</a
           >
           ·
           <a
             href="https://www.xbox.com/zh-CN/games/store/geo-book-scholar-edition/9p1gqx08j2p8"
             target="_blank"
             rel="noreferrer"
-            >Scholar Edition</a
+            >Expanded collection</a
           >
         </dd>
         <dt>Geography</dt>
         <dd>
           Both atlas views use Natural Earth boundaries and lakes. Alaska and
-          Hawaii appear at their geographic locations. Pin It and World Puzzle
-          use the game's own map.
+          Hawaii appear at their geographic locations. Map Pins and World Puzzle
+          use a separate practice map.
         </dd>
         <dt>Reference facts</dt>
         <dd>

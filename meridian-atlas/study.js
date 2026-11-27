@@ -60,44 +60,44 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
   const artNames = {
     puzzle: "Puzzle piece · 拼块素材",
     flag: "Flag · 旗帜",
-    outline: "Outline · 游戏轮廓",
+    outline: "Outline · 地点轮廓",
     comparison: "Comparison shape · 比较图",
     sticker: "Passport sticker · 护照贴纸",
     souvenir: "Souvenir · 纪念品",
   };
   const lessons = {
     tour: [
-      "World Tour",
+      "Mixed Review",
       "混合复习",
-      "轮流练习各种题型。遇到陌生词时先读音标，再回想中文释义，最后核对游戏采用的答案。",
+      "轮流练习各种题型。遇到陌生词时先读音标，再回想中文释义，最后核对自己的判断。",
       null,
     ],
     take: [
-      "Take Me Somewhere",
+      "Destination Clues",
       "三词猜地点",
       "读出三个英语提示，分别辨认它们所指的事物，再找三条线索共同指向的国家或州。",
       "takeMeSomewhere",
     ],
     flag: [
-      "Match the Flag",
+      "Flag Quiz",
       "认国旗和州旗",
-      "先读地点和音标，再看旗面的底色、条纹方向与徽记。四面候选旗帜都来自本版游戏。",
+      "先读地点和音标，再看旗面的底色、条纹方向与徽记。从四面旗帜中选出对应的一面。",
       "matchTheFlag",
     ],
     higher: [
-      "Higher or Lower",
+      "Compare Places",
       "比较大小",
       "先在问句里圈出比较对象。larger 比面积，more people 比人口，more visited 比到访次数。",
       "higherOrLower",
     ],
     souvenir: [
-      "Souvenir Sort",
+      "Souvenir Matching",
       "纪念品归属",
-      "根据物件的外观找对应地点。英文物名与中文释义按画面整理，配对答案来自游戏的货架配置。",
+      "观察纪念品的外形和用途，读出英文名称，再选出与它相关的地点。",
       "souvenirSort",
     ],
     guess: [
-      "Guess the Country",
+      "Identify the Outline",
       "读轮廓",
       "先找海岸线或平直边界，再判断轮廓宽窄。细长的陆地与分散的群岛可以先分开记。",
       "guessTheCountry",
@@ -105,19 +105,19 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     puzzle: [
       "World Puzzle",
       "世界拼图",
-      "读出地名，在游戏地图上找到它，再把拼块中心对准目标。越接近原版记录的中心，落点得分越高。",
+      "读出地名，把拼块拖到地图上的对应位置。拼块中心越接近参考点，得分越高。",
       "worldPuzzle",
     ],
     passport: [
-      "Passport Please",
+      "Passport Check",
       "核对护照",
       "依次核对国名、首都、旗帜和大洲。练习会有意替换一项，你要指出是哪一栏。",
       "passportPlease",
     ],
     pin: [
-      "Pin It",
+      "Map Pins",
       "地图标点",
-      "先判断它是首都、州府还是地标，再在游戏底图上点选位置。提交后可比较你的落点和游戏答案。",
+      "先判断它是首都、州府还是地标，再在地图上点选位置。提交后可比较你的落点和参考位置。",
       "pinItCapitals",
     ],
   };
@@ -217,7 +217,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
             others
               .map((other) => zh(other) + "（" + placeLabel(other) + "）")
               .join("、") +
-            "的游戏题目中。仅凭这三条线索，两地都说得通。",
+            "的练习中。仅凭这三条线索，两地都说得通。",
         ),
       );
     return box;
@@ -254,7 +254,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         chinese(
           "p",
           "source-small",
-          "这件物品收在该地点的游戏素材中，本版纪念品配对题使用的是另一件。",
+          "这件物品可在图鉴中查看。该地点的配对练习使用另一件纪念品。",
         ),
       );
     else if (atlasPlaces.get(owner.id)?.name !== owner.name)
@@ -262,7 +262,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         chinese(
           "p",
           "source-small",
-          "游戏货架的英文写作 “" + owner.name + "”。",
+          "配对题中的英文名称为 “" + owner.name + "”。",
         ),
       );
     return box;
@@ -270,7 +270,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
   function showSouvenir(s) {
     const content = souvenirExplanation(s);
     content.append(
-      element("small", "source-small", "Game asset · " + s.assetAddress),
+      element("small", "source-small", "Illustration ID · " + s.assetAddress),
     );
     showPicture(s.image, s.english, s.chinese + "  /" + s.ipa + "/", {
       content,
@@ -324,14 +324,14 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     const corrected = pin.variant === "Capital" && checks.get(pin.placeId)?.some((c) => c.field === "capital");
     if (info.note && !corrected) {
       const hint = element("details", "pin-hint");
-      hint.append(chinese("summary", "", "游戏提示"), introduction("pin-lesson-note", info.note, pin.placeId, pin.target));
+      hint.append(chinese("summary", "", "定位提示"), introduction("pin-lesson-note", info.note, pin.placeId, pin.target));
       container.append(hint);
     }
   }
   const numberFields = {
     area: ["Area", "面积", "km²"],
     population: ["Population", "人口", ""],
-    visits: ["Visits", "到访次数", ""],
+    visits: ["Visits", "到访次数（练习数据）", ""],
   };
   function vocabularyCard(word, showTranslation = true) {
     const text = readout(word.en, word.ipa, showTranslation ? word.zh : null);
@@ -452,7 +452,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     const section = element("section", "lookup-supplement");
     section.append(
       element("h4", "", "Further geography · 补充地理资料"),
-      chinese("p", "supplement-note", "课外参考，不计入游戏题目。点击名称查看资料，点击照片放大并查看署名。"),
+      chinese("p", "supplement-note", "延伸阅读。点击名称查看地点资料，点击照片放大并查看署名。"),
     );
     const groups = element("div", "supplement-groups");
     for (const [key, title] of [["cities", "主要城市"], ["sights", "景观名胜"]]) {
@@ -502,10 +502,10 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     }
     const flagArt = flagArtwork(p);
     if (flagArt.src && flagArt.src === p.images?.flag)
-      thumb(flagArt.src, "Flag", "游戏旗帜", "", flagArt.fallback, true);
+      thumb(flagArt.src, "Flag", "旗帜", "", flagArt.fallback, true);
     else thumb(
       flagArt.src, "Atlas flag",
-      p.images?.flag || geographyOnly(p.id) ? "地图参考旗帜" : "地图参考图 · 本版地点表未提供旗帜",
+      "地图参考旗帜",
       "", flagArt.fallback, true,
     );
     function thumbContinent() {
@@ -514,7 +514,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       const continent = passport || continentArtwork.get(regionLabel(p.parent)) ||
         continentArtwork.get(atlasRegion);
       if (continent)
-        thumb(continent.src, continent.en, continent.zh + (passport ? " · 护照原图" : " · 洲图"), continent.ipa);
+        thumb(continent.src, continent.en, continent.zh + (passport ? " · 护照配图" : " · 洲图"), continent.ipa);
     }
     if (geographyOnly(p.id)) {
       thumbContinent();
@@ -529,14 +529,14 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     if (comparison) thumb(comparison, "Comparison outline", "大小比较轮廓");
     else {
       thumb(studyImage(p, "outline"), "Outline", "猜地轮廓");
-      thumb(studyImage(p, "puzzle"), "Puzzle piece", "游戏拼块");
+      thumb(studyImage(p, "puzzle"), "Puzzle piece", "地图拼块");
     }
     for (const s of souvenirs.get(p.gameId) || []) {
       if (stickers.has(s.image)) continue;
       thumb(
         s.image,
         s.english,
-        s.chinese + (s.linkedInSouvenirSort ? " · 已绑定货架" : " · 素材图"),
+        s.chinese + (s.linkedInSouvenirSort ? " · 配对练习" : " · 图鉴配图"),
         "/" + s.ipa + "/",
       );
     }
@@ -546,7 +546,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       thumb(
         a.src,
         artNames[a.kind]?.split(" · ")[0] || p.name,
-        (artNames[a.kind]?.split(" · ")[1] || "配图") + " · 额外素材",
+        (artNames[a.kind]?.split(" · ")[1] || "配图") + " · 补充配图",
       );
     }
     thumbContinent();
@@ -565,7 +565,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     info.append(heading);
     if (geographyOnly(p.id)) {
       info.append(
-        chinese("p", "place-explainer", geographyLabel + "。本版游戏未收录该地点的独立词条。"),
+        chinese("p", "place-explainer", geographyLabel + "。可在地图上查看位置及参考资料。"),
         helpers.atlasFacts(p),
         studyGallery(p),
       );
@@ -592,7 +592,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       cap ? readout(cap.en, cap.ipa, cap.zh, capitalNotes) : "—",
     );
     fact(
-      "Game region · 地区",
+      "Region · 地区",
       p.parent
         ? {
             northAmerica: "North America · 北美洲",
@@ -635,7 +635,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         for (const reason of reasons) reason.hidden = closed;
       }
       updateReasons();
-      heading.append(element("h4", "", "Clue vocabulary · 游戏线索词"), toggle);
+      heading.append(element("h4", "", "Clue vocabulary · 地理线索词"), toggle);
       box.append(heading, words, sharedClueNote(p));
     }
     const used = Object.values(lessons)
@@ -646,7 +646,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     );
     const pins = pinsByPlace.get(p.id) || [];
     if (pins.length) {
-      box.append(element("h4", "", "Pin It · 游戏落点"));
+      box.append(element("h4", "", "Map Pins · 地图标点"));
       const chips = element("div", "entry-buttons");
       for (const t of pins) {
         const datum = learningPin(t, p),
@@ -656,7 +656,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
           row.append(chinese("small", "source-small", "美式近似读法"));
         appendPinDetails(row, t, datum);
         row.append(
-          action("Show game pin · 查看落点", () => showPinDialog(t, p)),
+          action("Show map pin · 查看落点", () => showPinDialog(t, p)),
         );
         chips.append(row);
       }
@@ -667,19 +667,14 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         chinese(
           "p",
           "source-small",
-          "本版有这条地点记录，安装包中没有它所引用的猜地轮廓图。",
+          "此地点暂无可供辨认的轮廓图。",
         ),
       );
     box.append(
       element(
         "p",
         "source-small",
-        "Geo Book " +
-          edition.version +
-          " · place ID " +
-          p.gameId +
-          " · " +
-          (p.nameKey || "scene asset row"),
+        "Entry ID · " + p.gameId,
       ),
     );
     if (p.neighbors?.length) {
@@ -706,7 +701,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     const frame = element("div", "game-map-plate");
     const img = picture(
       "assets/game/pin-map.webp",
-      "Geo Book world map",
+      "World map for placement practice",
       "game-map-image",
     );
     [img.width, img.height] = edition.dimensions;
@@ -718,7 +713,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       d.setAttribute("aria-label", desc);
       frame.append(d);
     }
-    if (target) dot(target.x, 1 - target.y, "correct", "Game target");
+    if (target) dot(target.x, 1 - target.y, "correct", "Reference location");
     if (guess) dot(guess.x, guess.y, "guess", "Your pin");
     return frame;
   }
@@ -741,7 +736,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         placeLabel(p) +
           " · " +
           t.variant +
-          " · Game pixel (" +
+          " · Map pixel (" +
           t.pixelX +
           ", " +
           t.pixelY +
@@ -866,16 +861,10 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         if (art.licenseUrl)
           credit.append(external(art.license, art.licenseUrl));
         else credit.append(document.createTextNode(art.license));
+      } else if (art.kind === "game") {
+        credit.append(chinese("span", "", art.caption), " · ", external("插图来源", "data-sources.txt"));
       } else {
-        credit.append(
-          chinese(
-            "span",
-            "",
-            art.kind === "game"
-              ? "游戏原图 · " + art.credit + " · " + art.caption
-              : "教学示意图 · " + art.credit,
-          ),
-        );
+        credit.append(chinese("span", "", "教学示意图 · " + art.credit));
       }
       dialog.append(credit);
     }
@@ -953,6 +942,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     lastPrompt = byId.has(saved.lastPrompt) ? saved.lastPrompt : "";
   const modes = Object.keys(lessons).filter((k) => k !== "tour");
   const parts = $("study-content");
+  session = restoreQuestion(saved.question);
   function saveStudy(scrollY) {
     helpers.storage.write({
       tab,
@@ -963,6 +953,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       closedReasons: [...closedReasons],
       tourStep,
       lastPrompt,
+      question: snapshotQuestion(),
       scrollY,
       library,
     });
@@ -1028,7 +1019,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       chinese(
         "p",
         "study-intro",
-        "先看游戏怎么判，再查现实地理。下列项目已经逐项核对；统计年份、四舍五入和拼写差异各有各的原因。",
+        "比较地理资料时，先核对名称、统计年份和单位。点击词条可查看具体差异及出处。",
       ),
     );
     if (checks.size) {
@@ -1124,7 +1115,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       chinese(
         "p",
         "study-intro",
-        "点击配图可查看对应国家、州、地区或大洲的资料。部分素材没有对应出题行；能否出题，以地点卡列出的玩法为准。",
+        "点击配图，查看对应国家、州、地区或大洲的资料。地点卡中也列出了可用的练习。",
       ),
       summary, grid, pager.bar,
     );
@@ -1217,7 +1208,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     const input = element("input");
     input.type = "search";
     input.placeholder = "Place, city, sight, clue… 地点、首都、城市、名胜或线索";
-    input.setAttribute("aria-label", "Search game and geography entries");
+    input.setAttribute("aria-label", "Search geography entries");
     input.value = query;
     const field = element("div", "search-bar wide");
     field.append(input);
@@ -1328,6 +1319,59 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       ).slice(0, count - 1),
     ]);
   }
+  function puzzleQuestion(target, progress) {
+    const rule = edition.extras.modeRules.find((r) => r.id === "BordersPuzzle");
+    const puzzle = createWorldPuzzle(target, [...puzzleTargets.values()], rule, edition.dimensions, {
+      place: (t) => byId.get(t.placeId),
+      imageOf: (t) => studyImage(byId.get(t.placeId), "puzzle"),
+      ipa, zh, mapPlate, action, shuffle, openEntry, onChange: saveStudy,
+    }, progress);
+    return puzzle && { key: "puzzle", puzzle };
+  }
+
+  function snapshotQuestion() {
+    if (!session) return null;
+    if (session.key === "puzzle")
+      return { key: session.key, puzzle: session.puzzle.snapshot() };
+    return {
+      ...session,
+      p: session.p.id,
+      choices: session.choices.map((place) => place.id),
+      other: session.other?.id,
+      target: session.target?.key,
+      souvenir: session.souvenir?.assetAddress,
+    };
+  }
+
+  function restoreQuestion(data) {
+    if (!data || !modes.includes(data.key) || (mode !== "tour" && mode !== data.key))
+      return null;
+    if (data.key === "puzzle") {
+      const target = puzzleTargets.get(data.puzzle?.target);
+      return target ? puzzleQuestion(target, data.puzzle) : null;
+    }
+    const p = byId.get(data.p);
+    if (!p || !Array.isArray(data.choices) || typeof data.title !== "string") return null;
+    const choices = data.choices.map((id) => byId.get(id));
+    if (choices.includes(undefined)) return null;
+    const q = { ...data, p, choices };
+    if (q.key === "pin") {
+      q.target = pinsByPlace.get(p.id)?.find((t) => t.key === data.target);
+      if (!q.target || (q.answered && !isMapPoint(q.point))) return null;
+    } else if (q.key === "passport") {
+      q.other = byId.get(data.other);
+      if (!q.other || !["Name", "Capital", "Flag", "Continent"].includes(q.which)) return null;
+    } else {
+      if (!choices.some((place) => place.id === q.correct)) return null;
+      if (q.key === "higher" && !Object.hasOwn(numberFields, q.field)) return null;
+      if (q.key === "souvenir") {
+        q.souvenir = souvenirs.get(p.gameId)?.find((item) => item.assetAddress === data.souvenir);
+        if (!q.souvenir) return null;
+      }
+    }
+    return q;
+  }
+
   function promptFor(chosenMode, preferred, comparison) {
     const key =
       chosenMode === "tour" ? modes[tourStep++ % modes.length] : chosenMode;
@@ -1336,13 +1380,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       const target = puzzleTargets.get(preferred) ||
         shuffle(pool).find((t) => t.placeId !== lastPrompt);
       lastPrompt = target.placeId;
-      const rule = edition.extras.modeRules.find((r) => r.id === "BordersPuzzle");
-      const puzzle = createWorldPuzzle(target, pool, rule, edition.dimensions, {
-        place: (t) => byId.get(t.placeId),
-        imageOf: (t) => studyImage(byId.get(t.placeId), "puzzle"),
-        ipa, zh, mapPlate, action, shuffle, openEntry,
-      });
-      return { key, puzzle };
+      return puzzleQuestion(target);
     }
     const eligible = edition.places.filter((p) =>
       p.modes.includes(lessons[key][3]),
@@ -1369,7 +1407,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       q.title = {
         area: "Which is larger?",
         population: "Which has more people?",
-        visits: "Which is more visited?",
+        visits: "Which has more visits in the exercise data?",
       }[field];
     } else if (key === "passport") {
       const which = shuffle(["Name", "Capital", "Flag", "Continent"])[0];
@@ -1395,7 +1433,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       q.title = {
         take: "Which place fits these three clues?",
         flag: "Find the flag of " + placeLabel(p),
-        souvenir: "Which shelf does this souvenir belong on?",
+        souvenir: "Which place is this souvenir associated with?",
         guess: "Which place has this outline?",
       }[key];
       if (key === "souvenir")
@@ -1414,7 +1452,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     const q = session;
     const section = element("div", "lesson-layout"),
       top = element("div", "lesson-top");
-    const modeField = element("label", "select-label", "Lesson · 选择玩法");
+    const modeField = element("label", "select-label", "Lesson · 选择题型");
     const picker = element("select");
     picker.id = "study-mode";
     for (const [key, [title, cn]] of Object.entries(lessons))
@@ -1426,10 +1464,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       session = promptFor(mode);
       goTab("practice");
     };
-    top.append(
-      modeField,
-      element("span", "version-stamp", "Xbox PC · " + edition.version),
-    );
+    top.append(modeField);
     const main = element("article", "prompt-card"),
       aside = element("aside", "lesson-context");
     function nextQuestion() {
@@ -1477,7 +1512,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         main.append(
           picture(
             src,
-            q.answered ? p.name : "Game illustration to identify",
+            q.answered ? p.name : "Illustration to identify",
             "prompt-art",
           ),
         );
@@ -1575,7 +1610,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
           "strong",
           "",
           q.key === "pin"
-            ? "Your pin and the game target"
+            ? "Your pin and the reference location"
             : q.answer === null
               ? "Answer · 查看答案"
               : q.answer === q.correct
@@ -1611,7 +1646,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       } else if (q.key === "pin") {
         const t = q.target;
         detail =
-          "红点是游戏目标，蓝点是你的落点。游戏使用左上角为原点的参考画布，这个目标落在 (" +
+          "红点是参考位置，蓝点是你的落点。以地图左上角为原点，参考位置的像素坐标为 (" +
           t.pixelX +
           ", " +
           t.pixelY +
@@ -1682,8 +1717,8 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         "p",
         "source-small",
         q.key === "puzzle"
-          ? "使用安装版拼块和落点。自由练习不限时，限时挑战累计每块的落点分。"
-          : "题目按安装版的对应表生成，选项由本教程组合。点击“游戏速查”可看每个地点的学习数据和来源。",
+          ? "自由练习不限时，限时挑战按每块拼图的落点累计得分。"
+          : "在“地理速查”中搜索题目里的地点，可以查看词卡、地图和参考来源。",
       ),
     );
     const rule = edition.extras?.modeRules.find(
@@ -1699,7 +1734,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
       parts.append(block);
       return block;
     }
-    const rules = disclosure("Game rules · 本版玩法与计分");
+    const rules = disclosure("Scoring reference · 题型与计分参考");
     for (const r of extras.modeRules) {
       const row = element("article", "study-note");
       row.append(
@@ -1741,18 +1776,18 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
         );
       rules.append(row);
     }
-    const ranks = disclosure("30 ranks · 段位名称与音标"),
+    const ranks = disclosure("30 levels · 等级名称与音标"),
       rankList = element("div", "rank-list");
     for (const r of extras.rankTiers)
       rankList.append(
         readout(r.position + ". " + r.title, "/" + r.ipa + "/", r.titleZh),
       );
     ranks.append(rankList);
-    const achievements = disclosure("Achievements · 本地成就与解锁条件");
+    const achievements = disclosure("Challenges · 挑战目标参考");
     for (const a of [...extras.achievements, ...extras.otherPlatformTrophies]) {
       const line = element("article", "study-note");
       line.append(
-        element("h4", "", a.title + " · " + a.gamerscore + "G"),
+        element("h4", "", a.title + " · " + a.gamerscore + " pts"),
         element("p", "", a.howTo || a.detail),
         chinese("p", "", a.detailZh),
       );
@@ -1787,7 +1822,7 @@ function createStudyDesk(edition, atlasPlaces, locate, helpers) {
     goTab("practice");
   }
   function initialize() {
-    if (location.hash === "#world-puzzle") openPuzzle();
+    if (location.hash === "#world-puzzle" && !(tab === "practice" && mode === "puzzle" && session)) openPuzzle();
     else goTab(tab);
     if (tab === "lookup" && location.hash === "#guide" && Number.isFinite(saved.scrollY)) {
       window.addEventListener(

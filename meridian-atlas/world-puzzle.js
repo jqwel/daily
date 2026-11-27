@@ -6,6 +6,11 @@ function positionOnGameMap(marker, point) {
   marker.style.top = point.y * 100 + "%";
 }
 
+function isMapPoint(point) {
+  return Number.isFinite(point?.x) && point.x >= 0 && point.x <= 1 &&
+    Number.isFinite(point.y) && point.y >= 0 && point.y <= 1;
+}
+
 function enableMapPlacement(board, cursor, label, submit, dragHandle) {
   const image = board.querySelector(".game-map-image");
   let point = { x: 0.5, y: 0.5 };
@@ -88,7 +93,8 @@ function createWorldPuzzle(
   pool,
   rule,
   dimensions,
-  { place, imageOf, ipa, zh, mapPlate, action, shuffle, openEntry },
+  { place, imageOf, ipa, zh, mapPlate, action, shuffle, openEntry, onChange },
+  saved,
 ) {
   const [mapWidth, mapHeight] = dimensions;
   // BordersPuzzleGameConfig uses 100 reference pixels per world unit.
@@ -97,12 +103,41 @@ function createWorldPuzzle(
   let target = first,
     result = null,
     ticker;
-  let deck = shuffle(pool.filter((piece) => piece !== first));
+  let deck;
   let placed = [],
     total = 0,
     attempts = 0,
     deadline = null,
     finished = false;
+
+  if (saved) {
+    const pieces = new Map(pool.map((piece) => [piece.placeId, piece]));
+    if (!Array.isArray(saved.deck) || !Array.isArray(saved.placed) ||
+        !Number.isSafeInteger(saved.total) || saved.total < 0 ||
+        !Number.isSafeInteger(saved.attempts) || saved.attempts < 0 ||
+        (saved.deadline !== null && !Number.isSafeInteger(saved.deadline)) ||
+        (saved.point !== null && !isMapPoint(saved.point))) return null;
+    deck = saved.deck.map((id) => pieces.get(id));
+    placed = saved.placed.map((id) => pieces.get(id));
+    if (deck.includes(undefined) || placed.includes(undefined)) return null;
+    total = saved.total;
+    attempts = saved.attempts;
+    deadline = saved.deadline;
+    finished = saved.finished === true;
+    result = saved.point && placement(saved.point);
+  } else {
+    deck = shuffle(pool.filter((piece) => piece !== first));
+  }
+
+  function snapshot() {
+    return {
+      target: target.placeId,
+      deck: deck.map((piece) => piece.placeId),
+      placed: placed.map((piece) => piece.placeId),
+      point: result?.point ?? null,
+      total, attempts, deadline, finished,
+    };
+  }
 
   function placement(point) {
     const error =
@@ -142,12 +177,15 @@ function createWorldPuzzle(
   function render(main, nextQuestion, standalone) {
     clearInterval(ticker);
     main.replaceChildren();
-    const expired = () => deadline !== null && performance.now() >= deadline;
-    const redraw = () => render(main, nextQuestion, standalone);
+    const expired = () => deadline !== null && Date.now() >= deadline;
+    const redraw = () => {
+      onChange();
+      render(main, nextQuestion, standalone);
+    };
     const startRound = () => {
       deck = shuffle(pool);
       target = deck.pop();
-      deadline = performance.now() + rule.roundSeconds * 1000;
+      deadline = Date.now() + rule.roundSeconds * 1000;
       placed = [];
       total = attempts = 0;
       finished = false;
@@ -183,7 +221,7 @@ function createWorldPuzzle(
       function updateClock() {
         const seconds = Math.max(
           0,
-          Math.ceil((deadline - performance.now()) / 1000),
+          Math.ceil((deadline - Date.now()) / 1000),
         );
         clock.textContent =
           Math.floor(seconds / 60) +
@@ -299,5 +337,5 @@ function createWorldPuzzle(
       );
     main.append(actions);
   }
-  return { render };
+  return { render, snapshot };
 }

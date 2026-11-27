@@ -576,7 +576,7 @@ function showPage(page) {
   }
   document.title =
     "Meridian — " +
-    { explorer: "World atlas", index: "Place index", guide: "Game guide" }[
+    { explorer: "World atlas", index: "Place index", guide: "Study guide" }[
       currentPage
     ];
   if (currentPage === "index") renderIndex();
@@ -776,7 +776,7 @@ function renderDetail(p) {
     const pinButton = element(
       "button",
       "detail-action",
-      "Game pin · 查看游戏落点",
+      "Map pin · 查看练习落点",
     );
     pinButton.onclick = () => study.showPinDialog(p.target, parent);
     box.append(pinButton);
@@ -925,7 +925,7 @@ function renderIndex() {
     const go = element(
       "button",
       "detail-action",
-      local ? "Game card" : "Atlas card",
+      local ? "Study card" : "Atlas card",
     );
     go.onclick = () => study.openEntry(p.id);
     lesson.append(go);
@@ -952,17 +952,17 @@ function drawCards() {
   const cards = [
     {
       id: "state-area",
-      mode: "Higher or Lower",
+      mode: "Compare Places",
       name: "California or Florida?",
       art: "area",
     },
     {
       id: "japan-flag",
-      mode: "Match the Flag",
+      mode: "Flag Quiz",
       name: "Recognize Japan",
       art: "flag",
     },
-    { id: "seoul-pin", mode: "Pin It", name: "Locate Seoul", art: "pin" },
+    { id: "seoul-pin", mode: "Map Pins", name: "Locate Seoul", art: "pin" },
   ];
   for (const card of cards) {
     const button = element("button", "clue-card"),

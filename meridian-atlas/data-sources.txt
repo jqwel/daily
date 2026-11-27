@@ -1,5 +1,5 @@
 Meridian Atlas — reference geography
-Snapshot assembled on 24 November 2026. Installed-edition records are in geo-book-1.0.8.0.json. Publicly documented examples are in game-guide.json.
+Snapshot assembled on 24 November 2026. The study guide offers a JSON download of the lesson data. Additional source examples are archived in game-guide.json.
 
 Names, places and units
 World records include countries, dependencies and other mapped regions. Names, aliases, representative coordinates, areas and administrative centres are adapted from world-countries 5.1.0 by Mohammed Le Doze and contributors. The adapted geographical database is available under ODbL 1.0. Place coordinates are representative points for the region. Areas are given in square kilometres.
@@ -7,7 +7,7 @@ https://github.com/mledoze/countries
 https://opendatacommons.org/licenses/odbl/1-0/
 
 Names and administrative updates
-Naoero is the atlas and study headword. Nauru remains a search alias and the spelling in the original game files. Equatorial Guinea moved its capital to Ciudad de la Paz in January 2026. Sri Lanka's administrative capital is Sri Jayawardenepura Kotte. The Svalbard and Jan Mayen area figure is the sum of Statistics Norway's 2026 land and fresh water areas.
+Naoero is the atlas and study headword. Nauru remains a search alias and the spelling in the source records. Equatorial Guinea moved its capital to Ciudad de la Paz in January 2026. Sri Lanka's administrative capital is Sri Jayawardenepura Kotte. The Svalbard and Jan Mayen area figure is the sum of Statistics Norway's 2026 land and fresh water areas.
 https://www.un.org/en/about-us/member-states/naoero
 The World Bank lists Naoeroan as the adjective. TERMIUM Plus lists dei-Naoero for an inhabitant. These two forms use approximate American readings. The atlas headword follows the General American entry for Naoero. Nauruan is also called Dorerin Naoero. English is widely used in government and commerce.
 https://documents1.worldbank.org/curated/en/099720507152616659/pdf/IDU-e682d79d-410a-4dc5-85b1-f0e61bda3d98.pdf
@@ -32,7 +32,7 @@ https://abs.gov.au/census/find-census-data/quickstats/2021/90104
 https://creativecommons.org/licenses/by/4.0/
 
 Chinese answer explanations
-The game supplies the clue assignments, souvenir artwork and shelf matches. The study companion supplies the Chinese explanations. The download includes one note per place and clue key under education.clueReasons and a teachingNote on each souvenirDescriptions record. linkedInSouvenirSort identifies artwork that the installed shelf exercise actually uses.
+The Chinese notes explain how each clue and souvenir relates to its assigned place. The download includes one note per place and clue key under education.clueReasons and a teachingNote on each souvenirDescriptions record. The linkedInSouvenirSort field identifies the illustrations used in the matching exercise.
 https://www.cafonline.com/afcon2025/news/totalenergies-caf-afcon-morocco-2025-know-your-team-cameroon/
 https://www.okhistory.org/publications/enc/entry.php?entry=so010
 https://www.okhistory.org/learn/latino2
@@ -147,13 +147,13 @@ The National Park Service provides each added site's published name, location an
 https://www.nps.gov/findapark/index.htm
 https://www.nps.gov/subjects/developer/index.htm
 
-Installed game and bilingual lessons
-The local Xbox PC installation of Geo Book 1.0.8.0 supplies its mode tables, English localization, original game-map coordinates and learning illustrations. Original artwork and game strings belong to their respective owners. In the JSON export, nativeContent retains the original production fields. The education section supplies independently written Chinese study notes, American English IPA and selected sources. Unused artwork is identified separately from playable questions. The game has no flag artwork for its Taiwan or French Guiana record.
+Bilingual lessons and illustration credits
+The original lesson illustrations, English source text, exercise tables and map coordinates come from Geo Book 1.0.8.0. Original text and artwork belong to their respective owners. The JSON download preserves the source fields under nativeContent. The education section contains independently written Chinese notes, American English IPA and selected sources. The catalogue also identifies unused illustrations. The source set lacks flags for Taiwan and French Guiana.
 https://www.xbox.com/zh-CN/games/store/geo-book/9pbcspvh57n2
 https://www.xbox.com/zh-CN/games/store/geo-book-scholar-edition/9p1gqx08j2p8
 
 City locations and geography lessons
-Real-world city points are matched to Natural Earth Populated Places. The game pin diagrams use the game's own map coordinate system. Game associations can include a shared international landmark. Chinese place names use CLDR and Wikimedia labels, reviewed against the game spelling. Per-place cultural sources, where supplied, are in the study card and JSON. U.S. state game area and population cross-checks cite the Census sources in Fact checks.
+Real-world city points are matched to Natural Earth Populated Places. The pin diagrams use a separate reference grid. Some landmarks span national borders. Chinese place names use CLDR and Wikimedia labels, checked against the English source names. Study cards and the JSON download include cultural sources where available. Fact checks cite Census sources for U.S. state area and population comparisons.
 https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/
 https://cldr.unicode.org/
 https://www.wikidata.org/
@@ -166,13 +166,13 @@ https://d3js.org/d3-geo
 https://www.internationalphoneticassociation.org/content/ipa-chart
 
 Destination clue illustrations
-TakeMeSomewhereContentAsset links each of the three clue slots to an English localization key. Its PeopleAtlas contains character portraits. The inline study illustrations are editorial pairings, shared by the map sidebar, Lookup and the three-clue lesson. Geo Book flags, souvenirs and stickers illustrate matching subjects. Supplemental photographs and artwork come from Wikimedia Commons. Open a thumbnail for its creator, source file and license. The local WebP copies are resized and re-encoded. Educational diagrams are by Meridian Atlas. Vocabulary pictograms arrange Twemoji graphics by Twitter, Inc. and other contributors under CC BY 4.0. Per-word credits and image paths are also included in the JSON download under education.vocabulary.glossary.
+Each destination clue links to an English vocabulary entry. The map sidebar, Lookup and three-clue lesson use the same editorial image pairings. Flags, souvenirs and stickers illustrate matching subjects. Supplemental photographs and artwork come from Wikimedia Commons. Open a thumbnail for its creator, source file and license. The local WebP copies are resized and re-encoded. Educational diagrams are by Meridian Atlas. Vocabulary pictograms arrange Twemoji graphics by Twitter, Inc. and other contributors under CC BY 4.0. Per-word credits and image paths are also included in the JSON download under education.vocabulary.glossary.
 https://commons.wikimedia.org/
 https://github.com/jdecked/twemoji
 https://creativecommons.org/licenses/by/4.0/
 
 Pin It city and landmark images
-The game pin cards show local WebP images of the target cities and landmarks. Click a picture for its source file, creator and license. Photos from Wikimedia Commons are resized and re-encoded. The JSON download includes these credits under education.capitalLessons and education.landmarks.
+Map pin cards show local WebP images of the target cities and landmarks. Click a picture for its source file, creator and license. Photos from Wikimedia Commons are resized and re-encoded. The JSON download includes these credits under education.capitalLessons and education.landmarks.
 https://commons.wikimedia.org/
 
 Place names, area and vocabulary
@@ -183,7 +183,7 @@ https://our-languages.canada.ca/en/writing-tips-plus/inuk-inuit
 https://pe.usps.com/text/pub28/28apb.htm
 
 Political geography (checked 2026-11-25)
-Atlas entries distinguish administrative relationships, self-government and unresolved sovereignty claims. These descriptions are independent of the game's regional assignments.
+Atlas entries distinguish administrative relationships, self-government and unresolved sovereignty claims. These descriptions are independent of the regional groupings used in exercises.
 France and its overseas jurisdictions:
 https://www.vie-publique.fr/files/collection_number/portrait/photo/9782111455788.pdf
 https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000052092591/2026-04-08
@@ -214,7 +214,7 @@ Further geography in lookup entries
 Cities are an editorial selection of regional centres outside the corresponding national, territorial or U.S. state capital. Natural Earth supplies place names and GeoNames identifiers. Each city links to its gazetteer record.
 https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/
 https://www.geonames.org/
-Scenic and cultural sites supplement the edition's named landmarks and clues. UNESCO World Heritage properties link to their catalogue records. Other sights link to the responsible tourism authority. Overseas properties appear under their local atlas entry.
+Scenic and cultural sites supplement the landmarks and clues in the exercises. UNESCO World Heritage properties link to their catalogue records. Other sights link to the responsible tourism authority. Overseas properties appear under their local atlas entry.
 https://whc.unesco.org/en/list/
 https://www.discoverhongkong.com/eng/place-to-go/travel.guide-the-peak.html
 https://www.sunmoonlake.gov.tw/en/guides/ArticlesFull?a=32
@@ -231,10 +231,10 @@ https://whc.unesco.org/en/documents/175097/
 https://www.flickr.com/photos/javier_losa/3522741729/
 https://whc.unesco.org/en/licenses/13
 
-The offline Chinese introductions describe the places themselves. City entries link to further reading about the individual city. Supplementary heritage entries link to their World Heritage Centre listing or the local visitor authority. Game-specific hints are kept separately from the place descriptions.
+The offline Chinese introductions describe the places themselves. City entries link to further reading about the individual city. Supplementary heritage entries link to their World Heritage Centre listing or the local visitor authority. Exercise hints are kept separately from the place descriptions.
 https://data.unesco.org/explore/dataset/whc001/
 
-The interactive atlas projects longitude and latitude, stored as [longitude, latitude]. Game-map pixels remain in the original Pin It diagrams. Each new game landmark coordinate and the Yaren and Ngerulmud coordinates carry a coordSource link in the education data. A park, lagoon, trail or group of monuments is marked by a representative site.
+The interactive atlas projects longitude and latitude, stored as [longitude, latitude]. Map pin diagrams use pixel coordinates on their own reference grid. Each new landmark coordinate and the Yaren and Ngerulmud coordinates carry a coordSource link in the education data. A park, lagoon, trail or group of monuments is marked by a representative site.
 Supplementary cities use their linked GeoNames records (CC BY 4.0). World Heritage sites use the representative geographical point from UNESCO's whc001 catalogue, including for serial properties. Other supplementary sights have an individual coordSource.
 https://www.geonames.org/export/
 https://data.unesco.org/explore/dataset/whc001/

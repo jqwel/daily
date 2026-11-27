@@ -3,11 +3,11 @@
   "platform": "Xbox PC",
   "captured": "2026-11-24",
   "notes": [
-    "The game stores parent identifiers such as australia. Oceania is the corresponding English geography label.",
+    "The source records use parent identifiers such as australia. Oceania is the corresponding English geography label.",
     "Area is measured in square kilometres. When Higher or Lower omits a place, its area may be sourced from Guess the Country or World Puzzle. Check areaSource and higherOrLowerEligible.",
     "Population and visits are the exact integers in HigherOrLowerContent. The asset does not specify a reference year or a definition of visits.",
-    "A missing field or source means that the corresponding game asset supplied no value for that place.",
-    "Study records use Argentina, a Vatican City area of 0.44 km², and the forms Inuk (singular) and Inuit (plural). nativeContent, englishTables, localizedNameRaw and the per-mode records preserve the original game data."
+    "A missing field or source means that the source record supplied no value for that place.",
+    "Study records use Argentina, a Vatican City area of 0.44 km², and the forms Inuk (singular) and Inuit (plural). nativeContent, englishTables, localizedNameRaw and the per-mode records preserve the original source data."
   ],
   "sources": {
     "takeMeSomewhere": {
@@ -80627,9 +80627,9 @@
       "placeKey": "CountryBelgium",
       "placeName": "Belgium",
       "image": "assets/game/souvenir/011_belgium_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "格子是辨认华夫饼的线索，由两面带凸纹的烤模压出。布鲁塞尔和列日各有传统做法，所以游戏把这块饼放到比利时。"
+      "teachingNote": "格子是辨认华夫饼的线索，由两面带凸纹的烤模压出。布鲁塞尔和列日各有传统做法，这块饼可以让人联想到比利时。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/011_Belgium2_souvenir.png",
@@ -80641,7 +80641,7 @@
       "placeKey": "CountryBelgium",
       "placeName": "Belgium",
       "image": "assets/game/souvenir/011_belgium2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "礼盒中不同外形的小块提示什锦巧克力。比利时以 praline 等夹心巧克力著称，和本国另一件格纹华夫饼可以分开记。"
     },
@@ -80655,7 +80655,7 @@
       "placeKey": "CountryFrance",
       "placeName": "France",
       "image": "assets/game/souvenir/021_france_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "先看扁圆软帽顶和没有帽檐的轮廓。贝雷帽在法国西南部有制作传统，后来也常用来表现法国形象。"
     },
@@ -80669,7 +80669,7 @@
       "placeKey": "CountryFrance",
       "placeName": "France",
       "image": "assets/game/souvenir/021_france2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "看塔身由四条向外张开的塔脚支撑。原塔位于法国巴黎塞纳河畔，缩小做成模型便成了纪念品。"
     },
@@ -80683,9 +80683,9 @@
       "placeKey": "CountryGreece",
       "placeName": "Greece",
       "image": "assets/game/souvenir/022_greece_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "盔顶的长缨和包住脸颊的护片让人联想到古希腊武士的头盔。游戏借古代历史来提示今天的希腊。"
+      "teachingNote": "盔顶的长缨和包住脸颊的护片让人联想到古希腊武士的头盔。这件纪念品以古代历史为线索，指向今天的希腊。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/022_greece2_souvenir.png",
@@ -80697,7 +80697,7 @@
       "placeKey": "CountryGreece",
       "placeName": "Greece",
       "image": "assets/game/souvenir/022_greece2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "两张面具一喜一悲，对应喜剧与悲剧。古希腊戏剧演员在露天剧场使用面具，这也是今天戏剧标志的由来。"
     },
@@ -80711,7 +80711,7 @@
       "placeKey": "CountryNetherlands",
       "placeName": "Netherlands",
       "image": "assets/game/souvenir/024_netherlands_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看整只鞋由木头挖成，鞋头上翘。这种荷兰传统木鞋称为 klompen，曾是农活等劳动时穿的鞋。"
     },
@@ -80725,7 +80725,7 @@
       "placeKey": "CountryNetherlands",
       "placeName": "Netherlands",
       "image": "assets/game/souvenir/024_netherlands2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "图中不仅有花，还有可栽种的球茎。荷兰以郁金香栽培和球根贸易闻名，球茎因此很适合作为园艺纪念品。"
     },
@@ -80739,7 +80739,7 @@
       "placeKey": "CountryIceland",
       "placeName": "Iceland",
       "image": "assets/game/souvenir/026_iceland_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "黑白身体配上粗厚的彩色嘴，是大西洋海鹦。它们会到冰岛沿海岛屿与悬崖繁殖，比企鹅更符合这里的海域。"
     },
@@ -80753,7 +80753,7 @@
       "placeKey": "CountryIceland",
       "placeName": "Iceland",
       "image": "assets/game/souvenir/026_iceland2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "skyr 是冰岛有代表性的浓稠发酵乳制品。看到类似酸奶的食物时，包装或名称上的 skyr 比白色外观更有辨识度。"
     },
@@ -80767,7 +80767,7 @@
       "placeKey": "CountryMalta",
       "placeName": "Malta",
       "image": "assets/game/souvenir/032_malta_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看鲜艳的彩色船身和高高翘起的船头。马耳他传统渔船 luzzu 常在船头画一双眼睛，海港里能看到实船。"
     },
@@ -80781,7 +80781,7 @@
       "placeKey": "CountryMalta",
       "placeName": "Malta",
       "image": "assets/game/souvenir/032_malta2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "观察瓶身交错的彩色旋纹。马耳他有艺术玻璃制作与吹制工坊，游客可买到这类花瓶；花纹本身不足以认定某家工坊。"
     },
@@ -80795,7 +80795,7 @@
       "placeKey": "CountryGermany",
       "placeName": "Germany",
       "image": "assets/game/souvenir/035_germany_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "面团的两端交叉再折回，形成带孔的结。巴伐利亚啤酒馆常见这种碱水面包，是德国的饮食线索。"
     },
@@ -80809,9 +80809,9 @@
       "placeKey": "CountryGermany",
       "placeName": "Germany",
       "image": "assets/game/souvenir/035_germany2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "长条形烤肠可联想到德国各地的 Bratwurst，街头摊位和节庆餐桌都常见。邻国也吃香肠，游戏配对取的是这种饮食联想。"
+      "teachingNote": "长条形烤肠可联想到德国各地的 Bratwurst，街头摊位和节庆餐桌都常见。邻国也吃香肠，这道配对题取的是这种饮食联想。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/037_Poland_souvenir.png",
@@ -80823,7 +80823,7 @@
       "placeKey": "CountryPoland",
       "placeName": "Poland",
       "image": "assets/game/souvenir/037_poland_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看半月形面皮和捏合的边，里面可以包马铃薯、奶酪或肉。它是波兰常见的 pierogi，不必因为像中式饺子就选中国。"
     },
@@ -80837,9 +80837,9 @@
       "placeKey": "CountryPoland",
       "placeName": "Poland",
       "image": "assets/game/souvenir/037_poland2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "塔楼和城墙提示这是城堡模型。波兰有马尔堡等中世纪城堡；游戏把素材归在波兰，单凭这幅图难以确定是哪一座。"
+      "teachingNote": "塔楼和城墙提示这是城堡模型。波兰有马尔堡等中世纪城堡；这幅插图与波兰配对，单凭这幅图难以确定是哪一座。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/038_Portugal_souvenir.png",
@@ -80851,7 +80851,7 @@
       "placeKey": "CountryPortugal",
       "placeName": "Portugal",
       "image": "assets/game/souvenir/038_portugal_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "蓝白纹样画在一块方砖上。葡萄牙的 azulejos 常铺成大片墙面，把图案从单块砖想象到里斯本的建筑就容易记。"
     },
@@ -80865,7 +80865,7 @@
       "placeKey": "CountryPortugal",
       "placeName": "Portugal",
       "image": "assets/game/souvenir/038_portugal2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "看酥皮小杯和表面烤出焦斑的蛋奶馅。葡萄牙的 pastel de nata 就是这种蛋挞，里斯本的贝伦尤其有名。"
     },
@@ -80879,7 +80879,7 @@
       "placeKey": "CountryRussia",
       "placeName": "Russia",
       "image": "assets/game/souvenir/039_russia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "木娃娃可以从腰间打开，大的里面套着小的。这种俄罗斯工艺品称为 matryoshka。"
     },
@@ -80893,7 +80893,7 @@
       "placeKey": "CountryRussia",
       "placeName": "Russia",
       "image": "assets/game/souvenir/039_russia2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "帽子两侧有可以放下来保暖的护耳，俄语称这类帽子为 ushanka。寒冷地区不止一处有毛帽，看护耳更好记。"
     },
@@ -80907,7 +80907,7 @@
       "placeKey": "CountrySlovenia",
       "placeName": "Slovenia",
       "image": "assets/game/souvenir/044_slovenia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看张开的翅膀和像爬行动物的身形。龙是斯洛文尼亚首都卢布尔雅那的城市象征，龙桥的桥头就有类似雕像。"
     },
@@ -80921,7 +80921,7 @@
       "placeKey": "CountrySwitzerland",
       "placeName": "Switzerland",
       "image": "assets/game/souvenir/045_switzerland_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "小工具能一件件折进同一个手柄，是瑞士军刀的特点。它原本面向军人使用，后来成为旅行用多功能工具。"
     },
@@ -80935,7 +80935,7 @@
       "placeKey": "CountrySwitzerland",
       "placeName": "Switzerland",
       "image": "assets/game/souvenir/045_switzerland2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "锅里是融化的奶酪，用长叉把面包块蘸着吃，这是瑞士传统奶酪火锅 fondue。看见叉和公用锅就能理解配对。"
     },
@@ -80949,7 +80949,7 @@
       "placeKey": "CountrySweden",
       "placeName": "Sweden",
       "image": "assets/game/souvenir/046_sweden_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "达拉木马源自瑞典达拉纳地区。木马身上通常画有鲜艳花纹，小型彩绘木马便于带走，逐渐成为瑞典纪念品。"
     },
@@ -80963,7 +80963,7 @@
       "placeKey": "CountrySweden",
       "placeName": "Sweden",
       "image": "assets/game/souvenir/046_sweden2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "瑞典餐桌常把小肉丸配土豆、酱汁和越橘酱。世界各地都有肉丸，这里要记的是一种瑞典吃法。"
     },
@@ -80977,7 +80977,7 @@
       "placeKey": "CountryUnitedKingdom",
       "placeName": "United Kingdom",
       "image": "assets/game/souvenir/051_unitedkingdom_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "数一数有上下两排车窗。伦敦街头的红色双层巴士是英国交通的视觉标志，看到车身颜色和层数就能联想到伦敦。"
     },
@@ -80991,7 +80991,7 @@
       "placeKey": "CountryUnitedKingdom",
       "placeName": "United Kingdom",
       "image": "assets/game/souvenir/051_unitedkingdom_souvenirsort.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "这张图是伦敦红色双层巴士的另一种画法。上下两层载客车厢与红色车身指向同一个英国街景。"
     },
@@ -81005,9 +81005,9 @@
       "placeKey": "CountryUnitedKingdom",
       "placeName": "United Kingdom",
       "image": "assets/game/souvenir/051_unitedkingdom2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "可从高塔上部的大钟面辨认伦敦议会大厦旁的伊丽莎白塔。Big Ben 严格说是塔里的大钟，游戏画的是钟楼。"
+      "teachingNote": "可从高塔上部的大钟面辨认伦敦议会大厦旁的伊丽莎白塔。Big Ben 严格说是塔里的大钟，图中画的是钟楼。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/052_Italian-Republic_souvenir.png",
@@ -81019,7 +81019,7 @@
       "placeKey": "CountryItalianRepublic",
       "placeName": "Italian Republic",
       "image": "assets/game/souvenir/052_italian-republic_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "长条面上浇番茄酱，提示意大利餐桌上的 spaghetti。看长面条的形状，可与意大利的另一件圆形披萨区分。"
     },
@@ -81033,7 +81033,7 @@
       "placeKey": "CountryItalianRepublic",
       "placeName": "Italian Republic",
       "image": "assets/game/souvenir/052_italian-republic2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "圆面饼上铺馅再高温烘烤，意大利那不勒斯与传统披萨制作紧密相连。"
     },
@@ -81047,7 +81047,7 @@
       "placeKey": "CountryCanada",
       "placeName": "Canada",
       "image": "assets/game/souvenir/054_canada_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "糖浆来自枫树。加拿大东部地区早春采集枫树汁，将水分蒸发浓缩成糖浆，魁北克尤其著名。"
     },
@@ -81061,7 +81061,7 @@
       "placeKey": "CountryCanada",
       "placeName": "Canada",
       "image": "assets/game/souvenir/054_canada2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "图里的薯条配有奶酪凝块，再浇上热肉汁。这三样合在一起就是起源于加拿大魁北克的 poutine。"
     },
@@ -81075,7 +81075,7 @@
       "placeKey": "CountryBrazil",
       "placeName": "Brazil",
       "image": "assets/game/souvenir/055_brazil_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "张开双臂的人像对应里约热内卢的基督像。原像矗立在科尔科瓦多山上，是巴西可以直接定位的地标。"
     },
@@ -81089,7 +81089,7 @@
       "placeKey": "CountryBrazil",
       "placeName": "Brazil",
       "image": "assets/game/souvenir/055_brazil2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "羽毛头饰提示节庆装束。巴西里约狂欢节的桑巴学校巡游中，舞者会穿着专门设计的演出服。"
     },
@@ -81103,7 +81103,7 @@
       "placeKey": "CountryArgentine",
       "placeName": "Argentina",
       "image": "assets/game/souvenir/056_argentina_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "杯里伸出的金属管末端带滤网，用来滤掉马黛茶叶。阿根廷有共饮热马黛茶的习惯，邻近的乌拉圭、巴拉圭也喝。"
     },
@@ -81117,7 +81117,7 @@
       "placeKey": "CountryArgentine",
       "placeName": "Argentina",
       "image": "assets/game/souvenir/056_argentina2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "成双的舞鞋提示双人探戈。阿根廷首都布宜诺斯艾利斯和邻国蒙得维的亚都参与了这种舞乐的发展。"
     },
@@ -81131,7 +81131,7 @@
       "placeKey": "CountryVenezuela",
       "placeName": "Venezuela",
       "image": "assets/game/souvenir/058_venezuela_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "图中的小型拨弦琴可联系委内瑞拉的 cuatro，外形似小吉他，常为当地音乐伴奏。"
     },
@@ -81145,7 +81145,7 @@
       "placeKey": "CountryVenezuela",
       "placeName": "Venezuela",
       "image": "assets/game/souvenir/058_venezuela2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "高崖上直落的水流呼应委内瑞拉的安赫尔瀑布。模型给的是地貌联想，素材名称没有确认具体瀑布。"
     },
@@ -81159,9 +81159,9 @@
       "placeKey": "CountryChile",
       "placeName": "Chile",
       "image": "assets/game/souvenir/059_chile_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "长脸、长鼻的石像是拉帕努伊人的摩艾。拉帕努伊岛离南美大陆很远，但行政上属于智利，因此在智利货架上找它。"
+      "teachingNote": "长脸、长鼻的石像是拉帕努伊人的摩艾。拉帕努伊岛离南美大陆很远，但行政上属于智利，因此它与智利配对。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/059_Chile2_souvenir.png",
@@ -81173,9 +81173,9 @@
       "placeKey": "CountryChile",
       "placeName": "Chile",
       "image": "assets/game/souvenir/059_chile2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "看卷成细筒的薄脆饼和巧克力外层，可联想智利的筒形点心 cuchuflí。类似甜点在别处也有，这一幅按游戏素材记为智利。"
+      "teachingNote": "看卷成细筒的薄脆饼和巧克力外层，可联想智利的筒形点心 cuchuflí。类似甜点在别处也有，本题的插图与智利配对。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/064_Madagascar_souvenir.png",
@@ -81187,7 +81187,7 @@
       "placeKey": "CountryMadagascar",
       "placeName": "Madagascar",
       "image": "assets/game/souvenir/064_madagascar_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "尾巴上黑白相间的圆环能辨认环尾狐猴。野生环尾狐猴原产马达加斯加，因此用动物本身就能判断。"
     },
@@ -81201,7 +81201,7 @@
       "placeKey": "CountryMadagascar",
       "placeName": "Madagascar",
       "image": "assets/game/souvenir/064_madagascar2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "树干粗得像柱子，枝条集中在顶端。马达加斯加西部有著名的猴面包树大道，可以把树和具体地点连起来。"
     },
@@ -81215,7 +81215,7 @@
       "placeKey": "CountryAustralia",
       "placeName": "Australia",
       "image": "assets/game/souvenir/069_australia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "大耳朵、黑鼻子和抱树的姿势是考拉的特征。考拉原产澳大利亚，食物主要是桉树叶。"
     },
@@ -81229,7 +81229,7 @@
       "placeKey": "CountryAustralia",
       "placeName": "Australia",
       "image": "assets/game/souvenir/069_australia2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "弯曲的木制投掷工具与澳大利亚原住民的传统相联。回旋镖形制很多，只有一部分设计为掷出后返回。"
     },
@@ -81243,9 +81243,9 @@
       "placeKey": "CountryEgypt",
       "placeName": "Egypt",
       "image": "assets/game/souvenir/070_egypt_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "几何形的尖顶陵墓提示古埃及法老；吉萨金字塔群在今天的埃及。苏丹也有金字塔，游戏借的是吉萨形象。"
+      "teachingNote": "几何形的尖顶陵墓提示古埃及法老；吉萨金字塔群在今天的埃及。苏丹也有金字塔，这幅插图取材于吉萨。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/070_egypt2_souvenir.png",
@@ -81257,7 +81257,7 @@
       "placeKey": "CountryEgypt",
       "placeName": "Egypt",
       "image": "assets/game/souvenir/070_egypt2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "十字形上端多一个封闭圆环，是 ankh。这个古埃及符号表示“生命”，常出现在神祇手中。"
     },
@@ -81271,7 +81271,7 @@
       "placeKey": "CountryJapan",
       "placeName": "Japan",
       "image": "assets/game/souvenir/072_japan_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "猫抬起一只前爪作招手状，这是日本的 maneki-neko。店铺摆招财猫有招来客人、好运的含义。"
     },
@@ -81285,7 +81285,7 @@
       "placeKey": "CountryJapan",
       "placeName": "Japan",
       "image": "assets/game/souvenir/072_japan2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "小团调味醋饭配鱼肉或海苔等食材，是日本的寿司。决定词义的是醋饭，不要求一定配生鱼。"
     },
@@ -81299,7 +81299,7 @@
       "placeKey": "CountryPhilippines",
       "placeName": "Philippines",
       "image": "assets/game/souvenir/075_philippines_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "车头像吉普、后部是加长客厢，外观常有彩绘。菲律宾的 jeepney 与战后改装吉普车载客的历史相联。"
     },
@@ -81313,7 +81313,7 @@
       "placeKey": "CountryPhilippines",
       "placeName": "Philippines",
       "image": "assets/game/souvenir/075_philippines2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "这件有刺绣的轻薄衬衫可联想到菲律宾的 barong Tagalog，正式场合常穿在裤腰外面。"
     },
@@ -81327,9 +81327,9 @@
       "placeKey": "CountrySouthKorea",
       "placeName": "South Korea",
       "image": "assets/game/souvenir/077_southkorea_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "白菜、萝卜等经调味腌制发酵，便成为 kimchi。它是朝鲜半岛共享的饮食传统，这一版游戏把这件图配给韩国。"
+      "teachingNote": "白菜、萝卜等经调味腌制发酵，便成为 kimchi。它是朝鲜半岛共享的饮食传统，本题中的插图与韩国配对。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/077_southkorea2_souvenir.png",
@@ -81341,9 +81341,9 @@
       "placeKey": "CountrySouthKorea",
       "placeName": "South Korea",
       "image": "assets/game/souvenir/077_southkorea2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "韩服可从短上衣与长裙等组合辨认，是朝鲜半岛传统服装。游戏在韩国货架使用这幅图。"
+      "teachingNote": "韩服可从短上衣与长裙等组合辨认，是朝鲜半岛传统服装。本题中的插图与韩国配对。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/082_armenia_souvenir.png",
@@ -81355,7 +81355,7 @@
       "placeKey": "CountryArmenia",
       "placeName": "Armenia",
       "image": "assets/game/souvenir/082_armenia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看石碑中央突出的十字和周围雕花。这类亚美尼亚纪念石称 khachkar，十字石雕是当地的重要工艺传统。"
     },
@@ -81369,7 +81369,7 @@
       "placeKey": "CountryArmenia",
       "placeName": "Armenia",
       "image": "assets/game/souvenir/082_armenia2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "这支簧管可联想到亚美尼亚的 duduk，传统上常用杏木制作，吹奏时由簧片振动发声。"
     },
@@ -81383,7 +81383,7 @@
       "placeKey": "CountryBangladesh",
       "placeName": "Bangladesh",
       "image": "assets/game/souvenir/086_bangladesh_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "前方自行车、后方乘客座椅是脚踏三轮车的轮廓。达卡以这种人力交通工具及彩绘车身闻名。"
     },
@@ -81397,7 +81397,7 @@
       "placeKey": "CountryBangladesh",
       "placeName": "Bangladesh",
       "image": "assets/game/souvenir/086_bangladesh2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "孟加拉国河网密集，鱼在日常饮食中很重要。图中银色鱼可作饮食提示，画面不足以确定鱼种。"
     },
@@ -81411,7 +81411,7 @@
       "placeKey": "CountryBhutan",
       "placeName": "Bhutan",
       "image": "assets/game/souvenir/090_bhutan_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "色彩鲜艳、五官夸张的面具可联系不丹宗教节庆上的面具舞，舞者用面具表现不同角色。"
     },
@@ -81425,7 +81425,7 @@
       "placeKey": "CountryBhutan",
       "placeName": "Bhutan",
       "image": "assets/game/souvenir/090_bhutan2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "转动圆筒的器具叫转经筒，与不丹的佛教传统相联，也见于喜马拉雅其他地区。"
     },
@@ -81439,7 +81439,7 @@
       "placeKey": "CountryBotswana",
       "placeName": "Botswana",
       "image": "assets/game/souvenir/092_botswana_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "观察植物纤维编出的密集纹样。博茨瓦纳奥卡万戈一带有编篮传统，材料取得与湿地环境相联。"
     },
@@ -81453,7 +81453,7 @@
       "placeKey": "CountryBotswana",
       "placeName": "Botswana",
       "image": "assets/game/souvenir/092_botswana2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "细长浅舟能穿行在奥卡万戈三角洲的浅水道。当地传统的 mokoro 以树干掏空制成，由人用长杆撑行。"
     },
@@ -81467,7 +81467,7 @@
       "placeKey": "CountryEcuador",
       "placeName": "Ecuador",
       "image": "assets/game/souvenir/110_ecuador_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "别让 Panama 这个名字带错方向。帽子用托基利亚植物纤维编成，传统工艺来自厄瓜多尔，尤其是沿海的编帽社区。",
       "teachingSource": "https://ich.unesco.org/en/RL/weaving-of-traditional-toquilla-straw-hats-of-ecuador-00729"
@@ -81482,7 +81482,7 @@
       "placeKey": "CountryEcuador",
       "placeName": "Ecuador",
       "image": "assets/game/souvenir/110_ecuador2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "加拉帕戈斯群岛以巨型陆龟闻名。群岛位于太平洋、属于厄瓜多尔，看到圆拱背甲可先想群岛再想国家。"
     },
@@ -81496,7 +81496,7 @@
       "placeKey": "CountryKyrgyzstan",
       "placeName": "Kyrgyzstan",
       "image": "assets/game/souvenir/138_kyrgyzstan_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "白色高顶、带深色纹路的是当地称为 ak-kalpak 的男式毡帽。帽子用羊毛毡制作，联系吉尔吉斯山地的牧养生活。"
     },
@@ -81510,7 +81510,7 @@
       "placeKey": "CountryKyrgyzstan",
       "placeName": "Kyrgyzstan",
       "image": "assets/game/souvenir/138_kyrgyzstan2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "圆屋用可拆装的木架撑起毡布，方便牧民迁移。吉尔吉斯斯坦国旗中央还有毡房顶部天窗的图案。"
     },
@@ -81524,7 +81524,7 @@
       "placeKey": "CountryLesotho",
       "placeName": "Lesotho",
       "image": "assets/game/souvenir/141_lesotho_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "草编帽底宽顶尖，称为 mokorotlo。莱索托国旗中央就有这种巴索托帽的黑色剪影，能直接拿旗帜核对。"
     },
@@ -81538,7 +81538,7 @@
       "placeKey": "CountryLesotho",
       "placeName": "Lesotho",
       "image": "assets/game/souvenir/141_lesotho2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "在莱索托高地，人们会把厚毯披在身上保暖。有纹样的巴索托毯也是服饰，所以这里画的毯子可以“穿”。"
     },
@@ -81552,7 +81552,7 @@
       "placeKey": "CountryMali",
       "placeName": "Mali",
       "image": "assets/game/souvenir/147_mali_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "鼓身上宽下窄、像一只高脚杯，提示西非金贝鼓。马里有曼丁鼓乐传统，邻近的几内亚等国也使用这种鼓。"
     },
@@ -81566,7 +81566,7 @@
       "placeKey": "CountryMali",
       "placeName": "Mali",
       "image": "assets/game/souvenir/147_mali2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "几何纹样可联想到马里的泥染布 bogolanfini，传统做法利用泥和植物材料染布。插图只展示纹样，无法仅据此断定染料。"
     },
@@ -81580,7 +81580,7 @@
       "placeKey": "CountryMauritius",
       "placeName": "Mauritius",
       "image": "assets/game/souvenir/150_mauritus_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "大鸟有粗弯嘴和小翅膀，是已灭绝的渡渡鸟。它曾生活在毛里求斯，岛名比“热带鸟”这个大类更能帮助记忆。"
     },
@@ -81594,7 +81594,7 @@
       "placeKey": "CountryMauritius",
       "placeName": "Mauritius",
       "image": "assets/game/souvenir/150_mauritus2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "甘蔗是有节的高茎作物，茎汁可制糖。制糖业曾深刻影响毛里求斯的经济和种植园景观。"
     },
@@ -81608,9 +81608,9 @@
       "placeKey": "CountryMexico",
       "placeName": "Mexico",
       "image": "assets/game/souvenir/151_mexico_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "先看很宽的帽檐，可为脸和肩颈遮阳。游戏用墨西哥传统宽檐帽作形象线索；西班牙语 sombrero 也能泛指帽子。"
+      "teachingNote": "先看很宽的帽檐，可为脸和肩颈遮阳。图中以墨西哥传统宽檐帽为线索；西班牙语 sombrero 也能泛指帽子。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/151_Mexico2_souvenir.png",
@@ -81622,7 +81622,7 @@
       "placeKey": "CountryMexico",
       "placeName": "Mexico",
       "image": "assets/game/souvenir/151_mexico2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "薄饼折起夹住肉、豆等馅料，就是 taco。它是墨西哥的日常食物，注意和卷成封闭筒状的卷饼区分。"
     },
@@ -81636,7 +81636,7 @@
       "placeKey": "CountryMicronesia",
       "placeName": "Micronesia",
       "image": "assets/game/souvenir/152_micronesia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "中间有孔的大石盘提示雅浦岛的 rai 石币。雅浦是密克罗尼西亚联邦的一州，所以答案写联邦国名。",
       "teachingSource": "https://www.americanhistory.si.edu/collections/object/nmah_1069139"
@@ -81651,7 +81651,7 @@
       "placeKey": "CountryMicronesia",
       "placeName": "Micronesia",
       "image": "assets/game/souvenir/152_micronesia2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "船身旁另有一根平行浮木，用横杆相连，能防止窄舟倾覆。密克罗尼西亚有乘这类舷外支架舟航海的传统。"
     },
@@ -81665,7 +81665,7 @@
       "placeKey": "CountryNamibia",
       "placeName": "Namibia",
       "image": "assets/game/souvenir/156_namibia_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "这件人物图取材于居住在纳米比亚西北部等地的辛巴社群。可从饰物和发式记这幅图，个人穿着并不都一样。"
     },
@@ -81679,7 +81679,7 @@
       "placeKey": "CountryNamibia",
       "placeName": "Namibia",
       "image": "assets/game/souvenir/156_namibia2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "百岁兰适应纳米布沙漠，终生主要长两片叶子；叶片随生长撕裂，看上去像许多带子。纳米比亚用这种植物作自然线索。"
     },
@@ -81693,7 +81693,7 @@
       "placeKey": "CountryNewZealand",
       "placeName": "New Zealand",
       "image": "assets/game/souvenir/158_new-zealand_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "长喙、身形圆而不会飞的鸟是 kiwi，原产新西兰。遇到这个英文词，图中的喙能帮助排除猕猴桃。"
     },
@@ -81707,7 +81707,7 @@
       "placeKey": "CountryNewZealand",
       "placeName": "New Zealand",
       "image": "assets/game/souvenir/158_new-zealand2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "绿色螺旋挂坠可联想到毛利的绿石饰物，螺旋形 koru 常让人想到卷起的蕨叶。插图的颜色和形状提供联想，不能鉴定石料。"
     },
@@ -81721,9 +81721,9 @@
       "placeKey": "CountryPapuaNewGuinea",
       "placeName": "Papua New Guinea",
       "image": "assets/game/souvenir/166_papuanewguinea_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "画中的礼仪面具可联系巴布亚新几内亚各社群的雕刻和彩绘传统。游戏没有指明具体社群，别用一张图概括全岛。"
+      "teachingNote": "画中的礼仪面具可联系巴布亚新几内亚各社群的雕刻和彩绘传统。图中没有指明具体社群，别用一张图概括全岛。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/166_PapuaNewGuinea2_souvenir.png",
@@ -81735,7 +81735,7 @@
       "placeKey": "CountryPapuaNewGuinea",
       "placeName": "Papua New Guinea",
       "image": "assets/game/souvenir/166_papuanewguinea2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "这种编成网状的挎包可联想到当地的 bilum，用线或纤维结编，常用来背东西。先看柔软袋身，再记国家。"
     },
@@ -81749,7 +81749,7 @@
       "placeKey": "CountryParaguay",
       "placeName": "Paraguay",
       "image": "assets/game/souvenir/167_paraguay_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "圆形放射状花纹像蛛网，可辨认巴拉圭的针编花边 ñandutí。花边与该国传统手工艺相联。"
     },
@@ -81763,7 +81763,7 @@
       "placeKey": "CountryParaguay",
       "placeName": "Paraguay",
       "image": "assets/game/souvenir/167_paraguay2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "杯里用带滤头的吸管喝马黛茶，壶用来续水。巴拉圭尤其有名的是冷泡的 tereré，周边国家也喝马黛茶。"
     },
@@ -81777,7 +81777,7 @@
       "placeKey": "CountrySolomonIslands",
       "placeName": "Solomon Islands",
       "image": "assets/game/souvenir/180_solomonislands_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "这件小人像提示所罗门群岛的木雕工艺。素材能确认地点归属，但没有给出人物姓名或特定仪式用途。"
     },
@@ -81791,7 +81791,7 @@
       "placeKey": "CountrySolomonIslands",
       "placeName": "Solomon Islands",
       "image": "assets/game/souvenir/180_solomonislands2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "看串成串的贝壳或贝片。所罗门群岛部分社群会把海贝加工成首饰、礼物或贝币；图中这一件画成项链。"
     },
@@ -81805,7 +81805,7 @@
       "placeKey": "CountrySouthAfrica",
       "placeName": "South Africa",
       "image": "assets/game/souvenir/181_southafrica_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "看大而展开的花头，周围有尖形苞片。帝王花是南非国花，花本身就是鲜明的国家线索。"
     },
@@ -81819,7 +81819,7 @@
       "placeKey": "CountrySouthAfrica",
       "placeName": "South Africa",
       "image": "assets/game/souvenir/181_southafrica2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "细小彩珠串成整圈衣饰。南非包括祖鲁在内的多个社群都有珠饰传统，图中项圈可用来记工艺，无法据图认定佩戴者身份。"
     },
@@ -81833,7 +81833,7 @@
       "placeKey": "CountrySriLanka",
       "placeName": "Sri Lanka",
       "image": "assets/game/souvenir/183_srilanka_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "夸张的面孔和鲜艳彩绘可联想到斯里兰卡西南部的木雕面具工艺，当地舞剧与部分仪式会使用面具。"
     },
@@ -81847,9 +81847,9 @@
       "placeKey": "CountrySriLanka",
       "placeName": "Sri Lanka",
       "image": "assets/game/souvenir/183_srilanka2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "Ceylon“锡兰”是斯里兰卡的旧称。高地种的茶以 Ceylon tea 行销，所以茶的英文名字本身就告诉你货架。"
+      "teachingNote": "Ceylon“锡兰”是斯里兰卡的旧称。高地种的茶以 Ceylon tea 行销，所以英文茶名就是识别产地的线索。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/194_unitedarabemirates_souvenir.png",
@@ -81861,7 +81861,7 @@
       "placeKey": "CountryUnitedArabEmirates",
       "placeName": "United Arab Emirates",
       "image": "assets/game/souvenir/194_unitedarabemirates_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "高楼由宽到窄逐层退台，顶端有细长尖塔。哈利法塔在迪拜，迪拜是阿联酋的一个酋长国。"
     },
@@ -81875,7 +81875,7 @@
       "placeKey": "CountryUnitedArabEmirates",
       "placeName": "United Arab Emirates",
       "image": "assets/game/souvenir/194_unitedarabemirates2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "有长弯嘴的 dallah 用来斟阿拉伯咖啡，和海湾地区的待客习俗相联。阿联酋及许多邻国都使用这种壶。"
     },
@@ -81889,7 +81889,7 @@
       "placeKey": "CountryVanuatu",
       "placeName": "Vanuatu",
       "image": "assets/game/souvenir/197_vanuatu_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "敲击木身侧面的长裂缝可发声，鼓的共鸣腔藏在木头里面。瓦努阿图有制作、演奏这种裂隙鼓的传统。"
     },
@@ -81903,9 +81903,9 @@
       "placeKey": "CountryVanuatu",
       "placeName": "Vanuatu",
       "image": "assets/game/souvenir/197_vanuatu2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "木桨把图案雕在桨面上，提示当地造舟、划舟和木雕工艺。相似木桨也见于其他太平洋岛屿，这件按游戏归属记瓦努阿图。"
+      "teachingNote": "木桨把图案雕在桨面上，提示当地造舟、划舟和木雕工艺。相似木桨也见于其他太平洋岛屿，本题选取的木桨与瓦努阿图配对。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/200_zimbabwe_souvenir.png",
@@ -81917,7 +81917,7 @@
       "placeKey": "CountryZimbabwe",
       "placeName": "Zimbabwe",
       "image": "assets/game/souvenir/200_zimbabwe_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "这只鸟对应大津巴布韦遗址出土的皂石鸟雕，鸟形也出现在国旗上。因此要记的是一件历史雕刻。"
     },
@@ -81931,7 +81931,7 @@
       "placeKey": "CountryZimbabwe",
       "placeName": "Zimbabwe",
       "image": "assets/game/souvenir/200_zimbabwe2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "小琴板上固定一排金属簧片，用拇指拨动发声。津巴布韦的绍纳音乐传统使用这种 mbira。"
     },
@@ -81945,9 +81945,9 @@
       "placeKey": "StateCalifornia",
       "placeName": "California",
       "image": "assets/game/souvenir/209_california_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "山坡上一排大写字母拼出 HOLLYWOOD。原标志位于美国加利福尼亚州洛杉矶，游戏要求选州。"
+      "teachingNote": "山坡上一排大写字母拼出 HOLLYWOOD。原标志位于美国加利福尼亚州洛杉矶，本题要选出相应的州。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/209_California2_souvenir.png",
@@ -81959,7 +81959,7 @@
       "placeKey": "StateCalifornia",
       "placeName": "California",
       "image": "assets/game/souvenir/209_california2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "橙红色悬索桥横跨旧金山湾入口的金门海峡。旧金山在加利福尼亚州，所以选加州。"
     },
@@ -81973,9 +81973,9 @@
       "placeKey": "StateHawaii",
       "placeName": "Hawaii",
       "image": "assets/game/souvenir/215_hawaii_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "舞者的手势和身体动作提示 hula，这种夏威夷表演用动作配合吟唱或歌曲讲故事。游戏按美国州归类。"
+      "teachingNote": "舞者的手势和身体动作提示 hula，这种夏威夷表演用动作配合吟唱或歌曲讲故事。本题按美国州归类。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/215_Hawaii_SouvenirSort.png",
@@ -81987,7 +81987,7 @@
       "placeKey": "StateHawaii",
       "placeName": "Hawaii",
       "image": "assets/game/souvenir/215_hawaii_souvenirsort.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "底座上的舞者做成会摇动的玩偶，是以夏威夷 hula 为题材的旅游纪念品。玩偶造型把真实舞蹈简化成了一个姿势。"
     },
@@ -82001,7 +82001,7 @@
       "placeKey": "StateHawaii",
       "placeName": "Hawaii",
       "image": "assets/game/souvenir/215_hawaii2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "雕刻的人形可联系波利尼西亚地区的形象传统，夏威夷语常写作 kiʻi。这种旅游插画无法单独代表某位神祇。"
     },
@@ -82015,7 +82015,7 @@
       "placeKey": "StateLouisiana",
       "placeName": "Louisiana",
       "image": "assets/game/souvenir/222_louisiana_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "新奥尔良在 Mardi Gras 狂欢节有化装、戴面具的传统。城市位于路易斯安那州，所以要找州名。"
     },
@@ -82029,7 +82029,7 @@
       "placeKey": "StateLouisiana",
       "placeName": "Louisiana",
       "image": "assets/game/souvenir/222_louisiana2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "当地常把淡水小龙虾与香料一起水煮，也是卡津饮食的一部分。注意 crawfish 的体形比海里的大龙虾小。"
     },
@@ -82043,7 +82043,7 @@
       "placeKey": "StateMaryland",
       "placeName": "Maryland",
       "image": "assets/game/souvenir/224_maryland_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "蓝蟹常见于切萨皮克湾，马里兰沿湾地区以蒸蓝蟹著称。看一对蟹螯，再把州与海湾连起来。"
     },
@@ -82057,7 +82057,7 @@
       "placeKey": "StateMaryland",
       "placeName": "Maryland",
       "image": "assets/game/souvenir/224_maryland2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "在马里兰吃蒸蟹常撒复合香料粉，调味罐和另一幅蓝蟹是同一餐桌上的两件东西。图上没有确认品牌。"
     },
@@ -82071,7 +82071,7 @@
       "placeKey": "StateNevada",
       "placeName": "Nevada",
       "image": "assets/game/souvenir/232_nevada_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "菱形欢迎牌让人想到拉斯维加斯南边著名的迎宾路牌。拉斯维加斯位于内华达州。"
     },
@@ -82085,9 +82085,9 @@
       "placeKey": "StateNevada",
       "placeName": "Nevada",
       "image": "assets/game/souvenir/232_nevada2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "Area 51 是内华达沙漠里的军事试验设施，游戏用路牌让人联想到这个地名。"
+      "teachingNote": "Area 51 是内华达沙漠里的军事试验设施，图中的路牌提示了这个地名。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/235_newmexico_souvenir.png",
@@ -82099,7 +82099,7 @@
       "placeKey": "StateNewMexico",
       "placeName": "New Mexico",
       "image": "assets/game/souvenir/235_newmexico_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "鲜红辣椒串挂起来晾晒，在新墨西哥州称为 ristra。把辣椒穿成串这一形状比单个辣椒更好辨认。"
     },
@@ -82113,9 +82113,9 @@
       "placeKey": "StateNewMexico",
       "placeName": "New Mexico",
       "image": "assets/game/souvenir/235_newmexico2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "几何纹样陶罐可联想到新墨西哥州普韦布洛社群的制陶传统。不同社群有不同风格，游戏没有标明这只罐的具体作者。"
+      "teachingNote": "几何纹样陶罐可联想到新墨西哥州普韦布洛社群的制陶传统。不同社群有不同风格，这幅插图没有注明制罐者。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/236_NewYork_souvenir.png",
@@ -82127,9 +82127,9 @@
       "placeKey": "StateNewYork",
       "placeName": "New York",
       "image": "assets/game/souvenir/236_newyork_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
-      "teachingNote": "持火炬的人像就在纽约港，提示纽约市。练习使用美国州货架，因此答案写纽约州。"
+      "teachingNote": "持火炬的人像就在纽约港，提示纽约市。练习按美国州归类，因此答案写纽约州。"
     },
     {
       "sourceKey": "SouvenirSort/Art/Souvenirs/236_NewYork2_souvenir.png",
@@ -82141,7 +82141,7 @@
       "placeKey": "StateNewYork",
       "placeName": "New York",
       "image": "assets/game/souvenir/236_newyork2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "纽约市的黄色出租车是醒目的街景。把城市纽约和它所在的纽约州连起来，就知道归到哪个州。"
     },
@@ -82155,7 +82155,7 @@
       "placeKey": "StateWisconsin",
       "placeName": "Wisconsin",
       "image": "assets/game/souvenir/253_wisconsin_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "红白毛衣加獾的形象呼应威斯康星大学麦迪逊分校的吉祥物，也呼应本州昵称“獾州”。"
     },
@@ -82169,7 +82169,7 @@
       "placeKey": "StateWisconsin",
       "placeName": "Wisconsin",
       "image": "assets/game/souvenir/253_wisconsin2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
       "teachingNote": "三角形奶酪块做成能戴的帽子，是威斯康星球迷熟悉的“奶酪头”形象；这句绰号借的是当地乳业。"
     },
@@ -82183,7 +82183,7 @@
       "placeKey": "CountryGreenland",
       "placeName": "Greenland",
       "image": "assets/game/souvenir/255_greenland_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": true,
       "teachingNote": "格陵兰传统服装中有称为 kamik 的长靴，保暖和防护适合北极环境。样式依地区和穿着场合而异。",
       "teachingSource": "https://en.nka.gl/intangible-topics/kalaallisuut/"
@@ -82198,9 +82198,9 @@
       "placeKey": "CountryGreenland",
       "placeName": "Greenland",
       "image": "assets/game/souvenir/255_greenland2_souvenir.webp",
-      "labelSource": "Study description based on the game illustration",
+      "labelSource": "Study description based on the illustration",
       "linkedInSouvenirSort": false,
-      "teachingNote": "浅色小摆件可联系格陵兰用骨或角雕刻小像的工艺。游戏归属明确；仅凭画面无法确定材料、物种或人物身份。"
+      "teachingNote": "浅色小摆件可联系格陵兰用骨或角雕刻小像的工艺。这幅插图有对应的地点；仅凭画面无法确定材料、物种或人物身份。"
     }
   ],
   "education": {
@@ -83490,7 +83490,7 @@
     "capitalLessons": {
       "ALB": {
         "zh": "地拉那",
-        "note": "地拉那是阿尔巴尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬41.3°，再沿纬线找到东经19.8°附近。",
+        "note": "阿尔巴尼亚的参考定位点是地拉那。在地理地图上，先找北纬41.3°，再沿纬线找到东经19.8°附近。",
         "coords": [
           19.818883,
           41.327541
@@ -83509,7 +83509,7 @@
       },
       "AND": {
         "zh": "安道尔城",
-        "note": "安道尔城是安道尔的游戏首都栏采用的行政中心。在地理地图上，先找北纬42.5°，再沿纬线找到东经1.5°附近。",
+        "note": "安道尔的参考定位点是安道尔城。在地理地图上，先找北纬42.5°，再沿纬线找到东经1.5°附近。",
         "coords": [
           1.516486,
           42.500001
@@ -83528,7 +83528,7 @@
       },
       "AUT": {
         "zh": "维也纳",
-        "note": "维也纳是奥地利的游戏首都栏采用的行政中心。在地理地图上，先找北纬48.2°，再沿纬线找到东经16.4°附近。",
+        "note": "奥地利的参考定位点是维也纳。在地理地图上，先找北纬48.2°，再沿纬线找到东经16.4°附近。",
         "coords": [
           16.364693,
           48.201961
@@ -83547,7 +83547,7 @@
       },
       "BEL": {
         "zh": "布鲁塞尔",
-        "note": "布鲁塞尔是比利时的游戏首都栏采用的行政中心。在地理地图上，先找北纬50.8°，再沿纬线找到东经4.3°附近。",
+        "note": "比利时的参考定位点是布鲁塞尔。在地理地图上，先找北纬50.8°，再沿纬线找到东经4.3°附近。",
         "coords": [
           4.331371,
           50.835263
@@ -83566,7 +83566,7 @@
       },
       "BLR": {
         "zh": "明斯克",
-        "note": "明斯克是白俄罗斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬53.9°，再沿纬线找到东经27.6°附近。",
+        "note": "白俄罗斯的参考定位点是明斯克。在地理地图上，先找北纬53.9°，再沿纬线找到东经27.6°附近。",
         "coords": [
           27.564681,
           53.901923
@@ -83585,7 +83585,7 @@
       },
       "BIH": {
         "zh": "萨拉热窝",
-        "note": "萨拉热窝是波斯尼亚和黑塞哥维那的游戏首都栏采用的行政中心。在地理地图上，先找北纬43.9°，再沿纬线找到东经18.4°附近。",
+        "note": "波斯尼亚和黑塞哥维那的参考定位点是萨拉热窝。在地理地图上，先找北纬43.9°，再沿纬线找到东经18.4°附近。",
         "coords": [
           18.383002,
           43.850022
@@ -83604,7 +83604,7 @@
       },
       "BGR": {
         "zh": "索非亚",
-        "note": "索非亚是保加利亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬42.7°，再沿纬线找到东经23.3°附近。",
+        "note": "保加利亚的参考定位点是索非亚。在地理地图上，先找北纬42.7°，再沿纬线找到东经23.3°附近。",
         "coords": [
           23.314708,
           42.685295
@@ -83623,7 +83623,7 @@
       },
       "HRV": {
         "zh": "萨格勒布",
-        "note": "萨格勒布是克罗地亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬45.8°，再沿纬线找到东经16.0°附近。",
+        "note": "克罗地亚的参考定位点是萨格勒布。在地理地图上，先找北纬45.8°，再沿纬线找到东经16.0°附近。",
         "coords": [
           15.999995,
           45.800007
@@ -83642,7 +83642,7 @@
       },
       "CYP": {
         "zh": "尼科西亚",
-        "note": "尼科西亚是塞浦路斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬35.2°，再沿纬线找到东经33.4°附近。",
+        "note": "塞浦路斯的参考定位点是尼科西亚。在地理地图上，先找北纬35.2°，再沿纬线找到东经33.4°附近。",
         "coords": [
           33.366635,
           35.166677
@@ -83661,7 +83661,7 @@
       },
       "CZE": {
         "zh": "布拉格",
-        "note": "布拉格是捷克的游戏首都栏采用的行政中心。在地理地图上，先找北纬50.1°，再沿纬线找到东经14.5°附近。",
+        "note": "捷克的参考定位点是布拉格。在地理地图上，先找北纬50.1°，再沿纬线找到东经14.5°附近。",
         "coords": [
           14.464034,
           50.085283
@@ -83680,7 +83680,7 @@
       },
       "DNK": {
         "zh": "哥本哈根",
-        "note": "哥本哈根是丹麦的游戏首都栏采用的行政中心。在地理地图上，先找北纬55.7°，再沿纬线找到东经12.6°附近。",
+        "note": "丹麦的参考定位点是哥本哈根。在地理地图上，先找北纬55.7°，再沿纬线找到东经12.6°附近。",
         "coords": [
           12.56154,
           55.68051
@@ -83699,7 +83699,7 @@
       },
       "EST": {
         "zh": "塔林",
-        "note": "塔林是爱沙尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬59.4°，再沿纬线找到东经24.7°附近。",
+        "note": "爱沙尼亚的参考定位点是塔林。在地理地图上，先找北纬59.4°，再沿纬线找到东经24.7°附近。",
         "coords": [
           24.728041,
           59.433877
@@ -83718,7 +83718,7 @@
       },
       "FIN": {
         "zh": "赫尔辛基",
-        "note": "赫尔辛基是芬兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬60.2°，再沿纬线找到东经24.9°附近。",
+        "note": "芬兰的参考定位点是赫尔辛基。在地理地图上，先找北纬60.2°，再沿纬线找到东经24.9°附近。",
         "coords": [
           24.932181,
           60.177509
@@ -83737,7 +83737,7 @@
       },
       "FRA": {
         "zh": "巴黎",
-        "note": "巴黎是法国的游戏首都栏采用的行政中心。在地理地图上，先找北纬48.9°，再沿纬线找到东经2.3°附近。",
+        "note": "法国的参考定位点是巴黎。在地理地图上，先找北纬48.9°，再沿纬线找到东经2.3°附近。",
         "coords": [
           2.33139,
           48.868639
@@ -83756,7 +83756,7 @@
       },
       "GRC": {
         "zh": "雅典",
-        "note": "雅典是希腊的游戏首都栏采用的行政中心。在地理地图上，先找北纬38.0°，再沿纬线找到东经23.7°附近。",
+        "note": "希腊的参考定位点是雅典。在地理地图上，先找北纬38.0°，再沿纬线找到东经23.7°附近。",
         "coords": [
           23.731375,
           37.985272
@@ -83775,7 +83775,7 @@
       },
       "ESP": {
         "zh": "马德里",
-        "note": "马德里是西班牙的游戏首都栏采用的行政中心。在地理地图上，先找北纬40.4°，再沿纬线找到西经3.7°附近。",
+        "note": "西班牙的参考定位点是马德里。在地理地图上，先找北纬40.4°，再沿纬线找到西经3.7°附近。",
         "coords": [
           -3.685298,
           40.401972
@@ -83794,7 +83794,7 @@
       },
       "NLD": {
         "zh": "阿姆斯特丹",
-        "note": "阿姆斯特丹是荷兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬52.4°，再沿纬线找到东经4.9°附近。",
+        "note": "荷兰的参考定位点是阿姆斯特丹。在地理地图上，先找北纬52.4°，再沿纬线找到东经4.9°附近。",
         "coords": [
           4.914694,
           52.351915
@@ -83813,7 +83813,7 @@
       },
       "IRL": {
         "zh": "都柏林",
-        "note": "都柏林是爱尔兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬53.3°，再沿纬线找到西经6.3°附近。",
+        "note": "爱尔兰的参考定位点是都柏林。在地理地图上，先找北纬53.3°，再沿纬线找到西经6.3°附近。",
         "coords": [
           -6.250852,
           53.335007
@@ -83832,7 +83832,7 @@
       },
       "ISL": {
         "zh": "雷克雅未克",
-        "note": "雷克雅未克是冰岛的游戏首都栏采用的行政中心。在地理地图上，先找北纬64.2°，再沿纬线找到西经22.0°附近。",
+        "note": "冰岛的参考定位点是雷克雅未克。在地理地图上，先找北纬64.2°，再沿纬线找到西经22.0°附近。",
         "coords": [
           -21.950015,
           64.150024
@@ -83851,7 +83851,7 @@
       },
       "LIE": {
         "zh": "瓦杜兹",
-        "note": "瓦杜兹是列支敦士登的游戏首都栏采用的行政中心。在地理地图上，先找北纬47.1°，再沿纬线找到东经9.5°附近。",
+        "note": "列支敦士登的参考定位点是瓦杜兹。在地理地图上，先找北纬47.1°，再沿纬线找到东经9.5°附近。",
         "coords": [
           9.51667,
           47.133724
@@ -83870,7 +83870,7 @@
       },
       "LTU": {
         "zh": "维尔纽斯",
-        "note": "维尔纽斯是立陶宛的游戏首都栏采用的行政中心。在地理地图上，先找北纬54.7°，再沿纬线找到东经25.3°附近。",
+        "note": "立陶宛的参考定位点是维尔纽斯。在地理地图上，先找北纬54.7°，再沿纬线找到东经25.3°附近。",
         "coords": [
           25.316635,
           54.683366
@@ -83889,7 +83889,7 @@
       },
       "LUX": {
         "zh": "卢森堡市",
-        "note": "卢森堡市是卢森堡的游戏首都栏采用的行政中心。在地理地图上，先找北纬49.6°，再沿纬线找到东经6.1°附近。",
+        "note": "卢森堡的参考定位点是卢森堡市。在地理地图上，先找北纬49.6°，再沿纬线找到东经6.1°附近。",
         "coords": [
           6.130003,
           49.61166
@@ -83908,7 +83908,7 @@
       },
       "LVA": {
         "zh": "里加",
-        "note": "里加是拉脱维亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬57.0°，再沿纬线找到东经24.1°附近。",
+        "note": "拉脱维亚的参考定位点是里加。在地理地图上，先找北纬57.0°，再沿纬线找到东经24.1°附近。",
         "coords": [
           24.099965,
           56.950024
@@ -83927,7 +83927,7 @@
       },
       "MKD": {
         "zh": "斯科普里",
-        "note": "斯科普里是北马其顿的游戏首都栏采用的行政中心。在地理地图上，先找北纬42.0°，再沿纬线找到东经21.4°附近。",
+        "note": "北马其顿的参考定位点是斯科普里。在地理地图上，先找北纬42.0°，再沿纬线找到东经21.4°附近。",
         "coords": [
           21.433462,
           42.000006
@@ -83946,7 +83946,7 @@
       },
       "MLT": {
         "zh": "瓦莱塔",
-        "note": "瓦莱塔是马耳他的游戏首都栏采用的行政中心。在地理地图上，先找北纬35.9°，再沿纬线找到东经14.5°附近。",
+        "note": "马耳他的参考定位点是瓦莱塔。在地理地图上，先找北纬35.9°，再沿纬线找到东经14.5°附近。",
         "coords": [
           14.514711,
           35.899733
@@ -83965,7 +83965,7 @@
       },
       "MDA": {
         "zh": "基希讷乌",
-        "note": "基希讷乌是摩尔多瓦的游戏首都栏采用的行政中心。在地理地图上，先找北纬47.0°，再沿纬线找到东经28.9°附近。",
+        "note": "摩尔多瓦的参考定位点是基希讷乌。在地理地图上，先找北纬47.0°，再沿纬线找到东经28.9°附近。",
         "coords": [
           28.857711,
           47.005024
@@ -83984,7 +83984,7 @@
       },
       "MCO": {
         "zh": "摩纳哥城",
-        "note": "摩纳哥城是摩纳哥的游戏首都栏采用的行政中心。在地理地图上，先找北纬43.7°，再沿纬线找到东经7.4°附近。",
+        "note": "摩纳哥的参考定位点是摩纳哥城。在地理地图上，先找北纬43.7°，再沿纬线找到东经7.4°附近。",
         "coords": [
           7.406913,
           43.739646
@@ -84003,7 +84003,7 @@
       },
       "DEU": {
         "zh": "柏林",
-        "note": "柏林是德国的游戏首都栏采用的行政中心。在地理地图上，先找北纬52.5°，再沿纬线找到东经13.4°附近。",
+        "note": "德国的参考定位点是柏林。在地理地图上，先找北纬52.5°，再沿纬线找到东经13.4°附近。",
         "coords": [
           13.399603,
           52.523765
@@ -84022,7 +84022,7 @@
       },
       "NOR": {
         "zh": "奥斯陆",
-        "note": "奥斯陆是挪威的游戏首都栏采用的行政中心。在地理地图上，先找北纬59.9°，再沿纬线找到东经10.7°附近。",
+        "note": "挪威的参考定位点是奥斯陆。在地理地图上，先找北纬59.9°，再沿纬线找到东经10.7°附近。",
         "coords": [
           10.748033,
           59.918636
@@ -84041,7 +84041,7 @@
       },
       "POL": {
         "zh": "华沙",
-        "note": "华沙是波兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬52.3°，再沿纬线找到东经21.0°附近。",
+        "note": "波兰的参考定位点是华沙。在地理地图上，先找北纬52.3°，再沿纬线找到东经21.0°附近。",
         "coords": [
           20.998054,
           52.251947
@@ -84060,7 +84060,7 @@
       },
       "PRT": {
         "zh": "里斯本",
-        "note": "里斯本是葡萄牙的游戏首都栏采用的行政中心。在地理地图上，先找北纬38.7°，再沿纬线找到西经9.1°附近。",
+        "note": "葡萄牙的参考定位点是里斯本。在地理地图上，先找北纬38.7°，再沿纬线找到西经9.1°附近。",
         "coords": [
           -9.146812,
           38.724669
@@ -84079,7 +84079,7 @@
       },
       "RUS": {
         "zh": "莫斯科",
-        "note": "莫斯科是俄罗斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬55.8°，再沿纬线找到东经37.6°附近。",
+        "note": "俄罗斯的参考定位点是莫斯科。在地理地图上，先找北纬55.8°，再沿纬线找到东经37.6°附近。",
         "coords": [
           37.613577,
           55.75411
@@ -84098,7 +84098,7 @@
       },
       "ROU": {
         "zh": "布加勒斯特",
-        "note": "布加勒斯特是罗马尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬44.4°，再沿纬线找到东经26.1°附近。",
+        "note": "罗马尼亚的参考定位点是布加勒斯特。在地理地图上，先找北纬44.4°，再沿纬线找到东经26.1°附近。",
         "coords": [
           26.098001,
           44.435318
@@ -84117,7 +84117,7 @@
       },
       "SMR": {
         "zh": "圣马力诺城",
-        "note": "圣马力诺城是圣马力诺的游戏首都栏采用的行政中心。在地理地图上，先找北纬43.9°，再沿纬线找到东经12.4°附近。",
+        "note": "圣马力诺的参考定位点是圣马力诺城。在地理地图上，先找北纬43.9°，再沿纬线找到东经12.4°附近。",
         "coords": [
           12.44177,
           43.936096
@@ -84136,7 +84136,7 @@
       },
       "SRB": {
         "zh": "贝尔格莱德",
-        "note": "贝尔格莱德是塞尔维亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬44.8°，再沿纬线找到东经20.5°附近。",
+        "note": "塞尔维亚的参考定位点是贝尔格莱德。在地理地图上，先找北纬44.8°，再沿纬线找到东经20.5°附近。",
         "coords": [
           20.466045,
           44.820591
@@ -84155,7 +84155,7 @@
       },
       "SVK": {
         "zh": "布拉迪斯拉发",
-        "note": "布拉迪斯拉发是斯洛伐克的游戏首都栏采用的行政中心。在地理地图上，先找北纬48.2°，再沿纬线找到东经17.1°附近。",
+        "note": "斯洛伐克的参考定位点是布拉迪斯拉发。在地理地图上，先找北纬48.2°，再沿纬线找到东经17.1°附近。",
         "coords": [
           17.116981,
           48.150018
@@ -84174,7 +84174,7 @@
       },
       "SVN": {
         "zh": "卢布尔雅那",
-        "note": "卢布尔雅那是斯洛文尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬46.1°，再沿纬线找到东经14.5°附近。",
+        "note": "斯洛文尼亚的参考定位点是卢布尔雅那。在地理地图上，先找北纬46.1°，再沿纬线找到东经14.5°附近。",
         "coords": [
           14.514969,
           46.055288
@@ -84212,7 +84212,7 @@
       },
       "SWE": {
         "zh": "斯德哥尔摩",
-        "note": "斯德哥尔摩是瑞典的游戏首都栏采用的行政中心。在地理地图上，先找北纬59.4°，再沿纬线找到东经18.1°附近。",
+        "note": "瑞典的参考定位点是斯德哥尔摩。在地理地图上，先找北纬59.4°，再沿纬线找到东经18.1°附近。",
         "coords": [
           18.095389,
           59.352706
@@ -84250,7 +84250,7 @@
       },
       "UKR": {
         "zh": "基辅",
-        "note": "基辅是乌克兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬50.4°，再沿纬线找到东经30.5°附近。",
+        "note": "乌克兰的参考定位点是基辅。在地理地图上，先找北纬50.4°，再沿纬线找到东经30.5°附近。",
         "coords": [
           30.514682,
           50.435313
@@ -84269,7 +84269,7 @@
       },
       "VAT": {
         "zh": "梵蒂冈城",
-        "note": "梵蒂冈城是梵蒂冈的游戏首都栏采用的行政中心。在地理地图上，先找北纬41.9°，再沿纬线找到东经12.5°附近。",
+        "note": "梵蒂冈的参考定位点是梵蒂冈城。在地理地图上，先找北纬41.9°，再沿纬线找到东经12.5°附近。",
         "coords": [
           12.453387,
           41.903282
@@ -84288,7 +84288,7 @@
       },
       "HUN": {
         "zh": "布达佩斯",
-        "note": "布达佩斯是匈牙利的游戏首都栏采用的行政中心。在地理地图上，先找北纬47.5°，再沿纬线找到东经19.1°附近。",
+        "note": "匈牙利的参考定位点是布达佩斯。在地理地图上，先找北纬47.5°，再沿纬线找到东经19.1°附近。",
         "coords": [
           19.081375,
           47.501952
@@ -84307,7 +84307,7 @@
       },
       "GBR": {
         "zh": "伦敦",
-        "note": "伦敦是英国的游戏首都栏采用的行政中心。在地理地图上，先找北纬51.5°，再沿纬线找到西经0.1°附近。",
+        "note": "英国的参考定位点是伦敦。在地理地图上，先找北纬51.5°，再沿纬线找到西经0.1°附近。",
         "coords": [
           -0.118668,
           51.501941
@@ -84326,7 +84326,7 @@
       },
       "ITA": {
         "zh": "罗马",
-        "note": "罗马是意大利首都。游戏把罗马、斗兽场、梵蒂冈城和圣彼得大教堂标在同一像素，实际地点各不相同。",
+        "note": "罗马是意大利首都。练习底图把罗马、斗兽场、梵蒂冈城和圣彼得大教堂标在同一像素，实际地点各不相同。",
         "coords": [
           12.481313,
           41.897902
@@ -84402,7 +84402,7 @@
       },
       "ARG": {
         "zh": "布宜诺斯艾利斯",
-        "note": "布宜诺斯艾利斯是阿根廷的游戏首都栏采用的行政中心。在地理地图上，先找南纬34.6°，再沿纬线找到西经58.4°附近。",
+        "note": "阿根廷的参考定位点是布宜诺斯艾利斯。在地理地图上，先找南纬34.6°，再沿纬线找到西经58.4°附近。",
         "coords": [
           -58.399477,
           -34.600556
@@ -84421,7 +84421,7 @@
       },
       "PER": {
         "zh": "利马",
-        "note": "利马是秘鲁的游戏首都栏采用的行政中心。在地理地图上，先找南纬12.0°，再沿纬线找到西经77.1°附近。",
+        "note": "秘鲁的参考定位点是利马。在地理地图上，先找南纬12.0°，再沿纬线找到西经77.1°附近。",
         "coords": [
           -77.052008,
           -12.046067
@@ -84440,7 +84440,7 @@
       },
       "VEN": {
         "zh": "加拉加斯",
-        "note": "加拉加斯是委内瑞拉的游戏首都栏采用的行政中心。在地理地图上，先找北纬10.5°，再沿纬线找到西经66.9°附近。",
+        "note": "委内瑞拉的参考定位点是加拉加斯。在地理地图上，先找北纬10.5°，再沿纬线找到西经66.9°附近。",
         "coords": [
           -66.918983,
           10.502944
@@ -84459,7 +84459,7 @@
       },
       "CHL": {
         "zh": "圣地亚哥",
-        "note": "圣地亚哥是智利的游戏首都栏采用的行政中心。在地理地图上，先找南纬33.4°，再沿纬线找到西经70.7°附近。",
+        "note": "智利的参考定位点是圣地亚哥。在地理地图上，先找南纬33.4°，再沿纬线找到西经70.7°附近。",
         "coords": [
           -70.668987,
           -33.448068
@@ -84478,7 +84478,7 @@
       },
       "TZA": {
         "zh": "多多马",
-        "note": "多多马是坦桑尼亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬6.2°，再沿纬线找到东经35.8°附近。",
+        "note": "坦桑尼亚的参考定位点是多多马。在地理地图上，先找南纬6.2°，再沿纬线找到东经35.8°附近。",
         "coords": [
           35.750004,
           -6.183306
@@ -84497,7 +84497,7 @@
       },
       "NER": {
         "zh": "尼亚美",
-        "note": "尼亚美是尼日尔的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.5°，再沿纬线找到东经7.1°附近。",
+        "note": "尼日尔的参考定位点是尼亚美。在地理地图上，先找北纬13.5°，再沿纬线找到东经7.1°附近。",
         "coords": [
           7.096404,
           13.491643
@@ -84516,7 +84516,7 @@
       },
       "SDN": {
         "zh": "喀土穆",
-        "note": "喀土穆是苏丹的游戏首都栏采用的行政中心。在地理地图上，先找北纬15.6°，再沿纬线找到东经32.5°附近。",
+        "note": "苏丹的参考定位点是喀土穆。在地理地图上，先找北纬15.6°，再沿纬线找到东经32.5°附近。",
         "coords": [
           32.532233,
           15.590024
@@ -84535,7 +84535,7 @@
       },
       "SOM": {
         "zh": "摩加迪休",
-        "note": "摩加迪休是索马里的游戏首都栏采用的行政中心。在地理地图上，先找北纬2.1°，再沿纬线找到东经45.4°附近。",
+        "note": "索马里的参考定位点是摩加迪休。在地理地图上，先找北纬2.1°，再沿纬线找到东经45.4°附近。",
         "coords": [
           45.364732,
           2.068627
@@ -84554,7 +84554,7 @@
       },
       "MDG": {
         "zh": "塔那那利佛",
-        "note": "塔那那利佛是马达加斯加的游戏首都栏采用的行政中心。在地理地图上，先找南纬18.9°，再沿纬线找到东经47.5°附近。",
+        "note": "马达加斯加的参考定位点是塔那那利佛。在地理地图上，先找南纬18.9°，再沿纬线找到东经47.5°附近。",
         "coords": [
           47.514678,
           -18.914692
@@ -84573,7 +84573,7 @@
       },
       "CHN": {
         "zh": "北京",
-        "note": "北京是中国首都。游戏的长城题进一步指定 Badaling（八达岭），代表其中一段长城。",
+        "note": "北京是中国首都。长城的定位题选取 Badaling（八达岭），代表其中一段长城。",
         "coords": [
           116.38634,
           39.930838
@@ -84592,7 +84592,7 @@
       },
       "IND": {
         "zh": "新德里",
-        "note": "新德里是印度的游戏首都栏采用的行政中心。在地理地图上，先找北纬28.6°，再沿纬线找到东经77.2°附近。",
+        "note": "印度的参考定位点是新德里。在地理地图上，先找北纬28.6°，再沿纬线找到东经77.2°附近。",
         "coords": [
           77.19998,
           28.600023
@@ -84611,7 +84611,7 @@
       },
       "KAZ": {
         "zh": "阿斯塔纳",
-        "note": "阿斯塔纳是哈萨克斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬51.2°，再沿纬线找到东经71.4°附近。",
+        "note": "哈萨克斯坦的参考定位点是阿斯塔纳。在地理地图上，先找北纬51.2°，再沿纬线找到东经71.4°附近。",
         "coords": [
           71.427774,
           51.181125
@@ -84630,7 +84630,7 @@
       },
       "MNG": {
         "zh": "乌兰巴托",
-        "note": "乌兰巴托是蒙古的游戏首都栏采用的行政中心。在地理地图上，先找北纬47.9°，再沿纬线找到东经106.9°附近。",
+        "note": "蒙古的参考定位点是乌兰巴托。在地理地图上，先找北纬47.9°，再沿纬线找到东经106.9°附近。",
         "coords": [
           106.91467,
           47.918619
@@ -84649,7 +84649,7 @@
       },
       "AUS": {
         "zh": "堪培拉",
-        "note": "堪培拉是联邦首都。游戏地标 Sydney Opera House 位于悉尼，两道题要在不同城市落点。",
+        "note": "堪培拉是联邦首都。悉尼歌剧院（Sydney Opera House） 位于悉尼，两道题要在不同城市落点。",
         "coords": [
           149.129026,
           -35.283029
@@ -84668,7 +84668,7 @@
       },
       "EGY": {
         "zh": "开罗",
-        "note": "开罗是埃及的游戏首都栏采用的行政中心。在地理地图上，先找北纬30.1°，再沿纬线找到东经31.2°附近。",
+        "note": "埃及的参考定位点是开罗。在地理地图上，先找北纬30.1°，再沿纬线找到东经31.2°附近。",
         "coords": [
           31.248022,
           30.051906
@@ -84687,7 +84687,7 @@
       },
       "COG": {
         "zh": "布拉柴维尔",
-        "note": "布拉柴维尔是刚果共和国的游戏首都栏采用的行政中心。在地理地图上，先找南纬4.3°，再沿纬线找到东经15.3°附近。",
+        "note": "刚果共和国的参考定位点是布拉柴维尔。在地理地图上，先找南纬4.3°，再沿纬线找到东经15.3°附近。",
         "coords": [
           15.282744,
           -4.25724
@@ -84725,7 +84725,7 @@
       },
       "VNM": {
         "zh": "河内",
-        "note": "河内是越南的游戏首都栏采用的行政中心。在地理地图上，先找北纬21.0°，再沿纬线找到东经105.8°附近。",
+        "note": "越南的参考定位点是河内。在地理地图上，先找北纬21.0°，再沿纬线找到东经105.8°附近。",
         "coords": [
           105.848068,
           21.035273
@@ -84744,7 +84744,7 @@
       },
       "THA": {
         "zh": "曼谷",
-        "note": "曼谷是泰国的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.8°，再沿纬线找到东经100.5°附近。",
+        "note": "泰国的参考定位点是曼谷。在地理地图上，先找北纬13.8°，再沿纬线找到东经100.5°附近。",
         "coords": [
           100.514699,
           13.751945
@@ -84763,7 +84763,7 @@
       },
       "PHL": {
         "zh": "马尼拉",
-        "note": "马尼拉是菲律宾的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.6°，再沿纬线找到东经121.0°附近。",
+        "note": "菲律宾的参考定位点是马尼拉。在地理地图上，先找北纬14.6°，再沿纬线找到东经121.0°附近。",
         "coords": [
           120.980271,
           14.606105
@@ -84782,7 +84782,7 @@
       },
       "NPL": {
         "zh": "加德满都",
-        "note": "加德满都是尼泊尔的游戏首都栏采用的行政中心。在地理地图上，先找北纬27.7°，再沿纬线找到东经85.3°附近。",
+        "note": "尼泊尔的参考定位点是加德满都。在地理地图上，先找北纬27.7°，再沿纬线找到东经85.3°附近。",
         "coords": [
           85.314696,
           27.718638
@@ -84820,7 +84820,7 @@
       },
       "AFG": {
         "zh": "喀布尔",
-        "note": "喀布尔是阿富汗的游戏首都栏采用的行政中心。在地理地图上，先找北纬34.5°，再沿纬线找到东经69.2°附近。",
+        "note": "阿富汗的参考定位点是喀布尔。在地理地图上，先找北纬34.5°，再沿纬线找到东经69.2°附近。",
         "coords": [
           69.181314,
           34.518636
@@ -84839,7 +84839,7 @@
       },
       "DZA": {
         "zh": "阿尔及尔",
-        "note": "阿尔及尔是阿尔及利亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬36.8°，再沿纬线找到东经3.0°附近。",
+        "note": "阿尔及利亚的参考定位点是阿尔及尔。在地理地图上，先找北纬36.8°，再沿纬线找到东经3.0°附近。",
         "coords": [
           3.048607,
           36.765011
@@ -84858,7 +84858,7 @@
       },
       "AGO": {
         "zh": "罗安达",
-        "note": "罗安达是安哥拉的游戏首都栏采用的行政中心。在地理地图上，先找南纬8.8°，再沿纬线找到东经13.2°附近。",
+        "note": "安哥拉的参考定位点是罗安达。在地理地图上，先找南纬8.8°，再沿纬线找到东经13.2°附近。",
         "coords": [
           13.232481,
           -8.83634
@@ -84877,7 +84877,7 @@
       },
       "ATG": {
         "zh": "圣约翰",
-        "note": "圣约翰是安提瓜和巴布达的游戏首都栏采用的行政中心。在地理地图上，先找北纬17.1°，再沿纬线找到西经61.9°附近。",
+        "note": "安提瓜和巴布达的参考定位点是圣约翰。在地理地图上，先找北纬17.1°，再沿纬线找到西经61.9°附近。",
         "coords": [
           -61.850034,
           17.118037
@@ -84896,7 +84896,7 @@
       },
       "ARM": {
         "zh": "埃里温",
-        "note": "埃里温是亚美尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬40.2°，再沿纬线找到东经44.5°附近。",
+        "note": "亚美尼亚的参考定位点是埃里温。在地理地图上，先找北纬40.2°，再沿纬线找到东经44.5°附近。",
         "coords": [
           44.511606,
           40.183097
@@ -84915,7 +84915,7 @@
       },
       "AZE": {
         "zh": "巴库",
-        "note": "巴库是阿塞拜疆的游戏首都栏采用的行政中心。在地理地图上，先找北纬40.4°，再沿纬线找到东经49.9°附近。",
+        "note": "阿塞拜疆的参考定位点是巴库。在地理地图上，先找北纬40.4°，再沿纬线找到东经49.9°附近。",
         "coords": [
           49.860271,
           40.397218
@@ -84934,7 +84934,7 @@
       },
       "BHS": {
         "zh": "拿骚",
-        "note": "拿骚是巴哈马的游戏首都栏采用的行政中心。在地理地图上，先找北纬25.1°，再沿纬线找到西经77.4°附近。",
+        "note": "巴哈马的参考定位点是拿骚。在地理地图上，先找北纬25.1°，再沿纬线找到西经77.4°附近。",
         "coords": [
           -77.350044,
           25.08339
@@ -84953,7 +84953,7 @@
       },
       "BHR": {
         "zh": "麦纳麦",
-        "note": "麦纳麦是巴林的游戏首都栏采用的行政中心。在地理地图上，先找北纬26.2°，再沿纬线找到东经50.6°附近。",
+        "note": "巴林的参考定位点是麦纳麦。在地理地图上，先找北纬26.2°，再沿纬线找到东经50.6°附近。",
         "coords": [
           50.583052,
           26.236136
@@ -84972,7 +84972,7 @@
       },
       "BGD": {
         "zh": "达卡",
-        "note": "达卡是孟加拉国的游戏首都栏采用的行政中心。在地理地图上，先找北纬23.7°，再沿纬线找到东经90.4°附近。",
+        "note": "孟加拉国的参考定位点是达卡。在地理地图上，先找北纬23.7°，再沿纬线找到东经90.4°附近。",
         "coords": [
           90.406634,
           23.725006
@@ -84991,7 +84991,7 @@
       },
       "BRB": {
         "zh": "布里奇顿",
-        "note": "布里奇顿是巴巴多斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.1°，再沿纬线找到西经59.6°附近。",
+        "note": "巴巴多斯的参考定位点是布里奇顿。在地理地图上，先找北纬13.1°，再沿纬线找到西经59.6°附近。",
         "coords": [
           -59.616527,
           13.102003
@@ -85010,7 +85010,7 @@
       },
       "BLZ": {
         "zh": "贝尔墨邦",
-        "note": "贝尔墨邦是伯利兹的游戏首都栏采用的行政中心。在地理地图上，先找北纬17.3°，再沿纬线找到西经88.8°附近。",
+        "note": "伯利兹的参考定位点是贝尔墨邦。在地理地图上，先找北纬17.3°，再沿纬线找到西经88.8°附近。",
         "coords": [
           -88.767073,
           17.252034
@@ -85029,7 +85029,7 @@
       },
       "BEN": {
         "zh": "波多诺伏",
-        "note": "波多诺伏是贝宁的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.5°，再沿纬线找到东经2.6°附近。",
+        "note": "贝宁的参考定位点是波多诺伏。在地理地图上，先找北纬6.5°，再沿纬线找到东经2.6°附近。",
         "coords": [
           2.616626,
           6.483311
@@ -85048,7 +85048,7 @@
       },
       "BTN": {
         "zh": "廷布",
-        "note": "廷布是不丹的游戏首都栏采用的行政中心。在地理地图上，先找北纬27.5°，再沿纬线找到东经89.6°附近。",
+        "note": "不丹的参考定位点是廷布。在地理地图上，先找北纬27.5°，再沿纬线找到东经89.6°附近。",
         "coords": [
           89.639014,
           27.472986
@@ -85067,7 +85067,7 @@
       },
       "BOL": {
         "zh": "苏克雷（法定首都）",
-        "note": "苏克雷（法定首都）是玻利维亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬19.0°，再沿纬线找到西经65.3°附近。",
+        "note": "玻利维亚的参考定位点是苏克雷（法定首都）。在地理地图上，先找南纬19.0°，再沿纬线找到西经65.3°附近。",
         "coords": [
           -65.259516,
           -19.040971
@@ -85086,7 +85086,7 @@
       },
       "BWA": {
         "zh": "哈博罗内",
-        "note": "哈博罗内是博茨瓦纳的游戏首都栏采用的行政中心。在地理地图上，先找南纬24.6°，再沿纬线找到东经25.9°附近。",
+        "note": "博茨瓦纳的参考定位点是哈博罗内。在地理地图上，先找南纬24.6°，再沿纬线找到东经25.9°附近。",
         "coords": [
           25.911948,
           -24.646314
@@ -85105,7 +85105,7 @@
       },
       "BRN": {
         "zh": "斯里巴加湾市",
-        "note": "斯里巴加湾市是文莱的游戏首都栏采用的行政中心。在地理地图上，先找北纬4.9°，再沿纬线找到东经114.9°附近。",
+        "note": "文莱的参考定位点是斯里巴加湾市。在地理地图上，先找北纬4.9°，再沿纬线找到东经114.9°附近。",
         "coords": [
           114.933284,
           4.883331
@@ -85124,7 +85124,7 @@
       },
       "BFA": {
         "zh": "瓦加杜古",
-        "note": "瓦加杜古是布基纳法索的游戏首都栏采用的行政中心。在地理地图上，先找北纬12.4°，再沿纬线找到西经1.5°附近。",
+        "note": "布基纳法索的参考定位点是瓦加杜古。在地理地图上，先找北纬12.4°，再沿纬线找到西经1.5°附近。",
         "coords": [
           -1.52667,
           12.372262
@@ -85143,7 +85143,7 @@
       },
       "BDI": {
         "zh": "基特加",
-        "note": "基特加是布隆迪的游戏首都栏采用的行政中心。在地理地图上，先找南纬3.4°，再沿纬线找到东经29.8°附近。",
+        "note": "布隆迪的参考定位点是基特加。在地理地图上，先找南纬3.4°，再沿纬线找到东经29.8°附近。",
         "coords": [
           29.843594,
           -3.426007
@@ -85162,7 +85162,7 @@
       },
       "KHM": {
         "zh": "金边",
-        "note": "金边是柬埔寨的游戏首都栏采用的行政中心。在地理地图上，先找北纬11.6°，再沿纬线找到东经104.9°附近。",
+        "note": "柬埔寨的参考定位点是金边。在地理地图上，先找北纬11.6°，再沿纬线找到东经104.9°附近。",
         "coords": [
           104.914689,
           11.551976
@@ -85181,7 +85181,7 @@
       },
       "CMR": {
         "zh": "雅温得",
-        "note": "雅温得是喀麦隆的游戏首都栏采用的行政中心。在地理地图上，先找北纬3.9°，再沿纬线找到东经11.5°附近。",
+        "note": "喀麦隆的参考定位点是雅温得。在地理地图上，先找北纬3.9°，再沿纬线找到东经11.5°附近。",
         "coords": [
           11.514705,
           3.868647
@@ -85200,7 +85200,7 @@
       },
       "CPV": {
         "zh": "普拉亚",
-        "note": "普拉亚是佛得角的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.9°，再沿纬线找到西经23.5°附近。",
+        "note": "佛得角的参考定位点是普拉亚。在地理地图上，先找北纬14.9°，再沿纬线找到西经23.5°附近。",
         "coords": [
           -23.516689,
           14.916698
@@ -85219,7 +85219,7 @@
       },
       "CAF": {
         "zh": "班吉",
-        "note": "班吉是中非共和国的游戏首都栏采用的行政中心。在地理地图上，先找北纬4.4°，再沿纬线找到东经18.6°附近。",
+        "note": "中非共和国的参考定位点是班吉。在地理地图上，先找北纬4.4°，再沿纬线找到东经18.6°附近。",
         "coords": [
           18.558288,
           4.366644
@@ -85238,7 +85238,7 @@
       },
       "TCD": {
         "zh": "恩贾梅纳",
-        "note": "恩贾梅纳是乍得的游戏首都栏采用的行政中心。在地理地图上，先找北纬12.1°，再沿纬线找到东经15.0°附近。",
+        "note": "乍得的参考定位点是恩贾梅纳。在地理地图上，先找北纬12.1°，再沿纬线找到东经15.0°附近。",
         "coords": [
           15.047203,
           12.115042
@@ -85257,7 +85257,7 @@
       },
       "COL": {
         "zh": "波哥大",
-        "note": "波哥大是哥伦比亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬4.6°，再沿纬线找到西经74.1°附近。",
+        "note": "哥伦比亚的参考定位点是波哥大。在地理地图上，先找北纬4.6°，再沿纬线找到西经74.1°附近。",
         "coords": [
           -74.08529,
           4.598369
@@ -85276,7 +85276,7 @@
       },
       "COM": {
         "zh": "莫洛尼",
-        "note": "莫洛尼是科摩罗的游戏首都栏采用的行政中心。在地理地图上，先找南纬11.7°，再沿纬线找到东经43.2°附近。",
+        "note": "科摩罗的参考定位点是莫洛尼。在地理地图上，先找南纬11.7°，再沿纬线找到东经43.2°附近。",
         "coords": [
           43.240244,
           -11.704158
@@ -85295,7 +85295,7 @@
       },
       "COD": {
         "zh": "金沙萨",
-        "note": "金沙萨是刚果民主共和国的游戏首都栏采用的行政中心。在地理地图上，先找南纬4.3°，再沿纬线找到东经15.3°附近。",
+        "note": "刚果民主共和国的参考定位点是金沙萨。在地理地图上，先找南纬4.3°，再沿纬线找到东经15.3°附近。",
         "coords": [
           15.313026,
           -4.327778
@@ -85314,7 +85314,7 @@
       },
       "CRI": {
         "zh": "圣何塞",
-        "note": "圣何塞是哥斯达黎加的游戏首都栏采用的行政中心。在地理地图上，先找北纬9.9°，再沿纬线找到西经84.1°附近。",
+        "note": "哥斯达黎加的参考定位点是圣何塞。在地理地图上，先找北纬9.9°，再沿纬线找到西经84.1°附近。",
         "coords": [
           -84.085997,
           9.936958
@@ -85333,7 +85333,7 @@
       },
       "CUB": {
         "zh": "哈瓦那",
-        "note": "哈瓦那是古巴的游戏首都栏采用的行政中心。在地理地图上，先找北纬23.1°，再沿纬线找到西经82.4°附近。",
+        "note": "古巴的参考定位点是哈瓦那。在地理地图上，先找北纬23.1°，再沿纬线找到西经82.4°附近。",
         "coords": [
           -82.366128,
           23.133905
@@ -85352,7 +85352,7 @@
       },
       "DJI": {
         "zh": "吉布提市",
-        "note": "吉布提市是吉布提的游戏首都栏采用的行政中心。在地理地图上，先找北纬11.6°，再沿纬线找到东经43.1°附近。",
+        "note": "吉布提的参考定位点是吉布提市。在地理地图上，先找北纬11.6°，再沿纬线找到东经43.1°附近。",
         "coords": [
           43.148002,
           11.595015
@@ -85371,7 +85371,7 @@
       },
       "DMA": {
         "zh": "罗索",
-        "note": "罗索是多米尼克的游戏首都栏采用的行政中心。在地理地图上，先找北纬15.3°，再沿纬线找到西经61.4°附近。",
+        "note": "多米尼克的参考定位点是罗索。在地理地图上，先找北纬15.3°，再沿纬线找到西经61.4°附近。",
         "coords": [
           -61.387013,
           15.301016
@@ -85390,7 +85390,7 @@
       },
       "DOM": {
         "zh": "圣多明各",
-        "note": "圣多明各是多米尼加共和国的游戏首都栏采用的行政中心。在地理地图上，先找北纬18.5°，再沿纬线找到西经69.9°附近。",
+        "note": "多米尼加共和国的参考定位点是圣多明各。在地理地图上，先找北纬18.5°，再沿纬线找到西经69.9°附近。",
         "coords": [
           -69.902031,
           18.472019
@@ -85409,7 +85409,7 @@
       },
       "TLS": {
         "zh": "帝力",
-        "note": "帝力是东帝汶的游戏首都栏采用的行政中心。在地理地图上，先找南纬8.6°，再沿纬线找到东经125.6°附近。",
+        "note": "东帝汶的参考定位点是帝力。在地理地图上，先找南纬8.6°，再沿纬线找到东经125.6°附近。",
         "coords": [
           125.579456,
           -8.559388
@@ -85428,7 +85428,7 @@
       },
       "ECU": {
         "zh": "基多",
-        "note": "基多是厄瓜多尔的游戏首都栏采用的行政中心。在地理地图上，先找南纬0.2°，再沿纬线找到西经78.5°附近。",
+        "note": "厄瓜多尔的参考定位点是基多。在地理地图上，先找南纬0.2°，再沿纬线找到西经78.5°附近。",
         "coords": [
           -78.501997,
           -0.213042
@@ -85447,7 +85447,7 @@
       },
       "SLV": {
         "zh": "圣萨尔瓦多",
-        "note": "圣萨尔瓦多是萨尔瓦多的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.7°，再沿纬线找到西经89.2°附近。",
+        "note": "萨尔瓦多的参考定位点是圣萨尔瓦多。在地理地图上，先找北纬13.7°，再沿纬线找到西经89.2°附近。",
         "coords": [
           -89.204987,
           13.711948
@@ -85466,7 +85466,7 @@
       },
       "GNQ": {
         "zh": "马拉博",
-        "note": "马拉博位于比奥科岛。游戏仍以它作答；2026 年迁都后的首都是大陆上的拉帕斯（Ciudad de la Paz）。",
+        "note": "马拉博位于比奥科岛。这道历史地名题沿用旧都。2026 年迁都后的首都是大陆上的拉帕斯（Ciudad de la Paz）。",
         "coords": [
           8.783278,
           3.750015
@@ -85480,12 +85480,12 @@
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
           "source": "https://commons.wikimedia.org/wiki/File:Hotel_de_Federaciones_02.jpg"
         },
-        "introduction": "马拉博在比奥科岛北岸，老港面向几内亚湾，背后是火山山体。它是赤道几内亚的旧都，也是本版游戏保留的落点。",
+        "introduction": "马拉博在比奥科岛北岸，老港面向几内亚湾，背后是火山山体。它是赤道几内亚的旧都，也是练习中的历史定位点。",
         "introductionSource": "https://en.wikipedia.org/wiki/Malabo"
       },
       "ERI": {
         "zh": "阿斯马拉",
-        "note": "阿斯马拉是厄立特里亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬15.3°，再沿纬线找到东经38.9°附近。",
+        "note": "厄立特里亚的参考定位点是阿斯马拉。在地理地图上，先找北纬15.3°，再沿纬线找到东经38.9°附近。",
         "coords": [
           38.933324,
           15.333339
@@ -85504,7 +85504,7 @@
       },
       "SWZ": {
         "zh": "姆巴巴内（行政首都）",
-        "note": "姆巴巴内（行政首都）是斯威士兰的游戏首都栏采用的行政中心。在地理地图上，先找南纬26.3°，再沿纬线找到东经31.1°附近。",
+        "note": "斯威士兰的参考定位点是姆巴巴内（行政首都）。在地理地图上，先找南纬26.3°，再沿纬线找到东经31.1°附近。",
         "coords": [
           31.133335,
           -26.316651
@@ -85523,7 +85523,7 @@
       },
       "ETH": {
         "zh": "亚的斯亚贝巴",
-        "note": "亚的斯亚贝巴是埃塞俄比亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬9.0°，再沿纬线找到东经38.7°附近。",
+        "note": "埃塞俄比亚的参考定位点是亚的斯亚贝巴。在地理地图上，先找北纬9.0°，再沿纬线找到东经38.7°附近。",
         "coords": [
           38.698059,
           9.035256
@@ -85542,7 +85542,7 @@
       },
       "FJI": {
         "zh": "苏瓦",
-        "note": "苏瓦是斐济的游戏首都栏采用的行政中心。在地理地图上，先找南纬18.1°，再沿纬线找到东经178.4°附近。",
+        "note": "斐济的参考定位点是苏瓦。在地理地图上，先找南纬18.1°，再沿纬线找到东经178.4°附近。",
         "coords": [
           178.441707,
           -18.133016
@@ -85561,7 +85561,7 @@
       },
       "GAB": {
         "zh": "利伯维尔",
-        "note": "利伯维尔是加蓬的游戏首都栏采用的行政中心。在地理地图上，先找北纬0.4°，再沿纬线找到东经9.5°附近。",
+        "note": "加蓬的参考定位点是利伯维尔。在地理地图上，先找北纬0.4°，再沿纬线找到东经9.5°附近。",
         "coords": [
           9.457965,
           0.385389
@@ -85580,7 +85580,7 @@
       },
       "GMB": {
         "zh": "班珠尔",
-        "note": "班珠尔是冈比亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.5°，再沿纬线找到西经16.6°附近。",
+        "note": "冈比亚的参考定位点是班珠尔。在地理地图上，先找北纬13.5°，再沿纬线找到西经16.6°附近。",
         "coords": [
           -16.591702,
           13.453877
@@ -85599,7 +85599,7 @@
       },
       "GEO": {
         "zh": "第比利斯",
-        "note": "第比利斯是格鲁吉亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬41.7°，再沿纬线找到东经44.8°附近。",
+        "note": "格鲁吉亚的参考定位点是第比利斯。在地理地图上，先找北纬41.7°，再沿纬线找到东经44.8°附近。",
         "coords": [
           44.78885,
           41.726956
@@ -85618,7 +85618,7 @@
       },
       "GHA": {
         "zh": "阿克拉",
-        "note": "阿克拉是加纳的游戏首都栏采用的行政中心。在地理地图上，先找北纬5.6°，再沿纬线找到西经0.2°附近。",
+        "note": "加纳的参考定位点是阿克拉。在地理地图上，先找北纬5.6°，再沿纬线找到西经0.2°附近。",
         "coords": [
           -0.218662,
           5.551981
@@ -85637,7 +85637,7 @@
       },
       "GRD": {
         "zh": "圣乔治",
-        "note": "圣乔治是格林纳达的游戏首都栏采用的行政中心。在地理地图上，先找北纬12.1°，再沿纬线找到西经61.7°附近。",
+        "note": "格林纳达的参考定位点是圣乔治。在地理地图上，先找北纬12.1°，再沿纬线找到西经61.7°附近。",
         "coords": [
           -61.741643,
           12.052633
@@ -85656,7 +85656,7 @@
       },
       "GTM": {
         "zh": "危地马拉城",
-        "note": "危地马拉城是危地马拉的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.6°，再沿纬线找到西经90.5°附近。",
+        "note": "危地马拉的参考定位点是危地马拉城。在地理地图上，先找北纬14.6°，再沿纬线找到西经90.5°附近。",
         "coords": [
           -90.528911,
           14.623081
@@ -85675,7 +85675,7 @@
       },
       "GIN": {
         "zh": "科纳克里",
-        "note": "科纳克里是几内亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬9.5°，再沿纬线找到西经13.7°附近。",
+        "note": "几内亚的参考定位点是科纳克里。在地理地图上，先找北纬9.5°，再沿纬线找到西经13.7°附近。",
         "coords": [
           -13.682181,
           9.533469
@@ -85694,7 +85694,7 @@
       },
       "GNB": {
         "zh": "比绍",
-        "note": "比绍是几内亚比绍的游戏首都栏采用的行政中心。在地理地图上，先找北纬11.9°，再沿纬线找到西经15.6°附近。",
+        "note": "几内亚比绍的参考定位点是比绍。在地理地图上，先找北纬11.9°，再沿纬线找到西经15.6°附近。",
         "coords": [
           -15.598361,
           11.865024
@@ -85713,7 +85713,7 @@
       },
       "GUY": {
         "zh": "乔治敦",
-        "note": "乔治敦是圭亚那的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.8°，再沿纬线找到西经58.2°附近。",
+        "note": "圭亚那的参考定位点是乔治敦。在地理地图上，先找北纬6.8°，再沿纬线找到西经58.2°附近。",
         "coords": [
           -58.167029,
           6.801974
@@ -85732,7 +85732,7 @@
       },
       "HTI": {
         "zh": "太子港",
-        "note": "太子港是海地的游戏首都栏采用的行政中心。在地理地图上，先找北纬18.5°，再沿纬线找到西经72.3°附近。",
+        "note": "海地的参考定位点是太子港。在地理地图上，先找北纬18.5°，再沿纬线找到西经72.3°附近。",
         "coords": [
           -72.33798,
           18.542971
@@ -85751,7 +85751,7 @@
       },
       "HND": {
         "zh": "特古西加尔巴",
-        "note": "特古西加尔巴是洪都拉斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.1°，再沿纬线找到西经87.2°附近。",
+        "note": "洪都拉斯的参考定位点是特古西加尔巴。在地理地图上，先找北纬14.1°，再沿纬线找到西经87.2°附近。",
         "coords": [
           -87.219475,
           14.103991
@@ -85770,7 +85770,7 @@
       },
       "IDN": {
         "zh": "雅加达",
-        "note": "雅加达是印度尼西亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬6.2°，再沿纬线找到东经106.8°附近。",
+        "note": "印度尼西亚的参考定位点是雅加达。在地理地图上，先找南纬6.2°，再沿纬线找到东经106.8°附近。",
         "coords": [
           106.827492,
           -6.172472
@@ -85789,7 +85789,7 @@
       },
       "IRN": {
         "zh": "德黑兰",
-        "note": "德黑兰是伊朗的游戏首都栏采用的行政中心。在地理地图上，先找北纬35.7°，再沿纬线找到东经51.4°附近。",
+        "note": "伊朗的参考定位点是德黑兰。在地理地图上，先找北纬35.7°，再沿纬线找到东经51.4°附近。",
         "coords": [
           51.422398,
           35.673889
@@ -85808,7 +85808,7 @@
       },
       "ISR": {
         "zh": "耶路撒冷",
-        "note": "耶路撒冷是以色列的游戏首都栏采用的行政中心。在地理地图上，先找北纬31.8°，再沿纬线找到东经35.2°附近。",
+        "note": "以色列的参考定位点是耶路撒冷。在地理地图上，先找北纬31.8°，再沿纬线找到东经35.2°附近。",
         "coords": [
           35.206626,
           31.778408
@@ -85827,7 +85827,7 @@
       },
       "CIV": {
         "zh": "亚穆苏克罗",
-        "note": "亚穆苏克罗是科特迪瓦的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.8°，再沿纬线找到西经5.3°附近。",
+        "note": "科特迪瓦的参考定位点是亚穆苏克罗。在地理地图上，先找北纬6.8°，再沿纬线找到西经5.3°附近。",
         "coords": [
           -5.275503,
           6.818381
@@ -85846,7 +85846,7 @@
       },
       "JAM": {
         "zh": "金斯敦",
-        "note": "金斯敦是牙买加的游戏首都栏采用的行政中心。在地理地图上，先找北纬18.0°，再沿纬线找到西经76.8°附近。",
+        "note": "牙买加的参考定位点是金斯敦。在地理地图上，先找北纬18.0°，再沿纬线找到西经76.8°附近。",
         "coords": [
           -76.767434,
           17.977077
@@ -85865,7 +85865,7 @@
       },
       "JOR": {
         "zh": "安曼",
-        "note": "安曼是约旦的游戏首都栏采用的行政中心。在地理地图上，先找北纬32.0°，再沿纬线找到东经35.9°附近。",
+        "note": "约旦的参考定位点是安曼。在地理地图上，先找北纬32.0°，再沿纬线找到东经35.9°附近。",
         "coords": [
           35.931354,
           31.951971
@@ -85884,7 +85884,7 @@
       },
       "KEN": {
         "zh": "内罗毕",
-        "note": "内罗毕是肯尼亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬1.3°，再沿纬线找到东经36.8°附近。",
+        "note": "肯尼亚的参考定位点是内罗毕。在地理地图上，先找南纬1.3°，再沿纬线找到东经36.8°附近。",
         "coords": [
           36.814711,
           -1.281401
@@ -85903,7 +85903,7 @@
       },
       "KIR": {
         "zh": "塔拉瓦",
-        "note": "游戏写 Tarawa（塔拉瓦）。基里巴斯的政府机关分布在南塔拉瓦，地图参考名称因此更具体。",
+        "note": "练习题采用 Tarawa（塔拉瓦）。基里巴斯的政府机关分布在南塔拉瓦，地图参考名称因此更具体。",
         "coords": [
           173.017571,
           1.338188
@@ -85922,7 +85922,7 @@
       },
       "PRK": {
         "zh": "平壤",
-        "note": "平壤是朝鲜的游戏首都栏采用的行政中心。在地理地图上，先找北纬38.3°，再沿纬线找到东经126.4°附近。",
+        "note": "朝鲜的参考定位点是平壤。在地理地图上，先找北纬38.3°，再沿纬线找到东经126.4°附近。",
         "coords": [
           126.386642,
           38.33669
@@ -85941,7 +85941,7 @@
       },
       "KWT": {
         "zh": "科威特城",
-        "note": "科威特城是科威特的游戏首都栏采用的行政中心。在地理地图上，先找北纬29.4°，再沿纬线找到东经48.0°附近。",
+        "note": "科威特的参考定位点是科威特城。在地理地图上，先找北纬29.4°，再沿纬线找到东经48.0°附近。",
         "coords": [
           47.976355,
           29.371664
@@ -85960,7 +85960,7 @@
       },
       "KGZ": {
         "zh": "比什凯克",
-        "note": "比什凯克是吉尔吉斯斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬42.9°，再沿纬线找到东经74.6°附近。",
+        "note": "吉尔吉斯斯坦的参考定位点是比什凯克。在地理地图上，先找北纬42.9°，再沿纬线找到东经74.6°附近。",
         "coords": [
           74.583258,
           42.875025
@@ -85979,7 +85979,7 @@
       },
       "LAO": {
         "zh": "万象",
-        "note": "万象是老挝的游戏首都栏采用的行政中心。在地理地图上，先找北纬18.0°，再沿纬线找到东经102.6°附近。",
+        "note": "老挝的参考定位点是万象。在地理地图上，先找北纬18.0°，再沿纬线找到东经102.6°附近。",
         "coords": [
           102.59998,
           17.966693
@@ -85998,7 +85998,7 @@
       },
       "LBN": {
         "zh": "贝鲁特",
-        "note": "贝鲁特是黎巴嫩的游戏首都栏采用的行政中心。在地理地图上，先找北纬33.9°，再沿纬线找到东经35.5°附近。",
+        "note": "黎巴嫩的参考定位点是贝鲁特。在地理地图上，先找北纬33.9°，再沿纬线找到东经35.5°附近。",
         "coords": [
           35.507762,
           33.873921
@@ -86017,7 +86017,7 @@
       },
       "LSO": {
         "zh": "马塞卢",
-        "note": "马塞卢是莱索托的游戏首都栏采用的行政中心。在地理地图上，先找南纬29.3°，再沿纬线找到东经27.5°附近。",
+        "note": "莱索托的参考定位点是马塞卢。在地理地图上，先找南纬29.3°，再沿纬线找到东经27.5°附近。",
         "coords": [
           27.483273,
           -29.316674
@@ -86036,7 +86036,7 @@
       },
       "LBR": {
         "zh": "蒙罗维亚",
-        "note": "蒙罗维亚是利比里亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.3°，再沿纬线找到西经10.8°附近。",
+        "note": "利比里亚的参考定位点是蒙罗维亚。在地理地图上，先找北纬6.3°，再沿纬线找到西经10.8°附近。",
         "coords": [
           -10.79966,
           6.314582
@@ -86055,7 +86055,7 @@
       },
       "LBY": {
         "zh": "的黎波里",
-        "note": "的黎波里是利比亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬32.9°，再沿纬线找到东经13.2°附近。",
+        "note": "利比亚的参考定位点是的黎波里。在地理地图上，先找北纬32.9°，再沿纬线找到东经13.2°附近。",
         "coords": [
           13.180012,
           32.8925
@@ -86074,7 +86074,7 @@
       },
       "MWI": {
         "zh": "利隆圭",
-        "note": "利隆圭是马拉维的游戏首都栏采用的行政中心。在地理地图上，先找南纬14.0°，再沿纬线找到东经33.8°附近。",
+        "note": "马拉维的参考定位点是利隆圭。在地理地图上，先找南纬14.0°，再沿纬线找到东经33.8°附近。",
         "coords": [
           33.783302,
           -13.983295
@@ -86093,7 +86093,7 @@
       },
       "MYS": {
         "zh": "吉隆坡",
-        "note": "吉隆坡是马来西亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬3.2°，再沿纬线找到东经101.7°附近。",
+        "note": "马来西亚的参考定位点是吉隆坡。在地理地图上，先找北纬3.2°，再沿纬线找到东经101.7°附近。",
         "coords": [
           101.698037,
           3.168612
@@ -86112,7 +86112,7 @@
       },
       "MDV": {
         "zh": "马累",
-        "note": "马累是马尔代夫的游戏首都栏采用的行政中心。在地理地图上，先找北纬4.2°，再沿纬线找到东经73.5°附近。",
+        "note": "马尔代夫的参考定位点是马累。在地理地图上，先找北纬4.2°，再沿纬线找到东经73.5°附近。",
         "coords": [
           73.499948,
           4.166708
@@ -86131,7 +86131,7 @@
       },
       "MLI": {
         "zh": "巴马科",
-        "note": "巴马科是马里的游戏首都栏采用的行政中心。在地理地图上，先找北纬12.7°，再沿纬线找到西经8.0°附近。",
+        "note": "马里的参考定位点是巴马科。在地理地图上，先找北纬12.7°，再沿纬线找到西经8.0°附近。",
         "coords": [
           -8.001985,
           12.651961
@@ -86150,7 +86150,7 @@
       },
       "MHL": {
         "zh": "马朱罗",
-        "note": "马朱罗是马绍尔群岛的游戏首都栏采用的行政中心。在地理地图上，先找北纬7.1°，再沿纬线找到东经171.4°附近。",
+        "note": "马绍尔群岛的参考定位点是马朱罗。在地理地图上，先找北纬7.1°，再沿纬线找到东经171.4°附近。",
         "coords": [
           171.38,
           7.103004
@@ -86170,7 +86170,7 @@
       },
       "MRT": {
         "zh": "努瓦克肖特",
-        "note": "努瓦克肖特是毛里塔尼亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬18.1°，再沿纬线找到西经16.0°附近。",
+        "note": "毛里塔尼亚的参考定位点是努瓦克肖特。在地理地图上，先找北纬18.1°，再沿纬线找到西经16.0°附近。",
         "coords": [
           -15.97534,
           18.086427
@@ -86189,7 +86189,7 @@
       },
       "MUS": {
         "zh": "路易港",
-        "note": "路易港是毛里求斯的游戏首都栏采用的行政中心。在地理地图上，先找南纬20.2°，再沿纬线找到东经57.5°附近。",
+        "note": "毛里求斯的参考定位点是路易港。在地理地图上，先找南纬20.2°，再沿纬线找到东经57.5°附近。",
         "coords": [
           57.499994,
           -20.166639
@@ -86208,7 +86208,7 @@
       },
       "MEX": {
         "zh": "墨西哥城",
-        "note": "墨西哥城是墨西哥的游戏首都栏采用的行政中心。在地理地图上，先找北纬19.4°，再沿纬线找到西经99.1°附近。",
+        "note": "墨西哥的参考定位点是墨西哥城。在地理地图上，先找北纬19.4°，再沿纬线找到西经99.1°附近。",
         "coords": [
           -99.132934,
           19.444388
@@ -86227,7 +86227,7 @@
       },
       "FSM": {
         "zh": "帕利基尔",
-        "note": "帕利基尔是密克罗尼西亚联邦的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.9°，再沿纬线找到东经158.1°附近。",
+        "note": "密克罗尼西亚联邦的参考定位点是帕利基尔。在地理地图上，先找北纬6.9°，再沿纬线找到东经158.1°附近。",
         "coords": [
           158.149974,
           6.916644
@@ -86246,7 +86246,7 @@
       },
       "MAR": {
         "zh": "拉巴特",
-        "note": "拉巴特是摩洛哥的游戏首都栏采用的行政中心。在地理地图上，先找北纬34.0°，再沿纬线找到西经6.8°附近。",
+        "note": "摩洛哥的参考定位点是拉巴特。在地理地图上，先找北纬34.0°，再沿纬线找到西经6.8°附近。",
         "coords": [
           -6.836408,
           34.025307
@@ -86265,7 +86265,7 @@
       },
       "MOZ": {
         "zh": "马普托",
-        "note": "马普托是莫桑比克的游戏首都栏采用的行政中心。在地理地图上，先找南纬26.0°，再沿纬线找到东经32.6°附近。",
+        "note": "莫桑比克的参考定位点是马普托。在地理地图上，先找南纬26.0°，再沿纬线找到东经32.6°附近。",
         "coords": [
           32.587217,
           -25.953332
@@ -86284,7 +86284,7 @@
       },
       "MMR": {
         "zh": "内比都",
-        "note": "内比都是缅甸的游戏首都栏采用的行政中心。在地理地图上，先找北纬19.8°，再沿纬线找到东经96.1°附近。",
+        "note": "缅甸的参考定位点是内比都。在地理地图上，先找北纬19.8°，再沿纬线找到东经96.1°附近。",
         "coords": [
           96.116673,
           19.768503
@@ -86303,7 +86303,7 @@
       },
       "NAM": {
         "zh": "温得和克",
-        "note": "温得和克是纳米比亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬22.6°，再沿纬线找到东经17.1°附近。",
+        "note": "纳米比亚的参考定位点是温得和克。在地理地图上，先找南纬22.6°，再沿纬线找到东经17.1°附近。",
         "coords": [
           17.083546,
           -22.570006
@@ -86322,7 +86322,7 @@
       },
       "NRU": {
         "zh": "亚伦区（政府所在地）",
-        "note": "瑙鲁没有法定首都；政府机关设在亚伦区。游戏把 Yaren 放在首都一栏。",
+        "note": "瑙鲁没有法定首都；政府机关设在亚伦区。英文地名为 Yaren。",
         "coords": [
           166.925,
           -0.545556
@@ -86336,13 +86336,13 @@
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
           "source": "https://commons.wikimedia.org/wiki/File:Parliament_(15403802091).jpg"
         },
-        "introduction": "亚伦是瑙鲁岛西南部的一个区，议会和政府办公地点集中在这一带。瑙鲁没有正式法定首都，游戏将亚伦列为落点。",
+        "introduction": "亚伦是瑙鲁岛西南部的一个区，议会和政府办公地点集中在这一带。瑙鲁没有正式法定首都，本题标出政府所在地。",
         "introductionSource": "https://en.wikipedia.org/wiki/Yaren",
         "coordSource": "https://en.wikipedia.org/wiki/Yaren"
       },
       "NZL": {
         "zh": "惠灵顿",
-        "note": "惠灵顿是新西兰的游戏首都栏采用的行政中心。在地理地图上，先找南纬41.3°，再沿纬线找到东经174.8°附近。",
+        "note": "新西兰的参考定位点是惠灵顿。在地理地图上，先找南纬41.3°，再沿纬线找到东经174.8°附近。",
         "coords": [
           174.783266,
           -41.299988
@@ -86361,7 +86361,7 @@
       },
       "NIC": {
         "zh": "马那瓜",
-        "note": "马那瓜是尼加拉瓜的游戏首都栏采用的行政中心。在地理地图上，先找北纬12.2°，再沿纬线找到西经86.3°附近。",
+        "note": "尼加拉瓜的参考定位点是马那瓜。在地理地图上，先找北纬12.2°，再沿纬线找到西经86.3°附近。",
         "coords": [
           -86.270438,
           12.154962
@@ -86380,7 +86380,7 @@
       },
       "NGA": {
         "zh": "阿布贾",
-        "note": "阿布贾是尼日利亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬9.1°，再沿纬线找到东经7.5°附近。",
+        "note": "尼日利亚的参考定位点是阿布贾。在地理地图上，先找北纬9.1°，再沿纬线找到东经7.5°附近。",
         "coords": [
           7.531382,
           9.085279
@@ -86399,7 +86399,7 @@
       },
       "OMN": {
         "zh": "马斯喀特",
-        "note": "马斯喀特是阿曼的游戏首都栏采用的行政中心。在地理地图上，先找北纬23.6°，再沿纬线找到东经58.6°附近。",
+        "note": "阿曼的参考定位点是马斯喀特。在地理地图上，先找北纬23.6°，再沿纬线找到东经58.6°附近。",
         "coords": [
           58.593312,
           23.613325
@@ -86418,7 +86418,7 @@
       },
       "PAK": {
         "zh": "伊斯兰堡",
-        "note": "伊斯兰堡是巴基斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬33.7°，再沿纬线找到东经73.2°附近。",
+        "note": "巴基斯坦的参考定位点是伊斯兰堡。在地理地图上，先找北纬33.7°，再沿纬线找到东经73.2°附近。",
         "coords": [
           73.164689,
           33.701942
@@ -86457,7 +86457,7 @@
       },
       "PSE": {
         "zh": "加沙",
-        "note": "游戏把加沙列在首都栏。巴勒斯坦方面主张东耶路撒冷为首都，行政机构驻拉姆安拉。",
+        "note": "这道题在首都栏沿用了加沙这一答案。巴勒斯坦方面主张东耶路撒冷为首都，行政机构驻拉姆安拉。",
         "coords": [
           34.445019,
           31.529999
@@ -86472,12 +86472,12 @@
           "source": "https://commons.wikimedia.org/wiki/File:Gaza_City.JPG",
           "caption": "2007 年拍摄的加沙城全景。"
         },
-        "introduction": "加沙城位于东地中海沿岸的加沙地带。古代商路经过这座沿海城市，连接埃及与黎凡特。游戏把这里列为城市落点。",
+        "introduction": "加沙城位于东地中海沿岸的加沙地带。古代商路经过这座沿海城市，连接埃及与黎凡特。这里是本题的城市定位点。",
         "introductionSource": "https://en.wikipedia.org/wiki/Gaza_City"
       },
       "PAN": {
         "zh": "巴拿马城",
-        "note": "巴拿马城是巴拿马的游戏首都栏采用的行政中心。在地理地图上，先找北纬9.0°，再沿纬线找到西经79.5°附近。",
+        "note": "巴拿马的参考定位点是巴拿马城。在地理地图上，先找北纬9.0°，再沿纬线找到西经79.5°附近。",
         "coords": [
           -79.534983,
           8.969963
@@ -86496,7 +86496,7 @@
       },
       "PNG": {
         "zh": "莫尔斯比港",
-        "note": "莫尔斯比港是巴布亚新几内亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬9.5°，再沿纬线找到东经147.2°附近。",
+        "note": "巴布亚新几内亚的参考定位点是莫尔斯比港。在地理地图上，先找南纬9.5°，再沿纬线找到东经147.2°附近。",
         "coords": [
           147.192504,
           -9.464708
@@ -86515,7 +86515,7 @@
       },
       "PRY": {
         "zh": "亚松森",
-        "note": "亚松森是巴拉圭的游戏首都栏采用的行政中心。在地理地图上，先找南纬25.3°，再沿纬线找到西经57.6°附近。",
+        "note": "巴拉圭的参考定位点是亚松森。在地理地图上，先找南纬25.3°，再沿纬线找到西经57.6°附近。",
         "coords": [
           -57.643451,
           -25.294457
@@ -86534,7 +86534,7 @@
       },
       "QAT": {
         "zh": "多哈",
-        "note": "多哈是卡塔尔的游戏首都栏采用的行政中心。在地理地图上，先找北纬25.3°，再沿纬线找到东经51.5°附近。",
+        "note": "卡塔尔的参考定位点是多哈。在地理地图上，先找北纬25.3°，再沿纬线找到东经51.5°附近。",
         "coords": [
           51.532968,
           25.286556
@@ -86553,7 +86553,7 @@
       },
       "RWA": {
         "zh": "基加利",
-        "note": "基加利是卢旺达的游戏首都栏采用的行政中心。在地理地图上，先找南纬2.0°，再沿纬线找到东经30.1°附近。",
+        "note": "卢旺达的参考定位点是基加利。在地理地图上，先找南纬2.0°，再沿纬线找到东经30.1°附近。",
         "coords": [
           30.058586,
           -1.951644
@@ -86572,7 +86572,7 @@
       },
       "KNA": {
         "zh": "巴斯特尔",
-        "note": "巴斯特尔是圣基茨和尼维斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬17.3°，再沿纬线找到西经62.7°附近。",
+        "note": "圣基茨和尼维斯的参考定位点是巴斯特尔。在地理地图上，先找北纬17.3°，再沿纬线找到西经62.7°附近。",
         "coords": [
           -62.717009,
           17.302031
@@ -86591,7 +86591,7 @@
       },
       "LCA": {
         "zh": "卡斯特里",
-        "note": "卡斯特里是圣卢西亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.0°，再沿纬线找到西经61.0°附近。",
+        "note": "圣卢西亚的参考定位点是卡斯特里。在地理地图上，先找北纬14.0°，再沿纬线找到西经61.0°附近。",
         "coords": [
           -61.000008,
           14.001974
@@ -86610,7 +86610,7 @@
       },
       "VCT": {
         "zh": "金斯敦",
-        "note": "金斯敦是圣文森特和格林纳丁斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬13.1°，再沿纬线找到西经61.2°附近。",
+        "note": "圣文森特和格林纳丁斯的参考定位点是金斯敦。在地理地图上，先找北纬13.1°，再沿纬线找到西经61.2°附近。",
         "coords": [
           -61.212062,
           13.148279
@@ -86629,7 +86629,7 @@
       },
       "WSM": {
         "zh": "阿皮亚",
-        "note": "阿皮亚是萨摩亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬13.8°，再沿纬线找到西经171.7°附近。",
+        "note": "萨摩亚的参考定位点是阿皮亚。在地理地图上，先找南纬13.8°，再沿纬线找到西经171.7°附近。",
         "coords": [
           -171.738642,
           -13.841545
@@ -86648,7 +86648,7 @@
       },
       "STP": {
         "zh": "圣多美",
-        "note": "圣多美是圣多美和普林西比的游戏首都栏采用的行政中心。在地理地图上，先找北纬0.3°，再沿纬线找到东经6.7°附近。",
+        "note": "圣多美和普林西比的参考定位点是圣多美。在地理地图上，先找北纬0.3°，再沿纬线找到东经6.7°附近。",
         "coords": [
           6.733325,
           0.333402
@@ -86667,7 +86667,7 @@
       },
       "SAU": {
         "zh": "利雅得",
-        "note": "利雅得是沙特阿拉伯的游戏首都栏采用的行政中心。在地理地图上，先找北纬24.6°，再沿纬线找到东经46.8°附近。",
+        "note": "沙特阿拉伯的参考定位点是利雅得。在地理地图上，先找北纬24.6°，再沿纬线找到东经46.8°附近。",
         "coords": [
           46.770796,
           24.642779
@@ -86686,7 +86686,7 @@
       },
       "SEN": {
         "zh": "达喀尔",
-        "note": "达喀尔是塞内加尔的游戏首都栏采用的行政中心。在地理地图上，先找北纬14.7°，再沿纬线找到西经17.5°附近。",
+        "note": "塞内加尔的参考定位点是达喀尔。在地理地图上，先找北纬14.7°，再沿纬线找到西经17.5°附近。",
         "coords": [
           -17.475076,
           14.717778
@@ -86705,7 +86705,7 @@
       },
       "SYC": {
         "zh": "维多利亚",
-        "note": "维多利亚是塞舌尔的游戏首都栏采用的行政中心。在地理地图上，先找南纬4.6°，再沿纬线找到东经55.4°附近。",
+        "note": "塞舌尔的参考定位点是维多利亚。在地理地图上，先找南纬4.6°，再沿纬线找到东经55.4°附近。",
         "coords": [
           55.44999,
           -4.616632
@@ -86724,7 +86724,7 @@
       },
       "SLE": {
         "zh": "弗里敦",
-        "note": "弗里敦是塞拉利昂的游戏首都栏采用的行政中心。在地理地图上，先找北纬8.5°，再沿纬线找到西经13.2°附近。",
+        "note": "塞拉利昂的参考定位点是弗里敦。在地理地图上，先找北纬8.5°，再沿纬线找到西经13.2°附近。",
         "coords": [
           -13.236162,
           8.471957
@@ -86743,7 +86743,7 @@
       },
       "SGP": {
         "zh": "新加坡",
-        "note": "新加坡是新加坡的游戏首都栏采用的行政中心。在地理地图上，先找北纬1.3°，再沿纬线找到东经103.9°附近。",
+        "note": "新加坡的参考定位点是新加坡。在地理地图上，先找北纬1.3°，再沿纬线找到东经103.9°附近。",
         "coords": [
           103.853875,
           1.294979
@@ -86762,7 +86762,7 @@
       },
       "SLB": {
         "zh": "霍尼亚拉",
-        "note": "霍尼亚拉是所罗门群岛的游戏首都栏采用的行政中心。在地理地图上，先找南纬9.4°，再沿纬线找到东经159.9°附近。",
+        "note": "所罗门群岛的参考定位点是霍尼亚拉。在地理地图上，先找南纬9.4°，再沿纬线找到东经159.9°附近。",
         "coords": [
           159.949766,
           -9.437994
@@ -86781,7 +86781,7 @@
       },
       "ZAF": {
         "zh": "比勒陀利亚（行政首都）",
-        "note": "比勒陀利亚（行政首都）是南非的游戏首都栏采用的行政中心。在地理地图上，先找南纬25.7°，再沿纬线找到东经28.2°附近。",
+        "note": "南非的参考定位点是比勒陀利亚（行政首都）。在地理地图上，先找南纬25.7°，再沿纬线找到东经28.2°附近。",
         "coords": [
           28.227483,
           -25.704975
@@ -86800,7 +86800,7 @@
       },
       "SSD": {
         "zh": "朱巴",
-        "note": "朱巴是南苏丹的游戏首都栏采用的行政中心。在地理地图上，先找北纬4.8°，再沿纬线找到东经31.6°附近。",
+        "note": "南苏丹的参考定位点是朱巴。在地理地图上，先找北纬4.8°，再沿纬线找到东经31.6°附近。",
         "coords": [
           31.580026,
           4.829975
@@ -86819,7 +86819,7 @@
       },
       "LKA": {
         "zh": "斯里贾亚瓦德纳普拉科特",
-        "note": "斯里贾亚瓦德纳普拉科特是斯里兰卡的游戏首都栏采用的行政中心。游戏标点题把城市画成一个点，轮廓题则要辨认它所属的整个区域。",
+        "note": "斯里兰卡的参考定位点是斯里贾亚瓦德纳普拉科特。标点练习用一个点表示城市，轮廓题则要辨认它所属的整个区域。",
         "coords": [
           79.949993,
           6.900004
@@ -86838,7 +86838,7 @@
       },
       "SUR": {
         "zh": "帕拉马里博",
-        "note": "帕拉马里博是苏里南的游戏首都栏采用的行政中心。在地理地图上，先找北纬5.8°，再沿纬线找到西经55.2°附近。",
+        "note": "苏里南的参考定位点是帕拉马里博。在地理地图上，先找北纬5.8°，再沿纬线找到西经55.2°附近。",
         "coords": [
           -55.167031,
           5.83503
@@ -86857,7 +86857,7 @@
       },
       "SYR": {
         "zh": "大马士革",
-        "note": "大马士革是叙利亚的游戏首都栏采用的行政中心。在地理地图上，先找北纬33.5°，再沿纬线找到东经36.3°附近。",
+        "note": "叙利亚的参考定位点是大马士革。在地理地图上，先找北纬33.5°，再沿纬线找到东经36.3°附近。",
         "coords": [
           36.29805,
           33.50198
@@ -86876,7 +86876,7 @@
       },
       "TJK": {
         "zh": "杜尚别",
-        "note": "杜尚别是塔吉克斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬38.6°，再沿纬线找到东经68.8°附近。",
+        "note": "塔吉克斯坦的参考定位点是杜尚别。在地理地图上，先找北纬38.6°，再沿纬线找到东经68.8°附近。",
         "coords": [
           68.773879,
           38.560035
@@ -86895,7 +86895,7 @@
       },
       "TGO": {
         "zh": "洛美",
-        "note": "洛美是多哥的游戏首都栏采用的行政中心。在地理地图上，先找北纬6.1°，再沿纬线找到东经1.2°附近。",
+        "note": "多哥的参考定位点是洛美。在地理地图上，先找北纬6.1°，再沿纬线找到东经1.2°附近。",
         "coords": [
           1.220811,
           6.133883
@@ -86914,7 +86914,7 @@
       },
       "TON": {
         "zh": "努库阿洛法",
-        "note": "努库阿洛法是汤加的游戏首都栏采用的行政中心。在地理地图上，先找南纬21.1°，再沿纬线找到西经175.2°附近。",
+        "note": "汤加的参考定位点是努库阿洛法。在地理地图上，先找南纬21.1°，再沿纬线找到西经175.2°附近。",
         "coords": [
           -175.220565,
           -21.138512
@@ -86933,7 +86933,7 @@
       },
       "TTO": {
         "zh": "西班牙港",
-        "note": "西班牙港是特立尼达和多巴哥的游戏首都栏采用的行政中心。在地理地图上，先找北纬10.7°，再沿纬线找到西经61.5°附近。",
+        "note": "特立尼达和多巴哥的参考定位点是西班牙港。在地理地图上，先找北纬10.7°，再沿纬线找到西经61.5°附近。",
         "coords": [
           -61.517031,
           10.651997
@@ -86952,7 +86952,7 @@
       },
       "TUN": {
         "zh": "突尼斯市",
-        "note": "突尼斯市是突尼斯的游戏首都栏采用的行政中心。在地理地图上，先找北纬36.8°，再沿纬线找到东经10.2°附近。",
+        "note": "突尼斯的参考定位点是突尼斯市。在地理地图上，先找北纬36.8°，再沿纬线找到东经10.2°附近。",
         "coords": [
           10.179678,
           36.802778
@@ -86971,7 +86971,7 @@
       },
       "TKM": {
         "zh": "阿什哈巴德",
-        "note": "阿什哈巴德是土库曼斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬37.9°，再沿纬线找到东经58.4°附近。",
+        "note": "土库曼斯坦的参考定位点是阿什哈巴德。在地理地图上，先找北纬37.9°，再沿纬线找到东经58.4°附近。",
         "coords": [
           58.383299,
           37.949995
@@ -86990,7 +86990,7 @@
       },
       "TUV": {
         "zh": "富纳富提",
-        "note": "富纳富提是图瓦卢的游戏首都栏采用的行政中心。在地理地图上，先找南纬8.5°，再沿纬线找到东经179.2°附近。",
+        "note": "图瓦卢的参考定位点是富纳富提。在地理地图上，先找南纬8.5°，再沿纬线找到东经179.2°附近。",
         "coords": [
           179.216647,
           -8.516652
@@ -87009,7 +87009,7 @@
       },
       "UGA": {
         "zh": "坎帕拉",
-        "note": "坎帕拉是乌干达的游戏首都栏采用的行政中心。在地理地图上，先找北纬0.3°，再沿纬线找到东经32.6°附近。",
+        "note": "乌干达的参考定位点是坎帕拉。在地理地图上，先找北纬0.3°，再沿纬线找到东经32.6°附近。",
         "coords": [
           32.581378,
           0.318605
@@ -87028,7 +87028,7 @@
       },
       "ARE": {
         "zh": "阿布扎比",
-        "note": "阿布扎比是阿拉伯联合酋长国的游戏首都栏采用的行政中心。在地理地图上，先找北纬24.5°，再沿纬线找到东经54.4°附近。",
+        "note": "阿拉伯联合酋长国的参考定位点是阿布扎比。在地理地图上，先找北纬24.5°，再沿纬线找到东经54.4°附近。",
         "coords": [
           54.366593,
           24.466684
@@ -87047,7 +87047,7 @@
       },
       "URY": {
         "zh": "蒙得维的亚",
-        "note": "蒙得维的亚是乌拉圭的游戏首都栏采用的行政中心。在地理地图上，先找南纬34.9°，再沿纬线找到西经56.2°附近。",
+        "note": "乌拉圭的参考定位点是蒙得维的亚。在地理地图上，先找南纬34.9°，再沿纬线找到西经56.2°附近。",
         "coords": [
           -56.172998,
           -34.856096
@@ -87066,7 +87066,7 @@
       },
       "UZB": {
         "zh": "塔什干",
-        "note": "塔什干是乌兹别克斯坦的游戏首都栏采用的行政中心。在地理地图上，先找北纬41.3°，再沿纬线找到东经69.3°附近。",
+        "note": "乌兹别克斯坦的参考定位点是塔什干。在地理地图上，先找北纬41.3°，再沿纬线找到东经69.3°附近。",
         "coords": [
           69.292987,
           41.313648
@@ -87085,7 +87085,7 @@
       },
       "VUT": {
         "zh": "维拉港",
-        "note": "维拉港是瓦努阿图的游戏首都栏采用的行政中心。在地理地图上，先找南纬17.7°，再沿纬线找到东经168.3°附近。",
+        "note": "瓦努阿图的参考定位点是维拉港。在地理地图上，先找南纬17.7°，再沿纬线找到东经168.3°附近。",
         "coords": [
           168.316641,
           -17.73335
@@ -87104,7 +87104,7 @@
       },
       "YEM": {
         "zh": "萨那",
-        "note": "萨那是也门的游戏首都栏采用的行政中心。在地理地图上，先找北纬15.4°，再沿纬线找到东经44.2°附近。",
+        "note": "也门的参考定位点是萨那。在地理地图上，先找北纬15.4°，再沿纬线找到东经44.2°附近。",
         "coords": [
           44.204648,
           15.356679
@@ -87123,7 +87123,7 @@
       },
       "ZMB": {
         "zh": "卢萨卡",
-        "note": "卢萨卡是赞比亚的游戏首都栏采用的行政中心。在地理地图上，先找南纬15.4°，再沿纬线找到东经28.3°附近。",
+        "note": "赞比亚的参考定位点是卢萨卡。在地理地图上，先找南纬15.4°，再沿纬线找到东经28.3°附近。",
         "coords": [
           28.281382,
           -15.414698
@@ -87142,7 +87142,7 @@
       },
       "ZWE": {
         "zh": "哈拉雷",
-        "note": "哈拉雷是津巴布韦的游戏首都栏采用的行政中心。在地理地图上，先找南纬17.8°，再沿纬线找到东经31.0°附近。",
+        "note": "津巴布韦的参考定位点是哈拉雷。在地理地图上，先找南纬17.8°，再沿纬线找到东经31.0°附近。",
         "coords": [
           31.042764,
           -17.815844
@@ -87161,7 +87161,7 @@
       },
       "IRQ": {
         "zh": "巴格达",
-        "note": "巴格达是伊拉克的游戏首都栏采用的行政中心。在地理地图上，先找北纬33.3°，再沿纬线找到东经44.4°附近。",
+        "note": "伊拉克的参考定位点是巴格达。在地理地图上，先找北纬33.3°，再沿纬线找到东经44.4°附近。",
         "coords": [
           44.391923,
           33.340594
@@ -87180,7 +87180,7 @@
       },
       "COK": {
         "zh": "阿瓦鲁阿",
-        "note": "阿瓦鲁阿是库克群岛的游戏首都栏采用的行政中心。在地理地图上，先找南纬21.2°，再沿纬线找到西经159.8°附近。",
+        "note": "库克群岛的参考定位点是阿瓦鲁阿。在地理地图上，先找南纬21.2°，再沿纬线找到西经159.8°附近。",
         "coords": [
           -159.785437,
           -21.196226
@@ -87199,7 +87199,7 @@
       },
       "UNK": {
         "zh": "普里什蒂纳",
-        "note": "普里什蒂纳是科索沃的游戏首都栏采用的行政中心。游戏标点题把城市画成一个点，轮廓题则要辨认它所属的整个区域。",
+        "note": "科索沃的参考定位点是普里什蒂纳。标点练习用一个点表示城市，轮廓题则要辨认它所属的整个区域。",
         "coords": [
           21.165984,
           42.66671
@@ -87218,7 +87218,7 @@
       },
       "NIU": {
         "zh": "阿洛菲",
-        "note": "阿洛菲是纽埃的游戏首都栏采用的行政中心。在地理地图上，先找南纬19.1°，再沿纬线找到西经169.9°附近。",
+        "note": "纽埃的参考定位点是阿洛菲。在地理地图上，先找南纬19.1°，再沿纬线找到西经169.9°附近。",
         "coords": [
           -169.913625,
           -19.065988
@@ -88187,7 +88187,7 @@
       },
       "GRL": {
         "zh": "努克",
-        "note": "努克是格陵兰的游戏首都栏采用的行政中心。在地理地图上，先找北纬64.2°，再沿纬线找到西经51.7°附近。",
+        "note": "格陵兰的参考定位点是努克。在地理地图上，先找北纬64.2°，再沿纬线找到西经51.7°附近。",
         "coords": [
           -51.732659,
           64.198282
@@ -88892,7 +88892,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/058_venezuela2_souvenir.webp",
             "subject": "Waterfall model",
-            "caption": "游戏中委内瑞拉的瀑布模型"
+            "caption": "委内瑞拉的瀑布模型"
           }
         },
         "Atacama": {
@@ -89368,7 +89368,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/090_bhutan_souvenir.webp",
             "subject": "Festival mask",
-            "caption": "游戏中的不丹节庆面具，图示舞者佩戴的物件。"
+            "caption": "图中的不丹节庆面具，图示舞者佩戴的物件。"
           }
         },
         "Drummers": {
@@ -90384,7 +90384,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/110_ecuador2_souvenir.webp",
             "subject": "Giant tortoise",
-            "caption": "游戏中的巨龟"
+            "caption": "图中的巨龟"
           }
         },
         "Merlion": {
@@ -91491,7 +91491,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/024_netherlands2_souvenir.webp",
             "subject": "Tulip bulbs",
-            "caption": "游戏中的郁金香花与球根"
+            "caption": "图中的郁金香花与球根"
           }
         },
         "Harps": {
@@ -92338,7 +92338,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/090_bhutan_souvenir.webp",
             "subject": "Festival mask",
-            "caption": "游戏中的不丹节庆面具"
+            "caption": "图中的不丹节庆面具"
           }
         },
         "Volcano": {
@@ -92514,7 +92514,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/166_papuanewguinea_souvenir.webp",
             "subject": "Painted ceremonial mask",
-            "caption": "游戏中的彩绘仪式面具"
+            "caption": "图中的彩绘仪式面具"
           }
         },
         "PolyphonicSongs": {
@@ -92975,7 +92975,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/092_botswana_souvenir.webp",
             "subject": "Woven basket",
-            "caption": "游戏中的编织篮，是编篮成品的一个例子。"
+            "caption": "图中的编织篮，是编篮成品的一个例子。"
           }
         },
         "TwinIslands": {
@@ -94272,7 +94272,7 @@
             "credit": "Geo Book 1.0.8.0",
             "src": "assets/game/souvenir/200_zimbabwe_souvenir.webp",
             "subject": "Zimbabwe Bird carving",
-            "caption": "木雕与石雕属于雕刻工艺，这里展示游戏中的津巴布韦鸟雕件。"
+            "caption": "木雕与石雕属于雕刻工艺，这里展示图中的津巴布韦鸟雕件。"
           }
         },
         "Dragons": {
@@ -96263,7 +96263,7 @@
         },
         "State": {
           "en": "state",
-          "zh": "在这款游戏的 U.S. state 分类里指美国的州。",
+          "zh": "州。U.S. state 指美国的州。",
           "ipa": "/ˈsteɪt/",
           "approximate": false
         },
@@ -96293,7 +96293,7 @@
         },
         "Area": {
           "en": "area",
-          "zh": "面积，游戏比较的是平方千米。",
+          "zh": "面积，练习中使用平方千米。",
           "ipa": "/ˈɛriə/",
           "approximate": false
         },
@@ -96305,7 +96305,7 @@
         },
         "Visits": {
           "en": "visits",
-          "zh": "到访次数；同一个人可以到访多次。游戏表未标年份。",
+          "zh": "到访次数；同一个人可以到访多次。练习数据未注明统计年份。",
           "ipa": "/ˈvɪzɪts/",
           "approximate": false
         },
@@ -96317,7 +96317,7 @@
         },
         "Souvenir": {
           "en": "souvenir",
-          "zh": "纪念品。在 Souvenir Sort 中要把图案归到相应地点。",
+          "zh": "纪念品。在 Souvenir Matching 中要把图案归到相应地点。",
           "ipa": "/ˌsuvəˈnɪr/",
           "approximate": false
         },
@@ -96861,7 +96861,7 @@
         "zh": "奥赫里德湖",
         "ipa": "/leɪk ˈoʊhrɪd/",
         "approximate": true,
-        "note": "奥赫里德湖跨北马其顿和阿尔巴尼亚。游戏将这一地标列在北马其顿条目下。",
+        "note": "奥赫里德湖跨北马其顿和阿尔巴尼亚。本题可从北马其顿一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/lake-ohrid.webp",
@@ -97155,7 +97155,7 @@
         "zh": "马特洪峰",
         "ipa": "/ˈmætɚˌhɔrn/",
         "approximate": false,
-        "note": "马特洪峰在瑞士与意大利边境。游戏把这座尖峰配给瑞士。",
+        "note": "马特洪峰在瑞士与意大利边境。本题从瑞士一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/matterhorn.webp",
@@ -97323,7 +97323,7 @@
         "zh": "尼亚加拉大瀑布",
         "ipa": "/naɪˈæɡrə fɔlz/",
         "approximate": false,
-        "note": "尼亚加拉瀑布群横跨加拿大与美国边境。本版把这道标点题列在加拿大名下。",
+        "note": "尼亚加拉瀑布群横跨加拿大与美国边境。本题从加拿大一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/clues/niagara-falls.webp",
@@ -97365,7 +97365,7 @@
         "zh": "伊瓜苏瀑布",
         "ipa": "/ˌiɡwəˈsu fɔlz/",
         "approximate": true,
-        "note": "伊瓜苏瀑布群横跨阿根廷与巴西边界，游戏以阿根廷为归属。falls 是瀑布的常用地名形式。",
+        "note": "伊瓜苏瀑布群横跨阿根廷与巴西边界，本题从阿根廷一侧定位。falls 是瀑布的常用地名形式。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/iguazu-falls.webp",
@@ -97682,7 +97682,7 @@
         "zh": "刚果圣安娜大教堂",
         "ipa": "/ˌbɑzɪˈlik sɛnt ˈæn du ˈkɑŋɡoʊ/",
         "approximate": true,
-        "note": "这座教堂位于布拉柴维尔。du Congo 是法语，游戏中的归属为刚果共和国。",
+        "note": "这座教堂位于布拉柴维尔。du Congo 是法语，对应的国家是刚果共和国。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/basilique-sainte-anne-du-congo.webp",
@@ -97787,7 +97787,7 @@
         "zh": "珠穆朗玛峰",
         "ipa": "/maʊnt ˈɛvɚəst/",
         "approximate": false,
-        "note": "珠穆朗玛峰位于中国与尼泊尔边界。游戏把 Mount Everest 配在尼泊尔的名胜题中。",
+        "note": "珠穆朗玛峰位于中国与尼泊尔边界。本题从尼泊尔一侧定位 Mount Everest。",
         "illustration": {
           "kind": "commons",
           "src": "assets/clues/everest.webp",
@@ -98186,7 +98186,7 @@
         "zh": "鲁托武尼罗河源头纪念地",
         "ipa": "/sɔrs əv ðə naɪl ruˈtoʊvu/",
         "approximate": true,
-        "note": "游戏选取鲁托武的源头纪念地。尼罗河有多条源流，题目的逗号后地名限定了落点。",
+        "note": "本题选取鲁托武的源头纪念地。尼罗河有多条源流，题目的逗号后地名限定了落点。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/source-of-the-nile-rutovu.webp",
@@ -98774,7 +98774,7 @@
         "zh": "宁巴山",
         "ipa": "/maʊnt ˈnɪmbə/",
         "approximate": true,
-        "note": "宁巴山地跨越国界，不能凭山名推断整条山脉属于一个国家。游戏题目将它归在几内亚。",
+        "note": "宁巴山地跨越国界，不能凭山名推断整条山脉属于一个国家。本题从几内亚一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/mount-nimba.webp",
@@ -98921,7 +98921,7 @@
         "zh": "耶路撒冷西墙（哭墙）",
         "ipa": "/ˈwɛstɚn wɔl/",
         "approximate": false,
-        "note": "西墙位于耶路撒冷老城。游戏按以色列收录这一题，耶路撒冷的最终地位存在争议。",
+        "note": "西墙位于耶路撒冷老城。本练习将该题列在以色列条目下，耶路撒冷的最终地位存在争议。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/western-wall.webp",
@@ -99217,7 +99217,7 @@
         "zh": "马拉维湖",
         "ipa": "/leɪk məˈlɑwi/",
         "approximate": false,
-        "note": "马拉维湖跨越多个国家，英文 Lake Malawi 采用马拉维一侧常见的名称。游戏归入马拉维。",
+        "note": "马拉维湖跨越多个国家，英文 Lake Malawi 采用马拉维一侧常见的名称。本题从马拉维一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/clues/lake.webp",
@@ -100122,7 +100122,7 @@
         "zh": "古帕玛库文化景观（巴塔马里巴人聚居地）",
         "ipa": "/ˌkutəməˈku/",
         "approximate": true,
-        "note": "库塔马库文化景观与巴塔马里巴人的土造塔屋有关。游戏将地标配给多哥。",
+        "note": "库塔马库文化景观与巴塔马里巴人的土造塔屋有关。本题从多哥一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/koutammakou.webp",
@@ -100332,7 +100332,7 @@
         "zh": "亚苏尔火山",
         "ipa": "/maʊnt ˈjɑsʊr/",
         "approximate": true,
-        "note": "亚苏尔山是坦纳岛上的火山。先确定瓦努阿图群岛，再看游戏给出的具体落点。",
+        "note": "亚苏尔山是坦纳岛上的火山。先确定瓦努阿图群岛，再找到坦纳岛。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/mount-yasur.webp",
@@ -100374,7 +100374,7 @@
         "zh": "维多利亚瀑布",
         "ipa": "/vɪkˈtɔriə fɔlz/",
         "approximate": false,
-        "note": "维多利亚瀑布位于赞比西河上，跨赞比亚和津巴布韦。游戏把它配给赞比亚。",
+        "note": "维多利亚瀑布位于赞比西河上，跨赞比亚和津巴布韦。本题从赞比亚一侧定位。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/victoria-falls.webp",
@@ -100521,7 +100521,7 @@
         "zh": "德纳里山",
         "ipa": "/dəˈnɑli/",
         "approximate": false,
-        "note": "游戏字段使用 Denali 这一个词，标的是阿拉斯加的山峰。按游戏拼写检索最容易找到。",
+        "note": "本题的英文地名 Denali 指阿拉斯加的山峰。用这个名称可以找到对应词卡。",
         "illustration": {
           "kind": "commons",
           "src": "assets/landmarks/denali.webp",
@@ -101549,7 +101549,7 @@
     },
     "placeNotes": {
       "ALB": {
-        "zh": "红底双头鹰可以直接认旗。再把亚得里亚海东岸与冷战时期修建的碉堡相连；游戏写 stone bunkers，沿途常见的圆顶碉堡实际多以混凝土建造。"
+        "zh": "红底双头鹰可以直接认旗。再把亚得里亚海东岸与冷战时期修建的碉堡相连；线索写作 stone bunkers，沿途常见的圆顶碉堡实际多以混凝土建造。"
       },
       "AND": {
         "zh": "从法国和西班牙之间找比利牛斯山。冬天能沿山坡滑雪，边境购物让 duty free 成了另一条线索；山谷之家则是安道尔的旧议会大楼。"
@@ -101621,7 +101621,7 @@
         "source": "https://ich.unesco.org/en/RL/the-baltic-song-and-dance-celebrations-00087"
       },
       "MKD": {
-        "zh": "游戏写 red sun，但北马其顿国旗实际是红底黄日，光芒从中央向外放射。西南的奥赫里德湖可对应 lakes，红椒则可做成 ajvar 酱。"
+        "zh": "线索写作 red sun，但北马其顿国旗实际是红底黄日，光芒从中央向外放射。西南的奥赫里德湖可对应 lakes，红椒则可做成 ajvar 酱。"
       },
       "MLT": {
         "zh": "骑士团历史可联系瓦莱塔的圣约翰共主教座堂。浅色石灰岩常用来砌墙，阳光下呈蜂蜜色，是辨认这座地中海岛国的街景线索。"
@@ -101630,7 +101630,7 @@
         "zh": "葡萄园提供酿酒原料，果园则提醒人们当地也种水果。民间地毯由经纬线织出图案，可以和前两种农业景观分别记。"
       },
       "MCO": {
-        "zh": "蒙特卡洛赌场是游戏的地标，王室与亲王公国则解释了 principality。沿地中海法国南岸找这个小国，蒙特卡洛只是其中一个城区。"
+        "zh": "蒙特卡洛赌场是这道定位题的地标，王室与亲王公国则解释了 principality。沿地中海法国南岸找这个小国，蒙特卡洛只是其中一个城区。"
       },
       "DEU": {
         "zh": "pretzel 常是扭成结状的烘焙面包。格林兄弟搜集的童话、冬季广场上的圣诞市场，分别对应 fairy tales 和 Christmas markets。"
@@ -101675,13 +101675,13 @@
         "zh": "vyshyvanka 是饰有刺绣的传统衬衫。向日葵可榨油，罗宋汤 borscht 的许多做法会用甜菜；花田、衣纹和汤色是三个记忆点。"
       },
       "VAT": {
-        "zh": "教宗礼服和瑞士近卫队指向梵蒂冈的机构。西斯廷礼拜堂以天顶壁画著称，游戏的定位地标圣伯多禄大殿则是另一座建筑。"
+        "zh": "教宗礼服和瑞士近卫队指向梵蒂冈的机构。西斯廷礼拜堂以天顶壁画著称，定位题中的圣伯多禄大殿则是另一座建筑。"
       },
       "HUN": {
         "zh": "paprika 是辣椒制成的调味粉，能把匈牙利炖汤 goulash 染成红色。再把骑术表演联系到匈牙利平原，餐桌和草原就都有了坐标。"
       },
       "GBR": {
-        "zh": "Big Ben 严格说是伦敦伊丽莎白塔内的大钟。双层巴士可放在同一条伦敦街景里；tea time 则是游戏给的日常饮食提示。"
+        "zh": "Big Ben 严格说是伦敦伊丽莎白塔内的大钟。双层巴士可放在同一条伦敦街景里；tea time 则是有关当地饮食的线索。"
       },
       "ITA": {
         "zh": "罗马斗兽场给出古罗马的地点线索。pizza 指烤制的有馅料面饼，gelato 是意式冰淇淋；可将两种食物与竞技场的椭圆形外观分别记。"
@@ -101693,7 +101693,7 @@
         "zh": "枫叶居于加拿大国旗中央，冰球可想到冰面上的杆和球饼。尼亚加拉瀑布横跨加美边境，加拿大一侧在安大略省。"
       },
       "BRA": {
-        "zh": "热带雨林指向北部亚马孙流域，狂欢节和桑巴则容易联想到东南沿海的里约热内卢。游戏的基督像也在里约，可以在地图上区分两处。"
+        "zh": "热带雨林指向北部亚马孙流域，狂欢节和桑巴则容易联想到东南沿海的里约热内卢。基督像也在里约，可以在地图上区分两处。"
       },
       "ARG": {
         "zh": "探戈让人想到布宜诺斯艾利斯和拉普拉塔河地区。gauchos 是南美草原上的牧人，mate 是用马黛叶冲泡、常用带滤头吸管饮用的茶饮。"
@@ -101768,7 +101768,7 @@
         "zh": "在阿尔及利亚南部找撒哈拉，椰枣树可以长在有地下水和灌溉的绿洲。薄荷茶是饮品线索，塔西利高原的岩画则为沙漠提供地标。"
       },
       "AGO": {
-        "zh": "鼓声和面具可联系当地不同社群的表演与仪式。猴面包树最醒目的特征是粗大的树干；游戏另以卡兰杜拉瀑布提供定位。"
+        "zh": "鼓声和面具可联系当地不同社群的表演与仪式。猴面包树最醒目的特征是粗大的树干；还可以用卡兰杜拉瀑布定位。"
       },
       "ATG": {
         "zh": "粉色海滩特别可想到巴布达岛，细碎的海洋生物遗骸能给沙粒增添粉色。珊瑚礁和帆船则把画面接到加勒比海上。",
@@ -101796,7 +101796,7 @@
         "zh": "蓝洞是海上近圆形的深色水域，周围浅礁让颜色反差格外显眼。潜水与海景相连，玛雅遗址则把视线带到伯利兹陆地。"
       },
       "BEN": {
-        "zh": "Vodun 是西非宗教传统，水上村落可想到棚屋架在桩上的冈维埃。游戏还给 bronze art；博物馆常说的“贝宁青铜器”来自今尼日利亚的历史贝宁王国。",
+        "zh": "Vodun 是西非宗教传统，水上村落可想到棚屋架在桩上的冈维埃。另一条线索是 bronze art；博物馆常说的“贝宁青铜器”来自今尼日利亚的历史贝宁王国。",
         "source": "https://africa.si.edu/exhibitions/benin-bronzes-ambassadors-oba"
       },
       "BTN": {
@@ -101828,7 +101828,7 @@
         "source": "https://ich.unesco.org/en/RL/morna-musical-practice-of-cabo-verde-01469"
       },
       "CAF": {
-        "zh": "雨林、蝴蝶是自然线索，鼓则是文化线索。中非共和国南部有热带森林，北部有稀树草原，不能把游戏的一条 rainforest 扩展到全国。"
+        "zh": "雨林、蝴蝶是自然线索，鼓则是文化线索。中非共和国南部有热带森林，北部有稀树草原，rainforest 这条线索只描述其中一部分。"
       },
       "TCD": {
         "zh": "乌尼昂加湖群位于撒哈拉沙漠之中，在少雨环境里仍有湖水，地下水补给是重要原因。desert 与 lakes 可以指向同一地点。"
@@ -101986,7 +101986,7 @@
         "zh": "渡渡鸟曾生活在毛里求斯，如今已经灭绝。想象它出现在岛屿的历史图册里，再把海滩和甘蔗田放进今天的风景。"
       },
       "MEX": {
-        "zh": "万寿菊的橙色花朵常用于亡灵节布置。taco 是夹馅食用的玉米或小麦薄饼，sombrero 是西班牙语的帽子，可用宽檐帽记这条游戏提示。"
+        "zh": "万寿菊的橙色花朵常用于亡灵节布置。taco 是夹馅食用的玉米或小麦薄饼，sombrero 是西班牙语的帽子，可用宽檐帽记这条线索。"
       },
       "FSM": {
         "zh": "stone money 尤其指雅浦岛的 rai 石币，典型外形是中间有孔的石盘。群岛之间依靠航海往来，独木舟与分散岛屿便容易连记。"
@@ -102032,7 +102032,7 @@
         "zh": "巴拿马运河横切中美洲地峡，把加勒比海一侧与太平洋一侧连接。molas 是古纳人用多层彩布剪缝形成图案的织物，雨林则是自然线索。"
       },
       "PNG": {
-        "zh": "天堂鸟的华丽羽饰与新几内亚相联。游戏把不同地方社群统称 tribes，但当地各社区语言与传统多样，面部彩绘的图案也随场合和社群变化。"
+        "zh": "天堂鸟的华丽羽饰与新几内亚相联。线索中的 tribes 泛指多个地方社群，但当地各社区语言与传统多样，面部彩绘的图案也随场合和社群变化。"
       },
       "PRY": {
         "zh": "tereré 是以冷水冲泡的马黛饮品，适合与邻国常见的热马黛茶作比较。竖琴和被称为 ñandutí 的精细花边则分别对应音乐与织艺。",
@@ -102060,7 +102060,7 @@
         "zh": "圣多美和普林西比是国名中的两座主要岛屿。湿热环境适合可可，圣多美岛冒出林冠的“大犬峰”则给雨林一个易辨的轮廓。"
       },
       "SAU": {
-        "zh": "椰枣树适于有水源的绿洲农业，驯鹰可联系阿拉伯半岛的传统。麦加禁寺是游戏的地标，能把与邻国相似的沙漠线索落到沙特阿拉伯。"
+        "zh": "椰枣树适于有水源的绿洲农业，驯鹰可联系阿拉伯半岛的传统。麦加禁寺是这道定位题的地标，能把与邻国相似的沙漠线索落到沙特阿拉伯。"
       },
       "SEN": {
         "zh": "teranga 常用来表达塞内加尔的好客之道。猴面包树以粗壮树干容易辨认，鼓乐则用耳朵记，三条提示各有不同入口。"
@@ -102111,7 +102111,7 @@
         "zh": "carpets 对应带几何纹样的土库曼地毯，国旗上也能看到地毯纹样。马可想到阿哈尔捷金马，白色大理石建筑则指向首都阿什哈巴德。"
       },
       "TUV": {
-        "zh": "图瓦卢由多座低矮岛屿组成，游戏的 tiny island 可理解为陆地狭小。富纳富提的环礁围着潟湖，再把椰树放在狭窄陆地上记。"
+        "zh": "图瓦卢由多座低矮岛屿组成，线索 tiny island 可理解为陆地狭小。富纳富提的环礁围着潟湖，再把椰树放在狭窄陆地上记。"
       },
       "UGA": {
         "zh": "布温迪国家公园保护山地大猩猩，能给动物提示一个实际地点。matoke 指烹煮用的蕉类及其菜肴，鼓乐再提示当地表演传统。"
@@ -102126,7 +102126,7 @@
         "zh": "撒马尔罕曾是丝绸之路上的城市，雷吉斯坦广场四周的宗教学校以瓷砖立面著称。plov 则指抓饭，把古城与饮食串在一起。"
       },
       "VUT": {
-        "zh": "游戏写 bungee jumps，可联想到彭特科斯特岛用藤蔓举行的陆地跳水传统。它与山药种植季有关；亚苏尔火山则在塔纳岛。",
+        "zh": "线索写作 bungee jumps，可联想到彭特科斯特岛用藤蔓举行的陆地跳水传统。它与山药种植季有关；亚苏尔火山则在塔纳岛。",
         "source": "https://www.vanuatu.travel/en/things-to-do/culture"
       },
       "YEM": {
@@ -102136,7 +102136,7 @@
         "zh": "铜矿带可解释 copper，赞比西河上的维多利亚瀑布与津巴布韦共享。若看见 waterfalls，记住瀑布本身跨国，还需结合铜矿等提示判断。"
       },
       "ZWE": {
-        "zh": "花岗岩风化后有时留下看似彼此叠放的巨石。mbira 是用手指拨动金属簧片的乐器；游戏的“大津巴布韦”则是著名的石砌遗址。"
+        "zh": "花岗岩风化后有时留下看似彼此叠放的巨石。mbira 是用手指拨动金属簧片的乐器；“大津巴布韦”则是著名的石砌遗址。"
       },
       "IRQ": {
         "zh": "伊拉克南部的两河流域有湿地，狭长的小船适合穿行在水道和芦苇间。椰枣树与河流灌溉相联，地毯则是另一条工艺线索。"
@@ -102145,7 +102145,7 @@
         "zh": "艾图塔基潟湖使 lagoon 有了具体岛名。花朵可编成花冠，鼓点可为舞蹈伴奏，分别对应库克群岛的花饰与表演。"
       },
       "UNK": {
-        "zh": "flija 是把多层面糊逐层烤成的食物。普里什蒂纳的 NEWBORN 纪念碑与 2008 年宣布独立相联；游戏的 newest country 不适合作世界年代排名。"
+        "zh": "flija 是把多层面糊逐层烤成的食物。普里什蒂纳的 NEWBORN 纪念碑与 2008 年宣布独立相联；线索 newest country 不适合作世界年代排名。"
       },
       "NIU": {
         "zh": "纽埃属于隆起的珊瑚岛，海崖上的塔拉瓦拱门把 coral cliffs 落到实处。海域有鲸类活动，小小岛屿与开阔太平洋构成鲜明对照。"
@@ -102163,7 +102163,7 @@
         "zh": "钻石可想到阿肯色州的钻石坑州立公园；温泉对应温泉城及其国家公园。东部平原种稻，说明三条提示来自州内不同地点。"
       },
       "US-CA": {
-        "zh": "加州的巨杉生长在内华达山脉西坡，淘金热也可联想到山麓。电影明星则移到南部洛杉矶，山坡上的 Hollywood 字样是游戏地标。"
+        "zh": "加州的巨杉生长在内华达山脉西坡，淘金热也可联想到山麓。电影明星则移到南部洛杉矶，山坡上的 Hollywood 字样是定位地标。"
       },
       "US-CO": {
         "zh": "落基山脉贯穿科罗拉多州，冬季山坡可滑雪。aspen 指山杨，秋季叶片转黄；派克峰提供了可在地图上找到的山名。"
@@ -102179,13 +102179,13 @@
         "source": "https://dos.fl.gov/florida-facts/florida-state-symbols/state-reptile"
       },
       "US-GA": {
-        "zh": "佐治亚的桃和碧根果都长在果树上，sweet tea 通常是冰镇加糖茶。定位时再找亚特兰大，游戏的可口可乐世界就在这座州府。"
+        "zh": "佐治亚的桃和碧根果都长在果树上，sweet tea 通常是冰镇加糖茶。定位时再找亚特兰大，可口可乐世界就在这座州府。"
       },
       "US-HI": {
         "zh": "乌克丽丽是小型拨弦乐器，lei 是可用花、叶等串制的佩饰。钻石头山是欧胡岛的火山地貌，可以把音乐、花环与海岛轮廓串起来。"
       },
       "US-ID": {
-        "zh": "爱达荷的马铃薯、温泉和宝石分属耕作、地热与矿物线索。游戏写 sapphires（蓝宝石）；记州名时也可想到它的昵称“宝石之州”。"
+        "zh": "爱达荷的马铃薯、温泉和宝石分属耕作、地热与矿物线索。线索写作 sapphires（蓝宝石）；记州名时也可想到它的昵称“宝石之州”。"
       },
       "US-IL": {
         "zh": "伊利诺伊被称为 Prairie State，草原与今天的玉米农田都是内陆景观。deep dish 指芝加哥的深盘披萨，芝加哥也是“云门”雕塑所在地。"
@@ -102194,7 +102194,7 @@
         "zh": "玉米田指向中西部，篮球是印第安纳深受欢迎的运动。race cars 可直接联系印第安纳波利斯赛车场及在那里举行的印第安纳波利斯 500 英里赛。"
       },
       "US-IA": {
-        "zh": "玉米田、得梅因举行的州博览会、地平线上的风机，是艾奥瓦农业景观的三种切面。游戏地标《梦幻之地》外景地也有田边棒球场。"
+        "zh": "玉米田、得梅因举行的州博览会、地平线上的风机，是艾奥瓦农业景观的三种切面。定位地标《梦幻之地》外景地也有田边棒球场。"
       },
       "US-KS": {
         "zh": "向日葵是堪萨斯州花，小麦田是大平原农业画面。tornadoes 来自中部平原常见的强对流天气；三条线索可联想到开阔的田野。"
@@ -102268,7 +102268,7 @@
         "zh": "自由钟在费城，可从钟身裂纹认出。pretzels 是扭结面包，fireflies 是能发光的萤火虫；配合地标就能把食物和自然提示落到宾夕法尼亚。"
       },
       "US-RI": {
-        "zh": "罗得岛按总面积是美国最小的州，海岸却曲折多湾。纳拉甘西特湾适合联想帆船与蛤蜊，纽波特的听涛山庄则是游戏地标。"
+        "zh": "罗得岛按总面积是美国最小的州，海岸却曲折多湾。纳拉甘西特湾适合联想帆船与蛤蜊，纽波特的听涛山庄则是定位地标。"
       },
       "US-SC": {
         "zh": "palmetto 指棕榈类植物，南卡罗来纳州旗上就有一棵。烧烤可想到多种地方酱汁，海滩则可从大西洋岸找起。"
@@ -102277,20 +102277,20 @@
         "zh": "mountain carving 对应拉什莫尔山上雕出的四位美国总统面孔。南达科他西部还有恶地与草原，可把侵蚀地貌和美洲野牛放在一起记。"
       },
       "US-TN": {
-        "zh": "纳什维尔联系乡村音乐，田纳西威士忌联系酿酒，东部的大烟山解释 mountains。另一座城市孟菲斯有游戏地标雅园，是猫王故居。"
+        "zh": "纳什维尔联系乡村音乐，田纳西威士忌联系酿酒，东部的大烟山解释 mountains。另一座城市孟菲斯的雅园，是猫王故居。"
       },
       "US-TX": {
         "zh": "牛仔与养牛传统相联，得州烧烤常以慢火熏制牛肉。bluebonnets 是春季开蓝紫色花的羽扇豆类，英文名字让人联想到小帽子的形状。"
       },
       "US-UT": {
-        "zh": "游戏的定位地标 Delicate Arch 位于犹他州拱门国家公园。岩层裂隙中的风化与侵蚀逐渐开出孔洞，留下这座独立的砂岩拱门；本地点未收录三词提示。",
+        "zh": "定位题中的 Delicate Arch 位于犹他州拱门国家公园。岩层裂隙中的风化与侵蚀逐渐开出孔洞，留下这座独立的砂岩拱门；本地点未收录三词提示。",
         "source": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-arches-national-park"
       },
       "US-VT": {
         "zh": "春季收集糖枫树液，熬去水分就得到枫糖浆。廊桥的屋顶有助于保护木质结构，cheddar 则提示佛蒙特州的乳制品。"
       },
       "US-VA": {
-        "zh": "dogwood 指开花的山茱萸类树木。殖民史可联想到詹姆斯敦等地，花生可联想到弗吉尼亚州东南部；游戏地标蒙蒂塞洛是杰斐逊的故居。"
+        "zh": "dogwood 指开花的山茱萸类树木。殖民史可联想到詹姆斯敦等地，花生可联想到弗吉尼亚州东南部；定位地标蒙蒂塞洛是杰斐逊的故居。"
       },
       "US-WA": {
         "zh": "西雅图将咖啡文化与太空针塔连在一起；常绿针叶林、多雨海岸则是州西部的景观。越过喀斯喀特山脉向东，降水条件会明显不同。"
@@ -102325,10 +102325,10 @@
         "category": "Outdated capital",
         "gameValue": "Malabo",
         "referenceValue": "Ciudad de la Paz",
-        "note": "A decree of 2 January 2026 transferred the capital to Ciudad de la Paz. The game's capital fields still point to Malabo.",
+        "note": "A decree of 2 January 2026 transferred the capital to Ciudad de la Paz. The exercise retains Malabo as a historical answer.",
         "sourceLabel": "Presidency of Equatorial Guinea",
         "sourceUrl": "https://www.guineaecuatorialpress.com/index.php/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial",
-        "zh": "游戏沿用比奥科岛上的 Malabo（马拉博）。赤道几内亚政府于 2026 年 1 月 2 日宣布迁都大陆上的 Ciudad de la Paz（拉帕斯）。"
+        "zh": "这道题沿用位于比奥科岛的旧都 Malabo（马拉博）。赤道几内亚政府于 2026 年 1 月 2 日宣布迁都大陆上的 Ciudad de la Paz（拉帕斯）。"
       },
       {
         "gameId": "164",
@@ -102337,7 +102337,7 @@
         "category": "Capital mismatch",
         "gameValue": "Gaza",
         "referenceValue": "Ramallah (administrative seat); East Jerusalem (claimed capital)",
-        "note": "The game assigns Gaza. The Palestinian government claims East Jerusalem as its capital, and the Palestinian Authority is based in Ramallah. Jerusalem's final status remains disputed.",
+        "note": "The exercise record lists Gaza. The Palestinian government claims East Jerusalem as its capital, and the Palestinian Authority is based in Ramallah. Jerusalem's final status remains disputed.",
         "sourceLabel": "France Diplomatie",
         "sourceUrl": "https://www.diplomatie.gouv.fr/fr/information-par-pays/israelpalestine/presentation-de-la-palestine",
         "additionalSources": [
@@ -102346,7 +102346,7 @@
             "url": "https://www.mfae.gov.ps/en-us/fundamentalissues/jerusalem"
           }
         ],
-        "zh": "游戏列为 Gaza（加沙）。巴勒斯坦方面主张东耶路撒冷（East Jerusalem）为首都，巴勒斯坦民族权力机构驻拉姆安拉（Ramallah）。耶路撒冷的最终地位仍有争议。"
+        "zh": "这道题的原始记录列为 Gaza（加沙）。巴勒斯坦方面主张东耶路撒冷（East Jerusalem）为首都，巴勒斯坦民族权力机构驻拉姆安拉（Ramallah）。耶路撒冷的最终地位仍有争议。"
       },
       {
         "gameId": "157",
@@ -102364,35 +102364,35 @@
     "checks": [
       {
         "title": "U.S. state populations",
-        "zh": "已逐州核对全部 50 个值，游戏里的州人口与 2025 年 7 月 1 日美国人口估算逐项相同。地图参考资料常用 2024 年。相比时先看年份。",
+        "zh": "已逐州核对全部 50 个值，练习中的州人口与 2025 年 7 月 1 日美国人口估算逐项相同。地图参考资料常用 2024 年。相比时先看年份。",
         "url": "https://dlt.ri.gov/sites/g/files/xkgbur571/files/2026-01/nation.pdf",
         "label": "U.S. Census Bureau · 2025 estimates"
       },
       {
         "title": "Area includes water",
-        "zh": "全部 50 州的游戏面积都与美国人口普查局 2010 年含水域总面积表相符。将 total area 与仅含陆地的 land area 相比会得出不同结果。",
+        "zh": "练习列出的 50 州面积都与美国人口普查局 2010 年含水域总面积表相符。将 total area 与仅含陆地的 land area 相比会得出不同结果。",
         "url": "https://www.census.gov/geographies/reference-files/2010/geo/state-area.html",
         "label": "U.S. Census Bureau · total area"
       },
       {
         "title": "Visits and population",
-        "zh": "游戏没有给访问量注明统计年份，也没有界定一次访问的口径。可以用原值做题；现实旅游排名需要另有同年、同口径的数据。"
+        "zh": "到访次数是比较练习的题设值，缺少统计年份和计数口径。比较现实中的旅游人数，需要查阅同年、同口径的统计资料。"
       },
       {
         "title": "Shared pin positions",
-        "zh": "Rome、Vatican City、Colosseum 和 St. Peter’s Basilica 在游戏里共用同一像素。这个位置适合游戏判分，无法用于区分现实中的四个地点。"
+        "zh": "Rome、Vatican City、Colosseum 和 St. Peter’s Basilica 在练习底图上共用同一像素。这个位置用于定位练习评分，无法用于区分现实中的四个地点。"
       }
     ],
     "clueReasons": {
       "ALB": {
         "EagleFlag": "阿尔巴尼亚国旗是红底黑色双头鹰，数鹰头就能认出。",
         "AdriaticCoast": "从意大利鞋跟隔海向东看，便是阿尔巴尼亚的亚得里亚海岸。",
-        "StoneBunkers": "冷战时期当地修了大量圆顶掩体。游戏写 stone，常见实物其实用混凝土浇筑。"
+        "StoneBunkers": "冷战时期当地修了大量圆顶掩体。线索写作 stone，常见实物其实用混凝土浇筑。"
       },
       "AND": {
         "TinyCountry": "在法国与西班牙的边界找面积很小的山地公国。",
         "SkiSlopes": "安道尔在比利牛斯山中，高山冬季积雪，山坡可作雪道。",
-        "DutyFree": "边境购物是当地旅游特色。游戏用 duty free 提示购物，不代表所有商品一概免税。"
+        "DutyFree": "边境购物是当地旅游特色。线索用 duty free 提示购物，不代表所有商品一概免税。"
       },
       "AUT": {
         "AlpinePeaks": "阿尔卑斯山横贯奥地利西部，蒂罗尔就位于这片山地。",
@@ -102500,7 +102500,7 @@
         "Saunas": "当地称传统浴室为 pirts，蒸汽浴是波罗的海地区共享的习俗。"
       },
       "MKD": {
-        "RedSun": "游戏写“红日”，请把两种颜色记准：北马其顿国旗是红底、黄色太阳。",
+        "RedSun": "线索写作“红日”，请把两种颜色记准：北马其顿国旗是红底、黄色太阳。",
         "Lakes": "西南边境的奥赫里德湖由北马其顿和阿尔巴尼亚共享。",
         "Peppers": "当地会把烤红椒制成 ajvar 酱，可把辣椒与餐桌联系起来。"
       },
@@ -102601,7 +102601,7 @@
       },
       "GBR": {
         "BigBen": "伦敦威斯敏斯特宫的钟楼是画面线索，Big Ben 原指楼里的大钟。",
-        "TeaTime": "英式下午茶把饮茶与点心联系起来，是游戏采用的生活习俗。",
+        "TeaTime": "英式下午茶把饮茶与点心联系起来，是了解当地生活习俗的一条线索。",
         "DoubleDecker": "红色双层巴士是伦敦街景，楼上还有一层座位。"
       },
       "ITA": {
@@ -102790,7 +102790,7 @@
         "BlueHole": "大蓝洞在伯利兹外海，是从空中可看见的圆形深蓝色海洞。"
       },
       "BEN": {
-        "BronzeArt": "游戏采用青铜艺术作提示。常说的“贝宁青铜器”来自今尼日利亚境内的历史贝宁王国，单靠这个词会猜错。",
+        "BronzeArt": "本题以青铜艺术为线索。常说的“贝宁青铜器”来自今尼日利亚境内的历史贝宁王国，单靠这个词会猜错。",
         "Voodoo": "Vodun 是当地延续至今的西非宗教传统。",
         "StiltVillage": "冈维埃村位于诺奎湖，许多房屋由木桩支撑在水面上。"
       },
@@ -102862,7 +102862,7 @@
       "COD": {
         "Rainforest": "刚果民主共和国境内有大面积刚果盆地雨林。",
         "River": "刚果河及支流穿过国土，许多地方依靠水运。",
-        "Masks": "库巴等社群有各自的面具传统，游戏以手工艺补充两条自然线索。"
+        "Masks": "库巴等社群有各自的面具传统，这道题以手工艺补充两条自然线索。"
       },
       "CRI": {
         "Sloths": "哥斯达黎加的热带森林栖息着树懒，常在树冠层活动。",
@@ -102877,7 +102877,7 @@
       "DJI": {
         "SaltLake": "阿萨尔湖处于炎热低地，水分蒸发会留下盐，岸边有白色盐壳。",
         "Camels": "骆驼能适应干旱，适合当地部分牧民运输和放牧。",
-        "Whales": "游戏写 whales，是“鲸”。吉布提观光常提的是鲸鲨，后者属于鱼类，别把两个英文词混用。"
+        "Whales": "线索写作 whales，是“鲸”。吉布提观光常提的是鲸鲨，后者属于鱼类，别把两个英文词混用。"
       },
       "DMA": {
         "BoilingLake": "多米尼克的沸水湖由地下热源加热，是岛上有辨识度的火山地貌。",
@@ -102916,7 +102916,7 @@
       },
       "SWZ": {
         "ReedDance": "乌姆兰加芦苇舞是斯威士兰的传统仪式，参与者持芦苇、集体歌舞。",
-        "Crafts": "当地有编篮、织物和木雕等手工艺，游戏用 crafts 统称。",
+        "Crafts": "当地有编篮、织物和木雕等手工艺，线索用 crafts 统称。",
         "Candles": "斯威士兰有制作彩色装饰蜡烛的工坊，动物造型也是常见纪念品。"
       },
       "ETH": {
@@ -103101,7 +103101,7 @@
       },
       "MEX": {
         "Tacos": "taco 常用玉米或小麦薄饼折起包馅，是墨西哥常见食物。",
-        "Sombrero": "游戏指宽檐的墨西哥帽；西班牙语 sombrero 本身也可泛指帽子。",
+        "Sombrero": "此处特指宽檐的墨西哥帽；西班牙语 sombrero 本身也可泛指帽子。",
         "Marigolds": "亡灵节常用橙黄色万寿菊布置祭坛或铺花瓣，与墨西哥节庆相联。"
       },
       "FSM": {
@@ -103177,7 +103177,7 @@
       "PNG": {
         "BirdsOfParadise": "新几内亚是多种极乐鸟的栖息地，华丽羽饰也与当地文化相联。",
         "FacePaint": "一些地方社群会在节庆或仪式上彩绘面部，图样随场合而变。",
-        "Tribes": "游戏用 tribes 指众多地方社群；巴布亚新几内亚的语言、服饰和传统非常多样。"
+        "Tribes": "线索用 tribes 指众多地方社群；巴布亚新几内亚的语言、服饰和传统非常多样。"
       },
       "PRY": {
         "Terere": "tereré 用冷水冲泡马黛茶，在巴拉圭常与家人朋友共饮。",
@@ -103330,7 +103330,7 @@
         "Plov": "plov 是用大锅烹制的米饭，常加肉和胡萝卜，也是乌兹别克聚餐菜肴。"
       },
       "VUT": {
-        "BungeeJumps": "游戏写 bungee jumps，所指传统可联想彭特科斯特岛的高台跳水，系脚用的是藤蔓。",
+        "BungeeJumps": "线索写作 bungee jumps，所指传统可联想彭特科斯特岛的高台跳水，系脚用的是藤蔓。",
         "Volcanoes": "塔纳岛有活跃的亚苏尔火山。",
         "YamFestivals": "彭特科斯特岛的陆地跳水仪式与山药种植、收获季节有关。"
       },
@@ -103362,7 +103362,7 @@
       "UNK": {
         "Flija": "flija 把面糊逐层烤熟，是科索沃及周边阿尔巴尼亚语地区的传统食物。",
         "Mountains": "沙尔山脉等位于科索沃边缘，山区也是当地地理特征。",
-        "NewestCountry": "游戏用“最新”提示 2008 年的独立宣告。南苏丹于 2011 年独立，这个游戏用词不能当作世界排名。"
+        "NewestCountry": "线索用“最新”提示 2008 年的独立宣告。南苏丹于 2011 年独立，这条线索不能当作世界排名。"
       },
       "NIU": {
         "CoralCliffs": "纽埃是隆起的珊瑚岛，海浪侵蚀石灰岩，形成崖壁和拱门。",
@@ -103412,7 +103412,7 @@
       "US-DE": {
         "FirstState": "1787 年特拉华第一个批准美国宪法，因而得名“首州”。",
         "Beaches": "里霍博斯等海滩位于特拉华州的大西洋岸。",
-        "TaxFree": "这里没有州级零售销售税，游戏的 tax free 特指购物场景。"
+        "TaxFree": "这里没有州级零售销售税，这里的 tax free 特指购物场景。"
       },
       "US-FL": {
         "ThemeParks": "迪士尼世界等大型主题乐园集中在奥兰多周边。",
@@ -103432,7 +103432,7 @@
       "US-ID": {
         "Potatoes": "爱达荷以马铃薯种植著称，当地灌溉农田适合大规模种植。",
         "HotSprings": "地下水受热后出露地表，爱达荷山地分布着许多天然温泉。",
-        "Sapphires": "游戏用蓝宝石提示宝石线索。本州昵称是“宝石之州”，州宝石则为星光石榴石。"
+        "Sapphires": "蓝宝石是这道题的宝石线索。本州昵称是“宝石之州”，州宝石则为星光石榴石。"
       },
       "US-IL": {
         "PrairieState": "Prairie State 是伊利诺伊的昵称，源于历史上的高草草原。",
@@ -103486,7 +103486,7 @@
       },
       "US-MN": {
         "TenThousandLakes": "“万湖之地”是明尼苏达的昵称，提示湖泊数量众多。",
-        "Mall": "布卢明顿的 Mall of America 是游戏用普通词 mall 指向的具体商场。",
+        "Mall": "布卢明顿的 Mall of America 是线索 mall 指向的具体商场。",
         "Loons": "普通潜鸟是明尼苏达州鸟，常在北部湖泊潜水捕鱼。"
       },
       "US-MS": {
@@ -103625,12 +103625,12 @@
     "modeRules": [
       {
         "id": "TakeMeSomewhere",
-        "title": "Take Me Somewhere",
+        "title": "Destination Clues",
         "titleZh": "线索选目的地",
-        "detail": "Read the three clues and pick the matching destination ticket.",
-        "detailZh": "读出三条提示，从车票中选出相符的目的地。",
+        "detail": "Read the three clues and choose the matching destination.",
+        "detailZh": "读出三条提示，从选项中选出相符的目的地。",
         "scoring": "180-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 180 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 180 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Destination clues"
         ],
@@ -103669,12 +103669,12 @@
       },
       {
         "id": "SouvenirSort",
-        "title": "Souvenir Sort",
+        "title": "Souvenir Matching",
         "titleZh": "纪念品分类",
-        "detail": "Choose an item, then choose the shelf for its destination. The game also contains a flags variant.",
-        "detailZh": "先选物品，再选目的地货架。游戏也有旗帜分类变体。",
+        "detail": "Match the souvenir to a place. Flags can also be sorted by place.",
+        "detailZh": "按地点给纪念品配对。分类练习也可以使用旗帜。",
         "scoring": "90-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 90 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 90 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Souvenirs",
           "Flags"
@@ -103716,12 +103716,12 @@
       },
       {
         "id": "GuessTheCountry",
-        "title": "Guess the Country",
+        "title": "Identify the Outline",
         "titleZh": "猜国家或州",
         "detail": "Identify the highlighted place from the available choices. A second variant uses souvenirs.",
         "detailZh": "根据地图轮廓，从候选项中选地点。另一变体使用纪念品。",
         "scoring": "150-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 150 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 150 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Countries",
           "Souvenirs"
@@ -103766,8 +103766,8 @@
         "titleZh": "世界拼图",
         "detail": "Place the named piece at its location on the map. Accuracy determines the placement score.",
         "detailZh": "把指定拼块放到地图对应位置。落点精度影响得分。",
-        "scoring": "240-second starting timer. The placement configuration gives 30 points for good and 10 for average, with thresholds of 0.5 and 2 in game units.",
-        "scoringZh": "起始时间 240 秒。放置精度在游戏内按 0.5 和 2 两档判定，良好得 30 分，一般得 10 分。",
+        "scoring": "240-second starting timer. The placement configuration gives 30 points for good and 10 for average, with thresholds of 0.5 and 2 in map units.",
+        "scoringZh": "起始时间 240 秒。落点误差按 0.5 和 2 个地图单位分档，良好得 30 分，一般得 10 分。",
         "variants": [
           "Map pieces"
         ],
@@ -103810,12 +103810,12 @@
       },
       {
         "id": "HigherOrLower",
-        "title": "Higher or Lower",
+        "title": "Compare Places",
         "titleZh": "比较大小",
         "detail": "Read the statistic in the question, then choose between the two places. The three question types compare area, population and visits.",
         "detailZh": "先看题目比较的指标，再从两个地点中选择。三个变体分别比较面积、人口和访问量。",
         "scoring": "150-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 150 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 150 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Area",
           "Population",
@@ -103857,12 +103857,12 @@
       },
       {
         "id": "PinIt",
-        "title": "Pin It",
+        "title": "Map Pins",
         "titleZh": "地图定位",
-        "detail": "Place the pin on the named capital or landmark. The score table uses distance in game pixels.",
-        "detailZh": "把图钉放到指定首都、州府或地标。原始配置以游戏像素距离分档计分。",
-        "scoring": "180-second starting timer. The distance bands use 25, 50 and 75 game pixels, with 30, 20 and 10 points respectively.",
-        "scoringZh": "起始时间 180 秒。定位距离按 25、50、75 个游戏像素分档，对应 30、20、10 分。",
+        "detail": "Place the pin on the named capital or landmark. The score table uses distance in map pixels.",
+        "detailZh": "把图钉放到指定首都、州府或地标。参考分值取决于落点间的像素距离。",
+        "scoring": "180-second starting timer. The distance bands use 25, 50 and 75 map pixels, with 30, 20 and 10 points respectively.",
+        "scoringZh": "起始时间 180 秒。定位距离按 25、50、75 个底图像素分档，对应 30、20、10 分。",
         "variants": [
           "Capitals",
           "Landmarks"
@@ -103910,12 +103910,12 @@
       },
       {
         "id": "MatchTheFlag",
-        "title": "Match the Flag",
+        "title": "Flag Quiz",
         "titleZh": "旗帜匹配",
-        "detail": "Choose the flag matching the place named on the suitcase. State flags can appear alongside national flags.",
-        "detailZh": "按行李箱上的地名选旗帜；题目可同时出现国旗和美国州旗。",
+        "detail": "Choose the flag matching the named place. State flags can appear alongside national flags.",
+        "detailZh": "按给出的地名选旗帜；题目可同时出现国旗和美国州旗。",
         "scoring": "180-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 180 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 180 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Flags"
         ],
@@ -103955,12 +103955,12 @@
       },
       {
         "id": "PassportPlease",
-        "title": "Passport Please",
+        "title": "Passport Check",
         "titleZh": "护照纠错",
         "detail": "Find the field or picture that conflicts with the other passport details.",
         "detailZh": "找出与护照其他资料不符的字段或图片。",
         "scoring": "180-second starting timer. Easy, medium and hard answer values in the configuration are 10, 20 and 30 points.",
-        "scoringZh": "起始时间 180 秒，配置中的简单、中等、困难答题分值依次为 10、20、30。",
+        "scoringZh": "起始时间 180 秒，参考分值按简单、中等和困难依次为 10、20、30。",
         "variants": [
           "Passports"
         ],
@@ -104000,12 +104000,12 @@
       },
       {
         "id": "WorldTour",
-        "title": "World Tour",
+        "title": "Mixed Review",
         "titleZh": "世界巡游",
-        "detail": "Play a sequence of mini-games. The host configuration schedules three games per daily challenge and six per weekly challenge.",
-        "detailZh": "依次完成一组小游戏。主程序配置的每日挑战含 3 场，每周挑战含 6 场。",
-        "scoring": "The World Tour configuration gives game counts for the daily and weekly challenges.",
-        "scoringZh": "World Tour 配置提供了每日与每周挑战的场数。",
+        "detail": "Review several question types in sequence. The daily and weekly challenge formats have three and six rounds respectively.",
+        "detailZh": "轮流练习不同题型。每日挑战的参考组合为 3 轮，每周为 6 轮。",
+        "scoring": "Use the daily or weekly round count to plan a review session.",
+        "scoringZh": "可按每日或每周的参考轮数安排复习。",
         "variants": [
           "Daily Challenge",
           "Weekly Challenge"
@@ -104295,10 +104295,10 @@
       {
         "id": 1,
         "title": "Practice Makes Perfect",
-        "description": "Play a practice game",
-        "howTo": "Play a practice game",
-        "detail": "Play a practice game",
-        "detailZh": "游玩一次练习模式。",
+        "description": "Complete one practice exercise",
+        "howTo": "Complete one practice exercise",
+        "detail": "Complete one practice exercise",
+        "detailZh": "完成一次自由练习。",
         "points": 15,
         "gradeCode": 0,
         "gamerscore": 15,
@@ -104309,10 +104309,10 @@
       {
         "id": 2,
         "title": "Overprepared",
-        "description": "Play a practice game for each mini-game",
-        "howTo": "Play a practice game for each mini-game",
-        "detail": "Play a practice game for each mini-game",
-        "detailZh": "每种小游戏都玩过一次练习模式。",
+        "description": "Try each type of exercise",
+        "howTo": "Try each type of exercise",
+        "detail": "Try each type of exercise",
+        "detailZh": "每种题型各练习一次。",
         "points": 15,
         "gradeCode": 0,
         "gamerscore": 15,
@@ -104352,9 +104352,9 @@
         "id": 5,
         "title": "Combo Breaker",
         "description": "Reach a streak of 20 correct answers",
-        "howTo": "Reach a streak of 20 correct answers in any mode/game",
-        "detail": "Reach a streak of 20 correct answers in any mode/game",
-        "detailZh": "在任一模式或小游戏中连续答对 20 次。",
+        "howTo": "Reach a streak of 20 correct answers in any exercise",
+        "detail": "Reach a streak of 20 correct answers in any exercise",
+        "detailZh": "在任一题型中连续答对 20 次。",
         "points": 90,
         "gradeCode": 2,
         "gamerscore": 90,
@@ -104380,9 +104380,9 @@
         "id": 7,
         "title": "Getting There",
         "description": "Beat your previous best score",
-        "howTo": "Beat your previous best score in any game",
-        "detail": "Beat your previous best score in any game",
-        "detailZh": "在任一小游戏刷新个人最好成绩。",
+        "howTo": "Beat your previous best score in any exercise",
+        "detail": "Beat your previous best score in any exercise",
+        "detailZh": "在任一练习刷新个人最好成绩。",
         "points": 15,
         "gradeCode": 0,
         "gamerscore": 15,
@@ -104394,8 +104394,8 @@
         "id": 8,
         "title": "Personal Record",
         "description": "Beat your previous best score 5 times",
-        "howTo": "Beat your previous best score 5 times in any game",
-        "detail": "Beat your previous best score 5 times in any game",
+        "howTo": "Beat your previous best score 5 times in any exercise",
+        "detail": "Beat your previous best score 5 times in any exercise",
         "detailZh": "刷新个人最好成绩 5 次。",
         "points": 30,
         "gradeCode": 1,
@@ -104407,10 +104407,10 @@
       {
         "id": 9,
         "title": "Around the World",
-        "description": "Play every mini-game at least once",
-        "howTo": "Play every mini-game at least once in any mode",
-        "detail": "Play every mini-game at least once in any mode",
-        "detailZh": "在任一模式中玩遍所有小游戏。",
+        "description": "Try every exercise at least once",
+        "howTo": "Try every exercise at least once in any mode",
+        "detail": "Try every exercise at least once in any mode",
+        "detailZh": "每种题型至少练习一次。",
         "points": 90,
         "gradeCode": 2,
         "gamerscore": 90,
@@ -104435,10 +104435,10 @@
       {
         "id": 11,
         "title": "Tourist",
-        "description": "Play World Tour",
-        "howTo": "Play World Tour",
-        "detail": "Play World Tour",
-        "detailZh": "开始一次 World Tour。",
+        "description": "Play Mixed Review",
+        "howTo": "Play Mixed Review",
+        "detail": "Play Mixed Review",
+        "detailZh": "开始一次 Mixed Review。",
         "points": 15,
         "gradeCode": 0,
         "gamerscore": 15,
@@ -104449,10 +104449,10 @@
       {
         "id": 12,
         "title": "Tour Guide",
-        "description": "Complete World Tour once",
-        "howTo": "Complete World Tour once",
-        "detail": "Complete World Tour once",
-        "detailZh": "完整通关一次 World Tour。",
+        "description": "Complete Mixed Review once",
+        "howTo": "Complete Mixed Review once",
+        "detail": "Complete Mixed Review once",
+        "detailZh": "完成一轮 Mixed Review。",
         "points": 90,
         "gradeCode": 2,
         "gamerscore": 90,
@@ -104463,10 +104463,10 @@
       {
         "id": 13,
         "title": "Border Control",
-        "description": "Play Passport Please 3 times in normal mode",
-        "howTo": "Play Passport Please 3 times in normal mode",
-        "detail": "Play Passport Please 3 times in normal mode",
-        "detailZh": "普通模式游玩 Passport Please 3 次。",
+        "description": "Play Passport Check 3 times in normal mode",
+        "howTo": "Play Passport Check 3 times in normal mode",
+        "detail": "Play Passport Check 3 times in normal mode",
+        "detailZh": "常规练习中完成 Passport Check 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104480,7 +104480,7 @@
         "description": "Play World Puzzle 3 times in normal mode",
         "howTo": "Play World Puzzle 3 times in normal mode",
         "detail": "Play World Puzzle 3 times in normal mode",
-        "detailZh": "普通模式游玩 World Puzzle 3 次。",
+        "detailZh": "常规练习中完成 World Puzzle 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104491,10 +104491,10 @@
       {
         "id": 15,
         "title": "Collector",
-        "description": "Play Souvenir Sort 3 times in normal mode",
-        "howTo": "Play Souvenir Sort 3 times in normal mode",
-        "detail": "Play Souvenir Sort 3 times in normal mode",
-        "detailZh": "普通模式游玩 Souvenir Sort 3 次。",
+        "description": "Play Souvenir Matching 3 times in normal mode",
+        "howTo": "Play Souvenir Matching 3 times in normal mode",
+        "detail": "Play Souvenir Matching 3 times in normal mode",
+        "detailZh": "常规练习中完成 Souvenir Matching 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104505,10 +104505,10 @@
       {
         "id": 16,
         "title": "Locator",
-        "description": "Play Pin It 3 times in normal mode",
-        "howTo": "Play Pin It 3 times in normal mode",
-        "detail": "Play Pin It 3 times in normal mode",
-        "detailZh": "普通模式游玩 Pin It 3 次。",
+        "description": "Play Map Pins 3 times in normal mode",
+        "howTo": "Play Map Pins 3 times in normal mode",
+        "detail": "Play Map Pins 3 times in normal mode",
+        "detailZh": "常规练习中完成 Map Pins 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104519,10 +104519,10 @@
       {
         "id": 17,
         "title": "Flight Attendant",
-        "description": "Play Take Me Somewhere 3 times in normal mode",
-        "howTo": "Play Take Me Somewhere 3 times in normal mode",
-        "detail": "Play Take Me Somewhere 3 times in normal mode",
-        "detailZh": "普通模式游玩 Take Me Somewhere 3 次。",
+        "description": "Play Destination Clues 3 times in normal mode",
+        "howTo": "Play Destination Clues 3 times in normal mode",
+        "detail": "Play Destination Clues 3 times in normal mode",
+        "detailZh": "常规练习中完成 Destination Clues 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104533,10 +104533,10 @@
       {
         "id": 18,
         "title": "Airport Security",
-        "description": "Play Match the Flag 3 times in normal mode",
-        "howTo": "Play Match the Flag 3 times in normal mode",
-        "detail": "Play Match the Flag 3 times in normal mode",
-        "detailZh": "普通模式游玩 Match the Flag 3 次。",
+        "description": "Play Flag Quiz 3 times in normal mode",
+        "howTo": "Play Flag Quiz 3 times in normal mode",
+        "detail": "Play Flag Quiz 3 times in normal mode",
+        "detailZh": "常规练习中完成 Flag Quiz 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104547,10 +104547,10 @@
       {
         "id": 19,
         "title": "Ups & Downs",
-        "description": "Play Higher or Lower 3 times in normal mode",
-        "howTo": "Play Higher or Lower 3 times in normal mode",
-        "detail": "Play Higher or Lower 3 times in normal mode",
-        "detailZh": "普通模式游玩 Higher or Lower 3 次。",
+        "description": "Play Compare Places 3 times in normal mode",
+        "howTo": "Play Compare Places 3 times in normal mode",
+        "detail": "Play Compare Places 3 times in normal mode",
+        "detailZh": "常规练习中完成 Compare Places 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104561,10 +104561,10 @@
       {
         "id": 20,
         "title": "Geographer",
-        "description": "Play Guess the Country 3 times in normal mode",
-        "howTo": "Play Guess the Country 3 times in normal mode",
-        "detail": "Play Guess the Country 3 times in normal mode",
-        "detailZh": "普通模式游玩 Guess the Country 3 次。",
+        "description": "Play Identify the Outline 3 times in normal mode",
+        "howTo": "Play Identify the Outline 3 times in normal mode",
+        "detail": "Play Identify the Outline 3 times in normal mode",
+        "detailZh": "常规练习中完成 Identify the Outline 3 次。",
         "points": 30,
         "gradeCode": 1,
         "gamerscore": 30,
@@ -104575,10 +104575,10 @@
       {
         "id": 21,
         "title": "Rising Star",
-        "description": "Score 1,000 points in 1 mini-game",
-        "howTo": "Score 1,000 points in 1 normal mode mini-game",
-        "detail": "Score 1,000 points in 1 normal mode mini-game",
-        "detailZh": "普通模式下的一场小游戏达到 1,000 分。",
+        "description": "Score 1,000 points in 1 exercise",
+        "howTo": "Score 1,000 points in 1 normal mode exercise",
+        "detail": "Score 1,000 points in 1 normal mode exercise",
+        "detailZh": "普通模式下的一轮练习达到 1,000 分。",
         "points": 90,
         "gradeCode": 2,
         "gamerscore": 90,
@@ -104605,10 +104605,10 @@
       {
         "id": 0,
         "title": "Geo Guesser",
-        "description": "Obtain all other trophies",
-        "howTo": "Obtain all other trophies",
-        "detail": "Obtain all other trophies",
-        "detailZh": "取得所有其他奖杯。",
+        "description": "Complete all the other challenges",
+        "howTo": "Complete all the other challenges",
+        "detail": "Complete all the other challenges",
+        "detailZh": "达成其余全部挑战目标。",
         "points": 0,
         "gradeCode": 3,
         "gamerscore": 0,
